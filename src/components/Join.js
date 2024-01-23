@@ -46,7 +46,7 @@ const Join = () => {
             .then(
                 response => {
                     alert("회원가입 완료");
-                    history('/login'); // 로그인 화면으로 이동
+                    history('/SignIn'); // 로그인 화면으로 이동
                 },
                 error => {
                     alert(error.response.data['password']);
