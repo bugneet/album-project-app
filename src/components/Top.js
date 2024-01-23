@@ -1,10 +1,14 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
-import Login from './Login';
-import Signup from './Signup';
+import SignIn from './SignIn';
+import Join from './Join';
 
 const Top = () => {
+    const onLogout = () => {
+        localStorage.clear();
+        window.location.replace('http://localhost:3000/')
+    };
     return (
         <div id='top'>
             <ul>
@@ -14,15 +18,19 @@ const Top = () => {
                     <Link to="/">[전체분석]</Link>
                     <Link to="/">[전시관]</Link>
                     <Link to="/mypage_album">[마이페이지]</Link>
-                    <Link to="/Login">[로그인]</Link>
-                    <Link to="/Signup">[회원가입]</Link>
+                    {
+                        localStorage.getItem("token") === null ?
+                            <Link to="/SignIn">[로그인]</Link> :
+                            <Link onClick={onLogout}>[로그아웃]</Link>
+                    }
+                    <Link to="/Join">[회원가입]</Link>
                 </li>
             </ul>
             <hr />
             <Routes>
                 <Route path='/' element={<Home />}></Route>
-                <Route path='/Login' element={<Login />}></Route>
-                <Route path='/Signup' element={<Signup />}></Route>
+                <Route path='/SignIn' element={<SignIn />}></Route>
+                <Route path='/Join' element={<Join />}></Route>
             </Routes>
         </div>
     );

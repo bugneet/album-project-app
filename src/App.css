@@ -13,3 +13,78 @@ div#top a {
   font-size: 20px;
   text-decoration: none;
 }
+
+table {
+  margin: 0 auto;
+}
+
+table#select {
+  border-bottom: brown;
+}
+
+table#select th {
+  width: 100px;
+  background-color: #dc3030;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+table#select tr td {
+  border-bottom: red 1px dashed;
+  height: 30px;
+  line-height: 30px;
+}
+
+button {
+  background-color: #dc3030;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+table#insert th,
+table#detail th {
+  width: 100px;
+  background-color: #dc3030;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+table#insert tr td {
+  height: 30px;
+  line-height: 30px;
+}
+
+table#insert tr td input {
+  /* border-bottom: red 1px dashed; */
+  height: 30px;
+  line-height: 30px;
+  border: red 1px dashed;
+}
+
+input[type=submit],
+input[type=reset] {
+  background-color: #dc3030;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  margin: 10px;
+  font-weight: bold;
+} 
+
+div#chardDB {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 70px;
+}
+
+div#chart {
+  margin: 0 auto;
+  width: 500px;
+}
