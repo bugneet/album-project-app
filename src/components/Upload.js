@@ -1,61 +1,97 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import "../App.css";
 
-const Upload = () => {
-  const history = useNavigate();
+import '../UploadPage.css'; 
+
+const UploadPage = () => {
   const [thumbnails, setThumbnails] = useState([]);
+  const [isUploading, setIsUploading] = useState(false);
 
   const onFileChange = (e) => {
     const selectedFiles = e.target.files;
 
     setThumbnails(
-      Array.from(selectedFiles).map((file) => Object.assign(file, {
+      Array.from(selectedFiles).filter(file => file.type.startsWith('image/')).map((file) => Object.assign(file, {
         preview: URL.createObjectURL(file),
       }))
     );
   };
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const removeThumbnail = (index) => {
+    const updatedThumbnails = [...thumbnails];
+    updatedThumbnails.splice(index, 1);
+    setThumbnails(updatedThumbnails);
+  };
 
-    const formData = new FormData(document.frmUpload);
+  const onSubmit = async () => {
+    setIsUploading(true);
+
+    const formData = new FormData(document.forms.frmUpload);
     thumbnails.forEach((file, index) => {
       formData.append(`imgFile${index}`, file);
     });
 
     try {
-        const response = await axios.post(`http://localhost:8000/Upload/`, formData, {
-          headers: { 'content-type': 'multipart/form-data' },
-        });
-      
-        alert("업로드 완료");
-        console.log(response.data);
-      
-        // 포워딩 하면서 파라미터 전달 
-        history('/uploadResult', {
-          state: { file_name: response.data },
-        }); // 업로드 결과 화면으로 이동
-      } catch (error) {
-        console.error('업로드 에러:', error);
+      const response = await axios.post(`http://localhost:8000/upload/`, formData, {
+        headers: { 'content-type': 'multipart/form-data' },
+      });
+
+      alert("업로드 완료");
+      console.log(response.data);
+    } catch (error) {
+      console.error('업로드 에러:', error);
+    } finally {
+      setIsUploading(false);
     }
-      
+  };
+
+  const onClassify = () => {
+    // 분류 로직 추가
+    alert("분류 완료");
+  };
 
   return (
-    <div>
-      <h2>다중 파일 업로드</h2>
-      <form name="frmUpload" method='post' onSubmit={onSubmit}>
-        <label htmlFor="imgFile">이미지 선택:</label>
-        <input type='file' name='imgFile' id='imgFile' onChange={onFileChange} multiple />
-        {thumbnails.map((file) => (
-          <div key={file.name}>
-            <img src={file.preview} alt={file.name} style={{ maxWidth: '100px', maxHeight: '100px', margin: '5px' }} />
-          </div>
-        ))}
-        <input type='submit' value='완료' />
-      </form><br /><br />
+    <div className="upload-container">
+      <div className="upload-box">
+        <h2>이미지 업로드</h2>
+        {thumbnails.length === 0 && (
+          <label htmlFor="imgFile" className="file-label">
+            이미지 선택
+            <input type='file' name='imgFile' id='imgFile' onChange={onFileChange} className="file-input" multiple accept="image/*" />
+          </label>
+        )}
+        {thumbnails.length > 0 && (
+          <button onClick={() => document.getElementById('imgFile').click()} className="add-photo-button">
+            사진 추가
+          </button>
+        )}
+        <div className="thumbnail-container">
+          {thumbnails.map((file, index) => (
+            <div key={file.name} className="thumbnail-item">
+              <img src={file.preview} alt={file.name} className="thumbnail" />
+              <button className="delete-button" onClick={() => removeThumbnail(index)}>취소</button>
+            </div>
+          ))}
+        </div>
+        <div className="button-container">
+          {thumbnails.length > 0 && (
+            <>
+              <button
+                onClick={onSubmit}
+                className={`submit-button ${isUploading ? 'disabled' : ''}`}
+                disabled={isUploading}
+              >
+                {isUploading ? '업로드 중...' : '업로드'}
+              </button>
+              <button onClick={onClassify} className="classify-button">분류</button>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
-}
-export default Upload;
+
+export default UploadPage;
+
