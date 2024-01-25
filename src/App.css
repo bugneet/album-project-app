@@ -13,3 +13,53 @@ div#top a {
   font-size: 20px;
   text-decoration: none;
 }
+
+.photo_tag {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-input {
+  margin-right: 5px;
+}
+
+.board {
+  margin-bottom: 40px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.board_image {
+  width: 100%;
+  height: auto;
+}
+
+.board_content {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.board_title {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.board_created_time,
+.board_phototag {
+  color: #666;
+  font-size: 13xpx;
+}
+
+.board_created_time {
+  font-size: 0.9em;
+}
+
+.board_contents {
+  font-size: 0.95em;
+}
