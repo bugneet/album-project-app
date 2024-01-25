@@ -41,7 +41,7 @@ const Exhibition = () => {
   const handleClassify = async () => {
     try {
       const response = await axios.post('http://localhost:8000/exhibition/', {
-        selectedtags : selectedPhototags
+        selectedtags: selectedPhototags
       });
       console.log(response);
 
@@ -89,7 +89,7 @@ const Exhibition = () => {
 
       {boards.map((board) => (
         <div key={board.id} className='board'>
-          <img src={url+board.photoid_image} alt="Board Image" className='board_image' />
+          <img src={url + board.photoid_image} alt="Board Image" className='board_image' />
           <div className='board_content'>
             <h2 className='board_title'>{board.title}</h2>
             <p className='board_created_time'>{board.created_time}</p>
