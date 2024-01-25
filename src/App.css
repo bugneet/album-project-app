@@ -13,3 +13,417 @@ div#top a {
   font-size: 20px;
   text-decoration: none;
 }
+
+table {
+  margin: 0 auto;
+}
+
+table#select {
+  border-bottom: brown;
+}
+
+table#select th {
+  width: 100px;
+  background-color: #dc3030;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+table#select tr td {
+  border-bottom: red 1px dashed;
+  height: 30px;
+  line-height: 30px;
+}
+
+button {
+  background-color: #dc3030;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+table#insert th,
+table#detail th {
+  width: 100px;
+  background-color: #dc3030;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+table#insert tr td {
+  height: 30px;
+  line-height: 30px;
+}
+
+table#insert tr td input {
+  /* border-bottom: red 1px dashed; */
+  height: 30px;
+  line-height: 30px;
+  border: red 1px dashed;
+}
+
+input[type=submit],
+input[type=reset] {
+  background-color: #dc3030;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  margin: 10px;
+  font-weight: bold;
+} 
+
+div#chardDB {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 70px;
+}
+
+div#chart {
+  margin: 0 auto;
+  width: 500px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section {
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4285F4;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #70757A;
+}
+
+.list {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.analysis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.analysis p {
+  width: 48%;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.file-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.file-input {
+  display: none;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.fileContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.fileContainer .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.selected-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.selected-image-container {
+  position: relative;
+  margin: 5px;
+}
+
+.selected-image {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.selected-image:hover {
+  transform: scale(1.1);
+}
+
+.image-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.delete-button {
+  cursor: pointer;
+  background-color: #dc3030;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.selected-images.large .selected-image {
+  width: 150px;
+  height: 150px;
+}
+
+.selected-images.small .selected-image {
+  width: 100px;
+  height: 100px;
+}
+
+.top-container {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.upload-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.submit-button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.new-upload-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-upload-container h2 {
+  color: #4285F4;
+}
+
+.new-upload-container .upload-box {
+  background-color: #fff; /* 업로드 상자 배경색 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.new-file-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.new-file-input {
+  display: none;
+}
+
+.new-thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.new-thumbnail-container-item {
+  position: relative;
+  margin: 5px;
+}
+
+.new-thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.new-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.new-submit-button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.new-thumbnail-container-item .image-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.new-thumbnail-container-item .image-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.new-thumbnail-container-item .delete-button {
+  cursor: pointer;
+  background-color: #dc3030;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.new-add-photo-button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.classify-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
