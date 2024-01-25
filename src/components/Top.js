@@ -28,13 +28,8 @@ const Top = () => {
                 <li>
                     <Link to="/">[홈]</Link>
                     <Link to="/classification">[분류페이지]</Link>
-                    <Link to="/">[전체분석]</Link>
-                    <Link to="/">[전시관]</Link>
                     <Link to="/mypage_album">[마이페이지]</Link>
-                    <Link to="/total_chart">[전체분석페이지]</Link>
-                    <Link to="/test_chart">[분석페이지]</Link>
-                    <Link to="/">[로그인]</Link>
-                    <Link to="/">[회원가입]</Link>
+                    <Link to="/total_chart">[전체분석차트]</Link>
                     <Link to="/upload">[분석]</Link>
                     <Link to="/exhibition">[전시관]</Link>
                     <Link to="/mypageAlbum2">[마이페이지]</Link>
