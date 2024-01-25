@@ -76,7 +76,7 @@ input[type=reset] {
   width: 70px;
   margin: 10px;
   font-weight: bold;
-} 
+}
 
 div#chardDB {
   margin: 0 auto;
@@ -94,7 +94,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .container {
@@ -257,6 +257,11 @@ body {
   margin-right: 10px;
 }
 
+.photo_tag {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .nav-links a {
   text-decoration: none;
   padding: 5px 10px;
@@ -321,7 +326,8 @@ hr {
 }
 
 .new-upload-container .upload-box {
-  background-color: #fff; /* 업로드 상자 배경색 */
+  background-color: #fff;
+  /* 업로드 상자 배경색 */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -426,4 +432,139 @@ hr {
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#mypage_album_body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+#menu {
+  width: 200px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#content {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.image-container {
+  width: calc(33.33% - 20px);
+  /* 33.33% 너비의 각 이미지 컨테이너를 만듭니다. 여기서 20px은 간격입니다. */
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.checkbox-container label {
+  color: #000000;
+  display: inline-block;
+}
+
+.mypost_item {
+  display: flex;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-align: left;
+  /* margin-bottom: 10px; */
+}
+
+#img_content {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-y: auto;
+
+  /* 이미지를 비율 유지하며 컨테이너에 맞게 조절 */
+  /* 이미지가 많아질 경우 스크롤바가 나타나도록 함 */
+}
+
+.mypost_item {
+  display: flex;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  /* margin-bottom: 10px; */
+
+}
+
+.mypost_image_container img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+
+}
+
+.mypost_content_container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+/* 테스트용 div라인 그리기 */
+/* div {
+  border: 1px solid #000;
+} */
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-input {
+  margin-right: 5px;
+}
+
+.board {
+  margin-bottom: 40px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.board_image {
+  width: 100%;
+  height: auto;
+}
+
+.board_content {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.board_title {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.board_created_time,
+.board_phototag {
+  color: #666;
+  font-size: 13xpx;
+}
+
+.board_created_time {
+  font-size: 0.9em;
+}
+
+.board_contents {
+  font-size: 0.95em;
 }
