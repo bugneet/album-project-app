@@ -29,7 +29,13 @@ const MypageMyLiked = () => {
     // 서버에 요청해서 데이터 받아와서
     // state 값 저장하는 함수
     const loadData = async () => {
-        const response = await axios.get('http://localhost:8000/myliked/');
+        const response = await axios.get('http://localhost:8000/myliked/', {
+            params: {
+                username: localStorage.getItem("username")
+            }
+        })
+
+        // const response = await axios.get('http://localhost:8000/myliked/', );
         console.log(response.data);
         // 받아온 값으로 state 값 저장
         setData(response.data);
