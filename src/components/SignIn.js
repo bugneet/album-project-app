@@ -40,6 +40,7 @@ const SignIn = () => {
                     setUser({
                         username: '',
                         password: '',
+                        id: ''
                     });
 
                     // ID 입력란에 포커스 주기

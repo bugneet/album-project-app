@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
-import { ScrollableFeed, FeedItem } from 'react-scrollable-feed';
+// import { ScrollableFeed, FeedItem } from 'react-scrollable-feed';
 
 import MypageAlbumItem from './MypageAlbumItem';
 import MypageSidemenu from './MypageSidemenu';
