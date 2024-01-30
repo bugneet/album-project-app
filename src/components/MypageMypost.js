@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MypageSidemenu from './MypageSidemenu';
 import axios from 'axios'
 import MypagePostItem from './MypagePostItem';
+import Pagination from './Pagination';
 
 
 const MypageMypost = () => {
@@ -10,25 +11,37 @@ const MypageMypost = () => {
 
     const [data, setData] = useState([]);
 
+    const [tags, setTags] = useState([]);
+    const [selectedTags, setSelectedTags] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
+    const [filteredData, setFilteredData] = useState([]);
+    const [tagCounts, setTagCounts] = useState({});
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = currentPage * itemsPerPage;
 
-    const currentData = data.slice(startIndex, endIndex);
+    const currentData = filteredData.slice(startIndex, endIndex);
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
-    const handleNextPage = () => {
-        setCurrentPage((prevPage) => prevPage + 1);
+    const handleTagChange = (tag) => {
+        if (selectedTags.includes(tag)) {
+            setSelectedTags(selectedTags.filter(item => item !== tag));
+        } else {
+            setSelectedTags([...selectedTags, tag]);
+        }
     };
 
-    const handlePrevPage = () => {
-        setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    const handlePageChange = page => {
+        setCurrentPage(page);
+        // 페이지 변경에 따른 데이터 로딩 등의 작업 수행
+        window.scrollTo({ top: 0, behavior: "auto" });
     };
+
 
     // 서버에 요청해서 데이터 받아와서
     // state 값 저장하는 함수
     const loadData = async () => {
-        const response = await axios.get('http://localhost:8000/mypost/');
+        const response = await axios.get(`http://localhost:8000/mypost/${localStorage.getItem("username")}/`);
         console.log(response.data);
         // 받아온 값으로 state 값 저장
         setData(response.data);
@@ -37,7 +50,42 @@ const MypageMypost = () => {
     useEffect(() => {
         loadData();
         window.scrollTo({ top: 0, behavior: "auto" });
-    }, [currentPage]);
+    }, []);
+
+    useEffect(() => {
+        const uniqueTags = Array.from(new Set(data.flatMap(photo => photo.board_photo_tag.split("#"))));
+        setTags(uniqueTags.filter(tag => tag !== ""));
+    }, [data]);
+
+    useEffect(() => {
+        const filterDataByTags = (data, selectedTags) => {
+            return data.filter(photo => {
+                return selectedTags.every(tag => photo.board_photo_tag.includes(tag));
+            });
+        };
+
+        const newFilteredData = filterDataByTags(data, selectedTags);
+        setFilteredData(newFilteredData);
+        setCurrentPage(1); // 태그가 변경될 때마다 첫 페이지로 이동
+    }, [data, selectedTags]);
+
+    useEffect(() => {
+        const counts = tags.reduce((acc, tag) => {
+            acc[tag] = data.filter(photo => photo.board_photo_tag.includes(tag)).length;
+            return acc;
+        }, {});
+        setTagCounts(counts);
+    }, [tags, data]);
+
+    useEffect(() => {
+        const uniqueTags = Array.from(new Set(data.flatMap(photo => photo.board_photo_tag.split('#').filter(tag => tag.trim() !== ''))));
+        const counts = uniqueTags.reduce((acc, tag) => {
+            acc[tag] = data.filter(photo => photo.board_photo_tag.includes(tag)).length;
+            return acc;
+        }, {});
+        const sortedTags = uniqueTags.sort((a, b) => counts[b] - counts[a]);
+        setTags(sortedTags);
+    }, [data, data]);
 
     return (
 
@@ -49,7 +97,16 @@ const MypageMypost = () => {
             </div>
             <div id="content">
                 <div className="checkbox-container">
-                    체크박스 or 검색 들어갈곳
+                    {tags.map(tag => (
+                        <label key={tag}>
+                            <input
+                                type="checkbox"
+                                checked={selectedTags.includes(tag)}
+                                onChange={() => handleTagChange(tag)}
+                            />
+                            {tag}({tagCounts[tag] || 0})
+                        </label>
+                    ))}
                 </div>
                 <div id="post_content">
                     {
@@ -58,14 +115,8 @@ const MypageMypost = () => {
                         })
                     }
                 </div>
-                <div>
-                    <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                        이전 페이지
-                    </button>
-                    <span>현재 페이지: {currentPage}</span>
-                    <button onClick={handleNextPage} disabled={endIndex >= data.length}>
-                        다음 페이지
-                    </button>
+                <div className="pagenumber_container">
+                    <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
                 </div>
             </div>
 

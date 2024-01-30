@@ -15,6 +15,7 @@ import Exhibition from './exhibition';
 import BoardUpdate from './boardUpdate';
 import Board_writing from './board_writing';
 import PhotoList from './photoList';
+import Classification from './Classification';
 
 const Top = () => {
     const onLogout = () => {
@@ -27,7 +28,7 @@ const Top = () => {
             <ul className='nav-links'>
                 <li>
                     <Link to="/">[홈]</Link>
-                    {/* <Link to="/classification">[분류페이지]</Link> */}
+                    <Link to="/classification">[분류페이지]</Link>
                     <Link to="/total_chart">[전체분석차트]</Link>
                     {/* <Link to="/upload">[분석]</Link> */}
                     <Link to="/exhibition">[전시관]</Link>
@@ -57,6 +58,8 @@ const Top = () => {
                 <Route path='/boardUpdate/:board_no' element={<BoardUpdate />} />
                 <Route path='/board_writing' element={<Board_writing />} />
                 <Route path='/photoList' element={<PhotoList />} />
+                <Route path='/classification' element={<Classification />} />
+
             </Routes>
         </div>
     );
