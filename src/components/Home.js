@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const Main = () => {
@@ -6,12 +7,13 @@ const Main = () => {
   const [analysisResults, setAnalysisResults] = useState([]);
   const [showInstructions, setShowInstructions] = useState(true);
 
+  const navigate = useNavigate();
+
   const handleFileChange = (event) => {
     const files = event.target.files;
     const newFiles = Array.from(files).slice(0, 5);
     setSelectedFiles([...newFiles]);
     analyzeFiles([...newFiles]);
-    setShowInstructions(false);
   };
 
   const analyzeFiles = (files) => {
@@ -22,6 +24,10 @@ const Main = () => {
 
   const getImageSizeClass = (count) => {
     return count < 5 ? "large" : "small";
+  };
+
+  const goToUploadPage = () => {
+    navigate("/upload", { state: { selectedFiles, analysisResults } });
   };
 
   return (
@@ -54,20 +60,14 @@ const Main = () => {
                 />
               ))}
             </div>
+            <button onClick={goToUploadPage} className="upload-page-button">
+              업로드 페이지로 이동
+            </button>
           </div>
         )}
       </section>
-      {!showInstructions && (
-        <section className="section">
-          <h2 className="main-title">전체 분석 결과</h2>
-          <div className="analysis">
-            {analysisResults.map((result, index) => (
-              <p key={index}>{result}</p>
-            ))}
-          </div>
-        </section>
-      )}
-      {showInstructions && (
+
+      {showInstructions ? (
         <section className="section">
           <h2 className="main-title">이용 방법</h2>
           <ol className="list">
@@ -75,6 +75,15 @@ const Main = () => {
             <li>분류 버튼을 누르면 태그별로 앨범을 자동으로 분류합니다.</li>
             <li>편집 기능을 통해 사진을 더 아름답게 만듭니다.</li>
           </ol>
+        </section>
+      ) : (
+        <section className="section">
+          <h2 className="main-title">전체 분석 결과</h2>
+          <div className="analysis">
+            {analysisResults.map((result, index) => (
+              <p key={index}>{result}</p>
+            ))}
+          </div>
         </section>
       )}
     </main>
