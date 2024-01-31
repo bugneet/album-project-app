@@ -42,16 +42,20 @@ const Join = () => {
         e.preventDefault();
 
         var frmData = new FormData(document.frmJoin);
-        axios.post('http://localhost:8000/users/register/', frmData)
-            .then(
-                response => {
-                    alert("회원가입 완료");
-                    history('/SignIn'); // 로그인 화면으로 이동
-                },
-                error => {
-                    alert(error.response.data['password']);
-                }
-            )
+        try {
+            axios.post('http://localhost:8000/users/register/', frmData)
+                .then(
+                    response => {
+                        alert("회원가입 완료");
+                        history('/SignIn'); // 로그인 화면으로 이동
+                    },
+                    error => {
+                        alert(error.response.data['password']);
+                    }
+                )
+        } catch (error) {
+            console('에러:', error);
+        }
     };
 
     return (

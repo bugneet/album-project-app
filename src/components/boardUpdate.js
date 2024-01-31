@@ -1,140 +1,164 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 
 const BoardUpdate = () => {
+    let history = useNavigate();
+    const location = useLocation();
     const { board_no } = useParams();
-
-    const [user, setUser] = useState({});
-    
+  
+    const url = 'http://127.0.0.1:8000/media/';
+  
     const [board, setBoard] = useState({
-        // board_no: '',
+      title: '',
+      contents: '',
+      tags: '',
+      selectedImage: null,
+    });
+  
+    useEffect(() => {
+      const loadBoardInfo = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8000/board/${board_no}/`);
+          const boardInfo = response.data;
+  
+          setBoard({
+            title: boardInfo.title,
+            contents: boardInfo.contents,
+            tags: boardInfo.board_photo_tag,
+            selectedImage: boardInfo.photoid.image,
+          });
+        } catch (error) {
+          console.error('게시글 정보 불러오기 에러:', error);
+        }
+      };
+  
+      loadBoardInfo();
+    }, [board_no]);
+  
+    useEffect(() => {
+      if (location.state && location.state.boardInfo) {
+        setBoard({
+          title: location.state.boardInfo.title,
+          contents: location.state.boardInfo.contents,
+          tags: location.state.boardInfo.tags,
+          selectedImage: location.state.boardInfo.selectedImage,
+        });
+      }
+    }, [location.state]);
+  
+    const onChange = (e) => {
+      const { value, name } = e.target;
+      setBoard({
+        ...board,
+        [name]: value,
+      });
+    };
+  
+    const onReset = () => {
+      setBoard({
         title: '',
         contents: '',
-        id: '',
-        created_time: '',
-    })
-
-    useEffect(() => {
-        axios.get('http://localhost:8000/current_user/')
-            .then(response => setUser(response.data))
-            .catch(error => console.error('에러', error))
-    }, []);
-
-    const loadData = async () => {
-        const response = await axios.get(`http:localhost:8000/board/${board_no}/`);
-        console.log("detail :", response.data);
-        setBoard({
-            // board_no: board_no,
-            title: response.data.title,
-            contents: response.data.contents,
-            created_time: new Date().toISOString(),
-            id: response.data.id 
-        });
-    }
-
-    useEffect(() => {
-        loadData();
-    }, []);
-
-    let history = useNavigate();
-
-    const onChange = (e) => {
-        const {value, name} = e.target;
-        setBoard({
-            ...board,
-            [name]: value
-        })
-    }
-
-    const onReset = () => {
-        setBoard({
-            board_no: board.board_no,
-            title: '',
-            contents: '',
-            id: '',
-            created_time: '',
-        })
+        tags: '',
+        selectedImage: null,
+      });
+      history('/exhibition');
     };
-    
+  
     const onSubmit = (e) => {
-        e.prevenDefault();
-
-        var frmData = new FormData(document.frmUpdate);
-        axios.put(`http://localhost:8000/board/${board_no}/`, frmData)
-            .then(
-                response => {
-                    alert("수정 완료");
-                    history('/exhibition')
-                }
-            )
-    }
+      e.preventDefault();
+  
+      const formData = new FormData();
+      formData.append('board_no', board_no);
+      formData.append('title', board.title);
+      formData.append('contents', board.contents);
+      formData.append('created_time', new Date().toISOString());
+      formData.append('tags', board.tags);
+      formData.append('photoid', location.state.selectedPhoto.id.photoid);
+      formData.append('username', localStorage.getItem("username"));
+  
+      axios.post(`http://localhost:8000/board/${board_no}/`, formData)
+        .then(response => {
+          alert("게시글이 수정되었습니다.");
+          history('/exhibition');
+        })
+        .catch(error => {
+          console.error('게시글 수정 오류:', error);
+        });
+    };
+  
+    const handlePhotoSelect = () => {
+      history(`/photoUpdate/${board_no}`, {
+        state: {
+          boardInfo: {
+            title: board.title,
+            contents: board.contents,
+            tags: board.tags,
+            selectedImage: board.selectedImage,
+            board_no: board_no
+          },
+          selectedPhoto: location.state?.selectedPhoto,
+        },
+      });
+    };
+  
     return (
-        <div>
-            <h3>게시글 수정</h3>
-            <form name="frmUpdate" onSubmit={onSubmit} onReset={onReset}>
-            <table id="board_insert">
-                    <thead>
-                        <tr>
-                            <th>게시글번호</th>
-                            <td> <input 
-                                type="text"
-                                name="board_no"
-                                value={board_no}
-                                readOnly
-                                />
-                            </td>
-                        </tr>
-                          <tr>
-                            <th>제목</th>
-                            <td> <input 
-                                type="text"
-                                name="title"
-                                value={board.title}
-                                onChange={onChange} />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>내용</th>
-                            <td> <input 
-                                type="text"
-                                name="contents"
-                                value={board.contents}
-                                onChange={onChange} />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>제목</th>
-                            <td> <input 
-                                type="text"
-                                name="title"
-                                value={board.title}
-                                onChange={onChange} />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>작성자</th>
-                            <td>
-                                <input
-                                    type="text"
-                                    name="userId"
-                                    value={user.username}
-                                    readOnly
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan="2">
-                                <input type="submit" value="수정" />
-                                <input type="reset" value="취소" />
-                            </td>
-                        </tr>
-                    </thead>
-                </table>
-            </form>
-        </div>
+      <div className="board_update_container">
+        <h3>게시글 수정</h3>
+        <form name="frmUpdate" onSubmit={onSubmit} onReset={onReset}>
+            <div className='photo_update_image_container'>
+                <button type="button" onClick={handlePhotoSelect} className="photo_select_btn">사진 선택</button>
+                <img
+                    src={location.state?.selectedPhoto?.image || (url + board.selectedImage)}
+                    alt="Board Image"
+                    className="board_image"
+                />
+            </div>
+            <table id="board_update">
+                <thead>
+                <tr>
+                    <th>제목</th>
+                    <td>
+                    <input
+                        type="text"
+                        name="title"
+                        value={board.title}
+                        onChange={onChange}
+                    />
+                    </td>
+                </tr>
+                <tr>
+                    <th>태그</th>
+                    <td>
+                    <input
+                        type="text"
+                        name="tags"
+                        value={board.tags}
+                        onChange={onChange}
+                    />
+                    </td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>
+                    <textarea
+                        name="contents"
+                        value={board.contents}
+                        onChange={onChange}
+                    />
+                    </td>
+                </tr>
+                <tr>
+                    <td colSpan="2">
+                    <input type="submit" value="수정" className="board_update_submit" />
+                    <input type="reset" value="취소" className="board_update_reset" />
+                    </td>
+                </tr>
+            </thead>
+          </table>
+        </form>
+      </div>
     );
-};
-
-export default BoardUpdate;
+  };
+  
+  export default BoardUpdate;

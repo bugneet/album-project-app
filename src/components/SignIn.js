@@ -30,6 +30,7 @@ const SignIn = () => {
                     localStorage.setItem("token", response.data["token"]);
                     localStorage.setItem("username", user.username);
                     console.log(localStorage.getItem("token"));
+                    console.log(localStorage.getItem("username"));
                     window.location.replace('http://localhost:3000/') // 홈 화면으로 이동
                 },
                 error => {

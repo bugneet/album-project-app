@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import axios from 'axios';
 
-const PhotoList = () => {
+const PhotoUpdate = () => {
     const navigate = useNavigate();
     const [photos, setPhotos] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
         axios.get(`http://localhost:8000/photos/${localStorage.getItem('username')}`)
             .then(response => {
-                console.log(response.data)
                 const photosWithFullImagePath = response.data.photos.map(photo => ({
                 ...photo,
                 image: `http://localhost:8000/media/${photo.image}`
@@ -20,16 +20,27 @@ const PhotoList = () => {
       }, []);
 
     const handleImageSelect = (photo) => {
-        console.log(photo)
-        navigate('/board_writing', {state: {selectedPhoto: photo}});
-    }
+        const mergedState = {
+            ...location.state,
+            selectedPhoto: {
+                title: photo.title,
+                contents: photo.contents,
+                tags: photo.tags,
+                image: photo.image,
+                id: photo,
+            },
+        };
+    
+        navigate(`/boardUpdate/${location.state.boardInfo.board_no}/`, { state: mergedState });
+    };
 
     return (
-        <div className="photo_list_container">
+        <div>
             <h3>사진 목록</h3>
-            <ul className='photo_list'>
+            <ul>
                 {photos.map(photo => (
-                    <li key={photo.id} onClick={() => handleImageSelect(photo)} className='photo_list_item'>
+                    <li key={photo.id} onClick={() => handleImageSelect(photo)}>
+                        {photo.image} <br/>
                         <img src={photo.image} alt="이미지 불러오기 실패" />
                     </li>
                 ))}
@@ -38,4 +49,4 @@ const PhotoList = () => {
     );
 };
 
-export default PhotoList;
+export default PhotoUpdate;
