@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useLocation } from 'react-router-dom';  // useLocation 추가
 import "../App.css";
-
-import '../UploadPage.css'; 
+import '../UploadPage.css';
 
 const UploadPage = () => {
   const [thumbnails, setThumbnails] = useState([]);
   const [isUploading, setIsUploading] = useState(false);
+  const location = useLocation();  // useLocation을 사용하여 현재 위치 정보 가져오기
+
+  useEffect(() => {
+    // 메인 페이지에서 전달된 데이터를 받아와서 처리
+    const { state } = location;
+    if (state && state.selectedFiles) {
+      setThumbnails(state.selectedFiles);
+    }
+  }, [location]);
 
   const onFileChange = (e) => {
     const selectedFiles = e.target.files;
@@ -27,20 +36,20 @@ const UploadPage = () => {
   const onSubmit = async () => {
     setIsUploading(true);
 
-    const formData = new FormData(document.forms.frmUpload);
+    const formData = new FormData();
     thumbnails.forEach((file, index) => {
       formData.append(`imgFile${index}`, file);
     });
 
     try {
-      const response = await axios.post(`http://localhost:8000/upload/`, formData, {
+      const response = await axios.post('http://localhost:8000/upload_photo/', formData, {
         headers: { 'content-type': 'multipart/form-data' },
       });
 
-      alert("업로드 완료");
+      alert('이미지 저장 완료');
       console.log(response.data);
     } catch (error) {
-      console.error('업로드 에러:', error);
+      console.error('이미지 저장 에러:', error);
     } finally {
       setIsUploading(false);
     }
@@ -48,7 +57,29 @@ const UploadPage = () => {
 
   const onClassify = () => {
     // 분류 로직 추가
-    alert("분류 완료");
+    alert('분류 완료');
+  };
+
+  const onSave = async () => {
+    setIsUploading(true);
+
+    const formData = new FormData();
+    thumbnails.forEach((file, index) => {
+      formData.append(`imgFile${index}`, file);
+    });
+
+    try {
+      const response = await axios.post('http://localhost:8000/upload/', formData, {
+        headers: { 'content-type': 'multipart/form-data' },
+      });
+
+      alert('이미지 저장 완료');
+      console.log(response.data);
+    } catch (error) {
+      console.error('이미지 저장 에러:', error);
+    } finally {
+      setIsUploading(false);
+    }
   };
 
   return (
@@ -87,6 +118,10 @@ const UploadPage = () => {
               <button onClick={onClassify} className="classify-button">분류</button>
             </>
           )}
+          {/* 저장하기 버튼 추가 */}
+          <button onClick={onSave} className="save-button">
+            저장하기
+          </button>
         </div>
       </div>
     </div>
@@ -94,4 +129,3 @@ const UploadPage = () => {
 };
 
 export default UploadPage;
-
