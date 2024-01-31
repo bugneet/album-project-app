@@ -1,12 +1,58 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BarChart, Bar, XAxis, YAxis, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, LineChart, CartesianAxis, Tooltip, Legend, Line, CartesianGrid, ComposedChart, Area, Scatter } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, LineChart, CartesianAxis, Tooltip, Legend, Line, CartesianGrid, ComposedChart, Area, Scatter, Brush } from 'recharts';
+import { Link } from 'react-router-dom';
 
 const Total_chart = () => {
     const [data, setData] = useState({
         tagname: '',
         tagcount: 0,
     })
+    const linkStyle = {
+        border: '1px dotted #000',
+        display: 'inline-block',
+        textAlign: 'center',
+        padding: '5px',
+        color: '#000',
+        textDecoration: 'none',
+    };
+
+    const hoverStyle = {
+        borderColor: '#f00',
+    };
+    const initialDomain = [0, 25]; // 초기에 보이는 데이터의 범위를 설정
+    const [xAxisDomain, setXAxisDomain] = useState(initialDomain);
+
+    const handleXAxisDomainChange = (domain) => {
+        setXAxisDomain(domain);
+    }
+
+    const shouldWrapLabel = (label) => label.length >= 4;
+    const CustomizedXAxisTick = (props) => {
+        const { x, y, payload } = props;
+        const label = payload.value;
+        const labelLines = shouldWrapLabel(label) ? [label.slice(0, 3), label.slice(3)] : [label];
+
+        return (
+            <g transform={`translate(${x},${y})`}>
+                {labelLines.map((line, index) => (
+                    <text
+                        key={index}
+                        x={0}
+                        y={index * 15} // 줄바꿈 간격 조절
+                        dy={5}
+                        textAnchor="start"
+                        transform={`rotate(45)`}
+                        fontSize="10"
+                        fontFamily="Arial"
+                        fill="#666"
+                    >
+                        {line}
+                    </text>
+                ))}
+            </g>
+        );
+    };
 
     // 서버에 요청해서 데이터 받아옴
     // state 값 저장     
@@ -21,7 +67,48 @@ const Total_chart = () => {
         loadData();
     }, []);
     return (
-        <div id="chardDB">
+        <div id="charDB">
+            <div>
+                <Link to="/total_chart">전체분석</Link>
+                <Link to="/yearly_chart" style={linkStyle} activeStyle={hoverStyle}>
+                    연도 및 월 지정하기
+                </Link>
+            </div>
+            <BarChart
+                width={1200}
+                height={400}
+                data={data}
+
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis
+                    dataKey="tagname"
+                    interval={0} // 모든 레이블 표시
+                    domain={xAxisDomain}
+                    angle={-45}
+                    tick={<CustomizedXAxisTick />}
+                />
+
+                <YAxis dataKey="tagcount" />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
+                <Brush
+                    dataKey="tagname"
+                    height={20}
+                    stroke="#8884d8"
+                    startIndex={xAxisDomain[0]}
+                    endIndex={xAxisDomain[1]}
+                    onChange={({ startIndex, endIndex }) => handleXAxisDomainChange([startIndex, endIndex])}
+                    y={380}
+                />
+            </BarChart>
+            <br /><br /><br />
+
+
+
+
+            {/* 
             <BarChart width={1000} height={400} data={data}>
                 <Bar dataKey="tagcount" barSize={30} fill="#8884d8" />
                 <XAxis dataKey="tagname" fontSize={10} />
@@ -72,7 +159,7 @@ const Total_chart = () => {
                 <Legend />
                 <Line type="monotone" dataKey="tagcount" stroke="#8884d8" activeDot={{ r: 8 }} />
 
-            </LineChart>
+            </LineChart> */}
         </div>
 
 
