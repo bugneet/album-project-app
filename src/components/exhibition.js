@@ -123,7 +123,7 @@ const Exhibition = () => {
           if (board.board_no === board_no) {
             return {
               ...board,
-              isLiked: !board.isLiked, // 상태를 반전시킴
+              isLiked: !board.isLiked,
             };
           }
           return board;
