@@ -1,19 +1,36 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Bar, BarChart, Brush, CartesianAxis, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 
 
 const Yearly_chart = () => {
 
+    const [startYear, setStartYear] = useState(2004);
+    const [startMonth, setStartMonth] = useState(1);
+    const [endYear, setEndYear] = useState(2009);
+    const [endMonth, setEndMonth] = useState(1);
     const [data, setData] = useState([]);
-    const [selectedYear, setSelectedYear] = useState(2011);
-    const [selectedMonth, setSelectedMonth] = useState(1);
 
+    //  출력시 등장
 
-    const initialDomain = [0, 25]; // 초기에 보이는 데이터의 범위를 설정
+    // 그래프  
+    const initialDomain = [0, 8]; // 초기에 보이는 데이터의 범위를 설정
     const [xAxisDomain, setXAxisDomain] = useState(initialDomain);
 
+    const linkStyle = {
+        border: '1px dotted #000',
+        display: 'inline-block',
+        textAlign: 'center',
+        padding: '5px',
+        color: '#000',
+        textDecoration: 'none',
+    };
+
+    const hoverStyle = {
+        borderColor: '#f00',
+    };
     const handleXAxisDomainChange = (domain) => {
         setXAxisDomain(domain);
     }
@@ -45,56 +62,104 @@ const Yearly_chart = () => {
     };
 
 
-    useEffect(() => {
-        fetchData(selectedYear, selectedMonth);
-    }, [selectedYear, selectedMonth]);
 
-    const fetchData = async (year, month) => {
+    const fetchData = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/tag_chart_yearly`);
-            const selectedData = response.data.find((item) => item.year === year && item.month === month);
-            setData(selectedData?.tags || []);
+            const response = await axios.get(`http://127.0.0.1:8000/tag_chart_yearly/${startYear}/${startMonth}/${endYear}/${endMonth}/`);
+            setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
     };
-
-    const handleYearChange = (event) => {
-        setSelectedYear(parseInt(event.target.value, 10));
+    const handleButtonClick = () => {
+        fetchData();
     };
 
-    const handleMonthChange = (event) => {
-        setSelectedMonth(parseInt(event.target.value, 10));
+    // useEffect(() => {
+    //     // Fetch data when the component mounts or when date parameters change
+    //     fetchData();
+    // }, [startYear, startMonth, endYear, endMonth]);
+
+
+    const handleStartYearChange = (event) => {
+        setStartYear(event.target.value);
+    };
+
+    const handleStartMonthChange = (event) => {
+        setStartMonth(event.target.value);
+    };
+
+    const handleEndYearChange = (event) => {
+        setEndYear(event.target.value);
+    };
+
+    const handleEndMonthChange = (event) => {
+        setEndMonth(event.target.value);
     };
 
     return (
         <div>
-            <div>
-                <label htmlFor="year">Select Year:</label>
-                <select id="year" value={selectedYear} onChange={handleYearChange}>
-                    {/* Add options for the years available in your data */}
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
 
-                    {/* ... Add more years as needed */}
-                </select>
-            </div>
 
-            <div>
-                <label htmlFor="month">Select Month:</label>
-                <select id="month" value={selectedMonth} onChange={handleMonthChange}>
-                    {/* Add options for the months */}
-                    {[...Array(12).keys()].map((month) => (
-                        <option key={month + 1} value={month + 1}>{month + 1}</option>
-                    ))}
-                </select>
-            </div>
+            <label>Start Year:</label>
+            <select value={startYear} onChange={handleStartYearChange}>
+                {/* Populate the options dynamically based on your requirements */}
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+            </select>
 
+            <label>Start Month:</label>
+            <select value={startMonth} onChange={handleStartMonthChange}>
+                {/* Populate the options dynamically based on your requirements */}
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+
+            </select>
+
+            <label>End Year:</label>
+            <select value={endYear} onChange={handleEndYearChange}>
+                {/* Populate the options dynamically based on your requirements */}
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+
+            </select>
+
+            <label>End Month:</label>
+            <select value={endMonth} onChange={handleEndMonthChange}>
+                {/* Populate the options dynamically based on your requirements */}
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+
+            </select>
+            <button onClick={handleButtonClick}>Show Graph</button>
             <div id="charDB">
                 <BarChart width={1200} height={400} data={data}
                     margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -109,7 +174,7 @@ const Yearly_chart = () => {
                     <YAxis dataKey="tagcount" />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} name={`Tag Count for ${selectedMonth}월`} />
+                    <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
                     <Brush
                         dataKey="tagname"
                         height={20}
@@ -121,6 +186,7 @@ const Yearly_chart = () => {
                     />
                 </BarChart>
             </div>
+            <br /><br /><br />
         </div>
     );
 };

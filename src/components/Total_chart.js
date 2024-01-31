@@ -1,19 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, LineChart, CartesianAxis, Tooltip, Legend, Line, CartesianGrid, ComposedChart, Area, Scatter, Brush } from 'recharts';
+import { Link } from 'react-router-dom';
 
 const Total_chart = () => {
     const [data, setData] = useState({
         tagname: '',
         tagcount: 0,
     })
+    const linkStyle = {
+        border: '1px dotted #000',
+        display: 'inline-block',
+        textAlign: 'center',
+        padding: '5px',
+        color: '#000',
+        textDecoration: 'none',
+    };
 
+    const hoverStyle = {
+        borderColor: '#f00',
+    };
     const initialDomain = [0, 25]; // 초기에 보이는 데이터의 범위를 설정
     const [xAxisDomain, setXAxisDomain] = useState(initialDomain);
 
     const handleXAxisDomainChange = (domain) => {
         setXAxisDomain(domain);
     }
+
     const shouldWrapLabel = (label) => label.length >= 4;
     const CustomizedXAxisTick = (props) => {
         const { x, y, payload } = props;
@@ -55,6 +68,12 @@ const Total_chart = () => {
     }, []);
     return (
         <div id="charDB">
+            <div>
+                <Link to="/total_chart">전체분석</Link>
+                <Link to="/yearly_chart" style={linkStyle} activeStyle={hoverStyle}>
+                    연도 및 월 지정하기
+                </Link>
+            </div>
             <BarChart
                 width={1200}
                 height={400}
@@ -85,7 +104,8 @@ const Total_chart = () => {
                 />
             </BarChart>
             <br /><br /><br />
-            <div>연도별 데이터 </div>
+
+
 
 
             {/* 

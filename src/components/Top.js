@@ -16,6 +16,7 @@ import Board_writing from './board_writing';
 import PhotoList from './photoList';
 import Personal_chart from './Personal_chart';
 import Yearly_chart from './Yearly_chart';
+import Personal_chart_yearly from './Personal_chart_yearly';
 
 const Top = () => {
     const username = localStorage.getItem("username")
@@ -31,8 +32,8 @@ const Top = () => {
                     <Link to="/">[홈]</Link>
                     <Link to="/classification">[분류페이지]</Link>
                     <Link to="/mypage_album">[마이페이지]</Link>
-                    <Link to="/total_chart">[전체분석차트]</Link>
-                    <Link to="/yearly_chart">[전체분석차트/연도별]</Link>
+                    {/* <Link to="/total_chart">[전체분석차트]</Link> */}
+                    <Link to="/yearly_chart">[전체분석차트]</Link>
                     <Link to="/upload">[분석]</Link>
                     <Link to="/exhibition">[전시관]</Link>
                     <Link to="/mypageAlbum2">[마이페이지]</Link>
@@ -50,6 +51,7 @@ const Top = () => {
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/total_chart' element={<Total_chart />} />
                 <Route path='/personal_chart/:username' element={<Personal_chart />} />
+                <Route path='/personal_chart_yearly/:username' element={<Personal_chart_yearly />} />
                 <Route path='/SignIn' element={<SignIn />}></Route>
                 <Route path='/Join' element={<Join />}></Route>
                 <Route path='/upload' element={<Upload />}></Route>
