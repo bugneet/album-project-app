@@ -91,7 +91,7 @@ const MypageAlbum2 = () => {
             return acc;
         }, {});
         const sortedTags = uniqueTags.sort((a, b) => counts[b] - counts[a]);
-        //const sortedTags = uniqueTags.sort((a, b) => a.localeCompare(b));
+        // sortedTags = uniqueTags.sort((a, b) => a.localeCompare(b));
         setTags(sortedTags);
     }, [filteredData, filteredData]);
 
