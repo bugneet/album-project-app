@@ -17,6 +17,7 @@ import Board_writing from './board_writing';
 import PhotoList from './photoList';
 import PhotoUpdate from './photoUpdate';
 import Recommend from './recommend';
+import Classification from './Classification';
 
 const Top = () => {
     const onLogout = () => {
@@ -30,9 +31,8 @@ const Top = () => {
                 <li>
                     <Link to="/">[홈]</Link>
                     <Link to="/classification">[분류페이지]</Link>
-                    <Link to="/mypage_album">[마이페이지]</Link>
                     <Link to="/total_chart">[전체분석차트]</Link>
-                    <Link to="/upload">[분석]</Link>
+                    {/* <Link to="/upload">[분석]</Link> */}
                     <Link to="/exhibition">[전시관]</Link>
                     <Link to="/recommend">[추천]</Link>
                     <Link to="/mypageAlbum2">[마이페이지]</Link>
@@ -63,6 +63,8 @@ const Top = () => {
                 <Route path='/photoList' element={<PhotoList />} />
                 <Route path='/photoUpdate/:board_no' element={<PhotoUpdate />} />
                 <Route path='/recommend' element={<Recommend />} />
+                <Route path='/classification' element={<Classification />} />
+
             </Routes>
         </div>
     );

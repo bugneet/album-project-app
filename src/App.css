@@ -319,7 +319,7 @@ hr {
 .new-upload-container {
   text-align: center;
   margin-top: 20px;
-} 
+}
 
 .new-upload-container h2 {
   color: #4285F4;
@@ -489,7 +489,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+
   overflow-y: auto;
 
   /* 이미지를 비율 유지하며 컨테이너에 맞게 조절 */
@@ -520,14 +520,6 @@ hr {
 
 }
 
-/* 테스트용 div라인 그리기 */
-/* div {
-  border: 1px solid #000;
-} */
-
-
-
-
 /* exhibition */
 
 .exhibition-container {
@@ -537,6 +529,11 @@ hr {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .exhibition-title {
@@ -653,8 +650,8 @@ hr {
   margin-bottom: 10px;
 }
 
-.like_button{
-  width: 40px ;
+.like_button {
+  width: 40px;
   cursor: pointer;
   transition: opacity 0.3s;
   background-color: transparent;
@@ -840,7 +837,8 @@ hr {
   background-color: white;
 }
 
-#board_insert th, #board_insert td {
+#board_insert th,
+#board_insert td {
   padding: 10px;
   border: none;
   background-color: white;
@@ -899,7 +897,7 @@ hr {
   margin-top: 20px;
 }
 
-.photo_update_image_container{
+.photo_update_image_container {
   background-color: white;
 }
 
@@ -920,7 +918,8 @@ hr {
   margin-top: 20px;
 }
 
-#board_update th, #board_update td {
+#board_update th,
+#board_update td {
   border: none;
   padding: 10px;
   background-color: white;
@@ -953,3 +952,39 @@ hr {
   background-color: #f44336;
   margin-left: 10px;
 }
+
+.board_contents {
+  font-size: 0.95em;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagenumber_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* 페이지 번호를 가운데 정렬 */
+}
+
+.pagenumber_container span {
+  margin: 0 5px;
+}
+
+.active button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 테스트용 div라인 그리기 */
+/* div {
+  border: 1px solid #000;
+} */

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MypageSidemenu from './MypageSidemenu';
 import axios from 'axios'
 import MypageReplyItem from './MypageReplyItem';
+import Pagination from './Pagination';
 
 
 const MypageMyReply = () => {
@@ -12,23 +13,24 @@ const MypageMyReply = () => {
 
     const [currentPage, setCurrentPage] = useState(1);
 
+
+    const totalPages = Math.ceil(data.length / itemsPerPage);
+
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = currentPage * itemsPerPage;
 
     const currentData = data.slice(startIndex, endIndex);
 
-    const handleNextPage = () => {
-        setCurrentPage((prevPage) => prevPage + 1);
-    };
-
-    const handlePrevPage = () => {
-        setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    const handlePageChange = page => {
+        setCurrentPage(page);
+        // 페이지 변경에 따른 데이터 로딩 등의 작업 수행
+        window.scrollTo({ top: 0, behavior: "auto" });
     };
 
     // 서버에 요청해서 데이터 받아와서
     // state 값 저장하는 함수
     const loadData = async () => {
-        const response = await axios.get('http://localhost:8000/myreply/');
+        const response = await axios.get(`http://localhost:8000/myreply/${localStorage.getItem("username")}/`);
         console.log(response.data);
         // 받아온 값으로 state 값 저장
         setData(response.data);
@@ -49,7 +51,7 @@ const MypageMyReply = () => {
             </div>
             <div id="content">
                 <div className="checkbox-container">
-                    체크박스 or 검색 들어갈곳
+
                 </div>
                 <div id="post_content">
                     {
@@ -58,14 +60,8 @@ const MypageMyReply = () => {
                         })
                     }
                 </div>
-                <div>
-                    <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                        이전 페이지
-                    </button>
-                    <span>현재 페이지: {currentPage}</span>
-                    <button onClick={handleNextPage} disabled={endIndex >= data.length}>
-                        다음 페이지
-                    </button>
+                <div className="pagenumber_container">
+                    <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
                 </div>
             </div>
 
