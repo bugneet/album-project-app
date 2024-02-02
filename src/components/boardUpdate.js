@@ -53,11 +53,6 @@ const BoardUpdate = () => {
 
       }
     }, [location.state]);
-  
-    useEffect(() => {
-      console.log('After setting photoid', photoid);
-      // 이곳에서 photoid에 대한 추가 동작 수행
-    }, [photoid]);
 
     const onChange = (e) => {
       const { value, name } = e.target;

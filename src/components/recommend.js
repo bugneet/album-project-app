@@ -85,23 +85,29 @@ const Recommend = () => {
 
     return (
         <div>
-            <p>{currentUser.name}님과 비슷한 취향을 가진 사람들입니다.</p>
-            <p>이런 제품은 어떠신가요? <button onClick={recommend}>보기</button></p>
-            <div>
-                <h2>User Contents</h2>
+            <p>{currentUser.name}님! 이런 제품은 어떠신가요? <button onClick={recommend}>보기</button></p>
+            <div className='user_content'>
                 {userContents.map((content) => (
                     <div key={content.contents_id}>
-                        <p>Contents Name: {content.contents_name}</p>
-                        <p>Content Link: {content.contents_link}</p>
+                        <p className='user_content_name'>{content.contents_name}</p>
+                        <p className='user_content_link'>{content.contents_link}</p>
                     </div>
                 ))}
             </div>
-            <div>
-                <h2>Recommend Contents</h2>
+            <p>{currentUser.name}님과 취향이 비슷한 사람들이 관심있어 하는 태그입니다.</p>
+            <div className='recommend_tags'>
+                {recommendTags.map((tag) => (
+                    <div key={tag}>
+                        <p>{tag}&nbsp;</p>
+                    </div>
+                ))}
+            </div>
+            <p>{currentUser.name}님과 취향이 비슷한 사람들이 관심있어 하는 제품입니다!</p>
+            <div className='recommend_content'>
                 {recommendContents.map((content) => (
                     <div key={content.contents_id}>
-                        <p>Contents Name: {content.contents_name}</p>
-                        <p>Content Link: {content.contents_link}</p>
+                        <p className='recommend_content_name'>{content.contents_name}</p>
+                        <p className='recommend_content_link'>{content.contents_link}</p>
                     </div>
                 ))}
             </div>
