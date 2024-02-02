@@ -93,9 +93,9 @@ const Top = () => {
                 <Route path='/tag_count_yearly_chart' element={<Tag_count_yearly_chart />} />
                 <Route path='/custom_tags_count_yearly_chart' element={<Custom_tags_count_yearly_chart />} />
 
-
-            </Routes>
-        </div>
+                <Route path='/UserAnalysis' element={<UserAnalysis />} />
+            </Routes >
+        </div >
     );
 };
 
