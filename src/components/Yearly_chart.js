@@ -98,6 +98,21 @@ const Yearly_chart = () => {
                             <option value="2007">2007</option>
                             <option value="2008">2008</option>
                             <option value="2009">2009</option>
+                            <option value="2009">2010</option>
+                            <option value="2009">2011</option>
+                            <option value="2009">2012</option>
+                            <option value="2009">2013</option>
+                            <option value="2009">2014</option>
+                            <option value="2009">2015</option>
+                            <option value="2009">2016</option>
+                            <option value="2009">2017</option>
+                            <option value="2009">2018</option>
+                            <option value="2009">2019</option>
+                            <option value="2009">2020</option>
+                            <option value="2009">2021</option>
+                            <option value="2009">2022</option>
+                            <option value="2009">2023</option>
+
                         </select>
                     </div>
 
