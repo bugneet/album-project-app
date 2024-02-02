@@ -17,6 +17,8 @@ const Exhibition = () => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = currentPage * itemsPerPage;
   const currentData = boards.slice(startIndex, endIndex);
+  const heart_icon1 = process.env.PUBLIC_URL + '/heart_icon1.png';
+  const heart_icon2 = process.env.PUBLIC_URL + '/heart_icon2.png';
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
@@ -141,13 +143,13 @@ const Exhibition = () => {
     setMenuOpen((prevMenuOpen) => {
       return {...prevMenuOpen, [board_no]: !prevMenuOpen[board_no] };
     });
-  }
+  };
 
   const toggleComment = (board_no) => {
     setCommentOpen((prevCommentOpen) => {
       return {...prevCommentOpen, [board_no]: !prevCommentOpen[board_no] };
     });
-  }
+  };
 
   const addComment = async (board_no) => {
     if (login){
@@ -166,9 +168,24 @@ const Exhibition = () => {
       }
     } else {
       alert('로그인 해주세요');
-      history('/SingIn/')
+      history("/SignIn/")
     }
-  }
+  };
+  
+  const deleteComment = async (rno) => {
+    if (window.confirm("삭제하시겠습니까?")) {
+      try {
+        await axios.delete(`http://localhost:8000/exhibition/delete_comment/${rno}/`, {
+          rno: rno,
+        });
+
+        loadData();
+        alert("댓글이 삭제되었습니다.")
+      } catch (error) {
+        console.error('댓글 삭제 에러', error);
+      }
+    }
+  };
 
   const handleEdit = (board_no) => {
     setMenuOpen(null);
@@ -255,7 +272,7 @@ const Exhibition = () => {
             <div className='like'>
               <button className='like_button' onClick={() => handleLike(board.board_no)}>
                 <img
-                  src={url + (board.isLiked ? 'heart_icon2.png' : 'heart_icon1.png')}
+                  src={(board.isLiked ? heart_icon2 : heart_icon1)}
                   className='like'
                   alt="Like Icon"
                 />
@@ -274,8 +291,11 @@ const Exhibition = () => {
 
             <div className={`replies ${commentOpen[board.board_no] ? 'show' : 'hide'}`}>
               {likes_and_replies.find(item => item.board_no === board.board_no)?.replies.map(reply => (
-                <div key={reply.id} className='reply'>
-                  <p>{reply.id} {reply.replytext}</p>
+                <div key={reply.rno} className='reply'>
+                  <p>{reply.id}: {reply.replytext} <span className='reply_regdate'>{reply.regdate.slice(0,10)}</span></p>
+                  {(reply.id === localStorage.getItem('username')) && (
+                    <button onClick={() => deleteComment(reply.rno)}>삭제</button>
+                  )}
                 </div>
               ))}
             </div>
