@@ -61,17 +61,17 @@ const Tag_count_yearly_chart = () => {
 
             {/* 오른쪽에 그래프 영역 */}
             <div>
-                {selectedTag && (
-                    <LineChart width={1200} height={400} data={data.find(item => item.tagname === selectedTag)?.tagcount_by_year || []}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="year" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="tagcount" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <ReferenceLine y={0} stroke="#666" strokeDasharray="3 3" label={<Label value={selectedTag} position="insideTop" />} />
-                    </LineChart>
-                )}
+
+                <LineChart width={1200} height={400} data={data.find(item => item.tagname === selectedTag)?.tagcount_by_year || []}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="year" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="tagcount" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <ReferenceLine y={0} stroke="#666" strokeDasharray="3 3" label={<Label value={selectedTag} position="insideTop" />} />
+                </LineChart>
+
             </div>
         </div>
     );

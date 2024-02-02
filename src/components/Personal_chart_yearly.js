@@ -6,7 +6,7 @@ import MypageSidemenu from './MypageSidemenu';
 
 const Personal_chart_yearly = () => {
     const [jsonData, setJsonData] = useState([]);
-    const [selectedYear, setSelectedYear] = useState(2021);
+    const [selectedYear, setSelectedYear] = useState(2023);
     const username = localStorage.getItem("username")
 
 
