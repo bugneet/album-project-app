@@ -17,6 +17,9 @@ import PhotoList from './photoList';
 import Personal_chart from './Personal_chart';
 import Yearly_chart from './Yearly_chart';
 import Personal_chart_yearly from './Personal_chart_yearly';
+import Tag_count_yearly_chart from './Tag_count_yearly_chart';
+import Custom_tags_count_yearly_chart from './custom_tags_count_yearly_chart';
+
 
 const Top = () => {
     const username = localStorage.getItem("username")
@@ -32,8 +35,8 @@ const Top = () => {
                     <Link to="/">[홈]</Link>
                     <Link to="/classification">[분류페이지]</Link>
                     <Link to="/mypage_album">[마이페이지]</Link>
-                    {/* <Link to="/total_chart">[전체분석차트]</Link> */}
-                    <Link to="/yearly_chart">[전체분석차트]</Link>
+                    <Link to="/total_chart">[전체분석차트]</Link>
+
                     <Link to="/upload">[분석]</Link>
                     <Link to="/exhibition">[전시관]</Link>
                     <Link to="/mypageAlbum2">[마이페이지]</Link>
@@ -64,6 +67,10 @@ const Top = () => {
                 <Route path='/board_writing' element={<Board_writing />} />
                 <Route path='/photoList' element={<PhotoList />} />
                 <Route path='/yearly_chart' element={<Yearly_chart />} />
+                <Route path='/tag_count_yearly_chart' element={<Tag_count_yearly_chart />} />
+                <Route path='/custom_tags_count_yearly_chart' element={<Custom_tags_count_yearly_chart />} />
+
+
             </Routes>
         </div>
     );
