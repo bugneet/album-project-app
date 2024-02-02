@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const MypageSidemenu = () => {
     return (
         <ul>
+            <li><Link to="/mypageRecentAlbum">최근사진</Link></li>
             <li><Link to="/mypageAlbum2">엘범보기</Link></li>
             <li><Link to="/personal_chart/{username}">분석결과</Link></li>
             <li><Link to="/personal_chart_yearly/{username}">분석결과연도별</Link></li>

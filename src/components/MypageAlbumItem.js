@@ -22,10 +22,10 @@ const MypageAlbumItem = ({ picture }) => {
     // 삭제 버튼 클릭 시
     const onDeleteItem = () => {
         if (window.confirm("삭제하시겠습니까?")) {
-            axios.delete('http://localhost:8000/book_app/book/' + picture.photoid)
+            axios.delete('http://localhost:8000/myalbumdel/' + picture.photoid)
                 .then(
                     () => {
-                        history('/mypageAlbum');
+                        // history('/mypageAlbum');
                         window.location.reload();
                         // reload 하지 않으면
                         // DB에서는 삭제되지만 현재 화면은 안 바뀜
@@ -42,7 +42,7 @@ const MypageAlbumItem = ({ picture }) => {
             <div>
                 날짜: {formattedDate}<br />
                 태그: {picture.phototag}<br />
-                <br /><button>수정</button>
+                <Link to={"/albumUpdate/" + picture.photoid}><button>수정</button></Link>
                 <button onClick={onDeleteItem}>삭제</button>
             </div>
         </div>
