@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { Bar, BarChart, Brush, CartesianAxis, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import Analysticpagemenu from './Analysticpagemenu';
 import jsonData from '../data/yearly_tag.json'
+import { Button, Select } from 'antd';
+
+const { Option } = Select;
 
 const Yearly_chart = () => {
 
@@ -23,35 +26,11 @@ const Yearly_chart = () => {
         setXAxisDomain(domain);
     }
     const shouldWrapLabel = (label) => label.length >= 4;
-    const CustomizedXAxisTick = (props) => {
-        const { x, y, payload } = props;
-        const label = payload.value;
-        const labelLines = shouldWrapLabel(label) ? [label.slice(0, 3), label.slice(3)] : [label];
 
-        return (
-            <g transform={`translate(${x},${y})`}>
-                {labelLines.map((line, index) => (
-                    <text
-                        key={index}
-                        x={0}
-                        y={index * 15} // 줄바꿈 간격 조절
-                        dy={5}
-                        textAnchor="start"
-                        transform={`rotate(45)`}
-                        fontSize="10"
-                        fontFamily="Arial"
-                        fill="#666"
-                    >
-                        {line}
-                    </text>
-                ))}
-            </g>
-        );
-    };
     const handleOutputClick = () => {
         setOutputClicked(true);
         fetchData(selectedYear, selectedMonth);
-        setShowSelects(true)
+        setShowSelects(true);
     };
 
     useEffect(() => {
@@ -71,12 +50,12 @@ const Yearly_chart = () => {
         }
     };
 
-    const handleYearChange = (event) => {
-        setSelectedYear(parseInt(event.target.value, 10));
+    const handleYearChange = (value) => {
+        setSelectedYear(value);
     };
 
-    const handleMonthChange = (event) => {
-        setSelectedMonth(parseInt(event.target.value, 10));
+    const handleMonthChange = (value) => {
+        setSelectedMonth(value);
     };
 
     return (
@@ -90,33 +69,37 @@ const Yearly_chart = () => {
                 {/* Center section - Select tags */}
                 <div style={{ marginBottom: '20px' }}>
                     <div style={{ marginBottom: '10px' }}>
-                        <label htmlFor="year">연도 :</label>
-                        <select id="year" value={selectedYear} onChange={handleYearChange}>
-                            <option value="2004">2004</option>
-                            <option value="2005">2005</option>
-                            <option value="2006">2006</option>
-                            <option value="2007">2007</option>
-                            <option value="2008">2008</option>
-                            <option value="2009">2009</option>
-                        </select>
+                        <label htmlFor="year">연도 </label>
+                        <Select
+                            id="year"
+                            value={selectedYear}
+                            onChange={handleYearChange}
+                            style={{ width: '120px' }}
+                        >
+                            {[...Array(20).keys()].map((index) => (
+                                <Option key={index} value={2004 + index}>{2004 + index}</Option>
+                            ))}
+                        </Select>
                     </div>
 
                     <div style={{ marginBottom: '10px' }}>
-                        <label htmlFor="month">달 :</label>
-                        <select
+                        <label htmlFor="month">달   </label>
+                        <Select
                             id="month"
                             value={selectedMonth}
                             onChange={handleMonthChange}
-                            style={{ zIndex: '1', position: 'relative' }}
+                            style={{ width: '120px', zIndex: '1', position: 'relative' }}
                         >
                             {[...Array(12).keys()].map((month) => (
-                                <option key={month + 1} value={month + 1}>{month + 1}</option>
+                                <Option key={month + 1} value={month + 1}>{month + 1}</Option>
                             ))}
-                        </select>
+                        </Select>
                     </div>
 
                     <div>
-                        <button onClick={handleOutputClick}>출력</button>
+                        <Button type="primary" onClick={handleOutputClick} style={{ borderRadius: '5px' }}>
+                            출력
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -131,8 +114,8 @@ const Yearly_chart = () => {
                             dataKey="tagname"
                             interval={0} // 모든 레이블 표시
                             domain={xAxisDomain}
-                            angle={-45}
-                            tick={<CustomizedXAxisTick />}
+                            angle={0}
+
                         />
 
                         <YAxis dataKey="tagcount" />
