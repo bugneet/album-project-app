@@ -38,11 +38,12 @@ const Top = () => {
         <div id='top' className='top-container'>
             <div className='logo-container'>
                 <Link to="/">
-                    <img src="../logo.png" alt="로고" />
+                    <img src="/logo.png" alt="로고" />
                 </Link>
             </div>
             <ul className='nav-links'>
                 <li>
+                    <Link to="/">[홈]</Link>
                     <Link to="/total_chart">[전체분석차트]</Link>
                     <Link to="/exhibition">[전시관]</Link>
                     {/* <Link to="/recommend">[추천]</Link> */}
