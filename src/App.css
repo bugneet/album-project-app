@@ -319,7 +319,7 @@ hr {
 .new-upload-container {
   text-align: center;
   margin-top: 20px;
-} 
+}
 
 .new-upload-container h2 {
   color: #4285F4;
@@ -653,8 +653,8 @@ hr {
   margin-bottom: 10px;
 }
 
-.like_button{
-  width: 40px ;
+.like_button {
+  width: 40px;
   cursor: pointer;
   transition: opacity 0.3s;
   background-color: transparent;
@@ -840,7 +840,8 @@ hr {
   background-color: white;
 }
 
-#board_insert th, #board_insert td {
+#board_insert th,
+#board_insert td {
   padding: 10px;
   border: none;
   background-color: white;
@@ -899,7 +900,7 @@ hr {
   margin-top: 20px;
 }
 
-.photo_update_image_container{
+.photo_update_image_container {
   background-color: white;
 }
 
@@ -920,7 +921,8 @@ hr {
   margin-top: 20px;
 }
 
-#board_update th, #board_update td {
+#board_update th,
+#board_update td {
   border: none;
   padding: 10px;
   background-color: white;
@@ -952,4 +954,18 @@ hr {
 #board_update input[type="reset"] {
   background-color: #f44336;
   margin-left: 10px;
+}
+
+.board_contents {
+  font-size: 0.95em;
+}
+
+.logo-container {
+  padding: 10px;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
 }

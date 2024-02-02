@@ -26,22 +26,31 @@ const Top = () => {
 
     return (
         <div id='top' className='top-container'>
+            <div className='logo-container'>
+                <Link to="/">
+                    <img src="../logo.png" alt="로고" />
+                </Link>
+            </div>
             <ul className='nav-links'>
                 <li>
-                    <Link to="/">[홈]</Link>
-                    <Link to="/classification">[분류페이지]</Link>
-                    <Link to="/mypage_album">[마이페이지]</Link>
                     <Link to="/total_chart">[전체분석차트]</Link>
-                    <Link to="/upload">[분석]</Link>
                     <Link to="/exhibition">[전시관]</Link>
                     <Link to="/recommend">[추천]</Link>
-                    <Link to="/mypageAlbum2">[마이페이지]</Link>
+
                     {
-                        localStorage.getItem("token") === null ?
-                            <Link to="/SignIn">[로그인]</Link> :
-                            <Link onClick={onLogout}>[로그아웃]</Link>
+                        localStorage.getItem("token") === null ? (
+                            <>
+                                <Link to="/SignIn">[로그인]</Link>
+                                <Link to="/Join">[회원가입]</Link>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/mypageAlbum2">[마이페이지]</Link>
+                                <Link onClick={onLogout}>[로그아웃]</Link>
+                            </>
+                        )
                     }
-                    <Link to="/Join">[회원가입]</Link>
+
 
                 </li>
             </ul>
