@@ -45,6 +45,7 @@ const Top = () => {
                             </>
                         ) : (
                             <>
+                                <Link to="/UserAnalysis">[분석페이지]</Link>
                                 <Link to="/mypageAlbum2">[마이페이지]</Link>
                                 <Link onClick={onLogout}>[로그아웃]</Link>
                             </>
@@ -72,8 +73,9 @@ const Top = () => {
                 <Route path='/photoList' element={<PhotoList />} />
                 <Route path='/photoUpdate/:board_no' element={<PhotoUpdate />} />
                 <Route path='/recommend' element={<Recommend />} />
-            </Routes>
-        </div>
+                <Route path='/UserAnalysis' element={<UserAnalysis />} />
+            </Routes >
+        </div >
     );
 };
 
