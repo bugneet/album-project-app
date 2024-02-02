@@ -42,7 +42,7 @@ const UploadPage = () => {
     });
 
     try {
-      const response = await axios.post('http://localhost:8000/upload_photo/', formData, {
+      const response = await axios.post('http://localhost:8000/upload/', formData, {
         headers: { 'content-type': 'multipart/form-data' },
       });
 
@@ -108,18 +108,11 @@ const UploadPage = () => {
         <div className="button-container">
           {thumbnails.length > 0 && (
             <>
-              <button
-                onClick={onSubmit}
-                className={`submit-button ${isUploading ? 'disabled' : ''}`}
-                disabled={isUploading}
-              >
-                {isUploading ? '업로드 중...' : '업로드'}
-              </button>
               <button onClick={onClassify} className="classify-button">분류</button>
             </>
           )}
           {/* 저장하기 버튼 추가 */}
-          <button onClick={onSave} className="save-button">
+          <button onClick={onSave} className="submit-button">
             저장하기
           </button>
         </div>

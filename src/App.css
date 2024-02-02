@@ -988,3 +988,12 @@ hr {
 /* div {
   border: 1px solid #000;
 } */
+.logo-container {
+  padding: 10px;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
