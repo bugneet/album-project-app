@@ -37,7 +37,7 @@ const Top = () => {
                     {
                         localStorage.getItem("token") === null ? (
                             <>
-                            <Link to="/classification">[분류페이지]</Link>
+                            <Link to="/UserAnalysis">[분석페이지]</Link>
                             <Link to="/SignIn">[로그인]</Link> 
                             <Link to="/Join">[회원가입]</Link>
                             </>
@@ -68,6 +68,7 @@ const Top = () => {
                 <Route path='/boardUpdate/:board_no' element={<BoardUpdate />} />
                 <Route path='/board_writing' element={<Board_writing />} />
                 <Route path='/photoList' element={<PhotoList />} />
+                <Route path='/UserAnalysis' element={<UserAnalysis />} />
             </Routes>
         </div>
     );
