@@ -27,6 +27,7 @@ const Main = () => {
   };
 
   const goToUploadPage = () => {
+    // '/upload'로 이동
     navigate("/upload", { state: { selectedFiles, analysisResults } });
   };
 
