@@ -568,3 +568,13 @@ hr {
 .board_contents {
   font-size: 0.95em;
 }
+
+.logo-container {
+  padding: 10px; 
+}
+
+.logo-container img {
+  width: 100px; 
+  height: auto; 
+  cursor: pointer; 
+}
