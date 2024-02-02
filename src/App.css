@@ -953,3 +953,57 @@ hr {
   background-color: #f44336;
   margin-left: 10px;
 }
+
+/* recommend */
+.user_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user_content > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user_content_name {
+  font-weight: bold;
+}
+
+.user_content_link {
+  color: #3498db;
+}
+
+.recommend_tags {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.recommend_tags > div {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.recommend_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommend_content > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.recommend_content_name {
+  font-weight: bold;
+}
+
+.recommend_content_link {
+  color: #3498db;
+}
