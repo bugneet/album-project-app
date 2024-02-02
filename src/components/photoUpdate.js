@@ -39,7 +39,7 @@ const PhotoUpdate = () => {
             <h3>사진 목록</h3>
             <ul>
                 {photos.map(photo => (
-                    <li key={photo.id} onClick={() => handleImageSelect(photo)}>
+                    <li key={photo.photoid} onClick={() => handleImageSelect(photo)}>
                         {photo.image} <br/>
                         <img src={photo.image} alt="이미지 불러오기 실패" />
                     </li>
