@@ -26,6 +26,7 @@ import Custom_tags_count_yearly_chart from './custom_tags_count_yearly_chart';
 import Upload2 from './Upload2';
 import MypageRecentAlbum from './MypageRecentAlbum';
 import MypageAlbumUpdate from './MypageAlbumUpdate';
+import UserAnalysis from './UserAnalysis';
 
 const Top = () => {
     const username = localStorage.getItem("username")

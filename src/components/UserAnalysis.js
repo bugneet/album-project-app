@@ -24,7 +24,7 @@ const UserAnalysis = ({ username }) => {
           <h1>{username} 님의 분석 페이지</h1>
           <p>전체 이미지 수: {user_data.total_images_count} 개입니다.</p>
           <UserTopTags topTags={user_data.user_tags} />
-          <MatchingSection userTags={user_data.user_tags} matchingActivities={user_data.matching_activities} />
+          <MatchingSection userTags={user_data.user_tags} matchingActivities={user_data.matching_activities} username={username} />
         </div>
       ) : (
         <p>데이터를 불러오는 중입니다...</p>
@@ -46,7 +46,7 @@ const UserTopTags = ({ topTags }) => {
   );
 };
 
-const MatchingSection = ({ userTags, matchingActivities }) => {
+const MatchingSection = ({ userTags, matchingActivities, username }) => {
   return (
     <div>
       <h2>{username} 님의 선호 하는 엑티비티는 </h2>
@@ -59,15 +59,15 @@ const MatchingSection = ({ userTags, matchingActivities }) => {
       ) : (
         <p>데이터를 불러오는 중입니다...</p>
       )}
-      {renderAssociatedActivities(userTags, matchingActivities)}
+      {renderAssociatedActivities(userTags, matchingActivities, username)}
     </div>
   );
 };
 
-const renderAssociatedActivities = (userTags, matchingActivities) => {
+const renderAssociatedActivities = (userTags, matchingActivities, username) => {
   if (userTags.length >= 3 && matchingActivities) {
     const topTags = userTags.slice(0, 3).map(tag => tag.phototag);
-    
+
     return (
       <div>
         <h2>선호 할수도 있는 액티비티:</h2>
@@ -88,5 +88,6 @@ const renderAssociatedActivities = (userTags, matchingActivities) => {
   }
   return null;
 };
+
 
 export default UserAnalysis;
