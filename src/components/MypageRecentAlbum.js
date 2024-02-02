@@ -9,7 +9,7 @@ import Pagination from './Pagination';
 
 const itemsPerPage = 9;
 
-const MypageAlbum2 = () => {
+const MypageRecentAlbum = () => {
 
     const [data, setData] = useState([]);
 
@@ -47,12 +47,22 @@ const MypageAlbum2 = () => {
     // state 값 저장하는 함수
     const loadData = async () => {
         const response = await axios.get(`http://localhost:8000/mixin/mypage_album/${localStorage.getItem("username")}/`);
-        console.log(response.data);
-        // 받아온 값으로 state 값 저장
-        setData(response.data);
+        // console.log(response.data);
+
+        // 받아온 데이터에서 오늘 날짜 기준으로 3일 이전의 데이터 필터링
+        const today = new Date();
+        const threeDaysAgo = new Date(today);
+        threeDaysAgo.setDate(today.getDate() - 3);
+
+        const recentData = response.data.filter(item => {
+            // item의 날짜를 포맷에 맞게 변환 
+            const itemDate = new Date(item.uploaddate);
+            return itemDate >= threeDaysAgo;
+        });
+        console.log(recentData);
+        // 추려진 데이터를 state 값으로 저장
+        setData(recentData);
     };
-
-
 
     // useEffect() : 컴포넌트가 렌더링될 때마다 특정 작업을 실행할 수 있도록 해주는 Hook
     // 렌더링 될 때마다 호출 
@@ -135,4 +145,4 @@ const MypageAlbum2 = () => {
     );
 };
 
-export default MypageAlbum2;
+export default MypageRecentAlbum;

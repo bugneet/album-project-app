@@ -20,6 +20,9 @@ import Classification from './Classification';
 import Personal_chart from './Personal_chart';
 import Yearly_chart from './Yearly_chart';
 import Personal_chart_yearly from './Personal_chart_yearly';
+import Upload2 from './Upload2';
+import MypageRecentAlbum from './MypageRecentAlbum';
+import MypageAlbumUpdate from './MypageAlbumUpdate';
 
 const Top = () => {
     const username = localStorage.getItem("username")
@@ -34,14 +37,14 @@ const Top = () => {
                 <li>
                     <Link to="/">[홈]</Link>
                     <Link to="/classification">[분류페이지]</Link>
-                    <Link to="/total_chart">[전체분석차트]</Link>
-                    {/* <Link to="/upload">[분석]</Link> */}
-                    <Link to="/mypage_album">[마이페이지]</Link>
+                    {/* <Link to="/total_chart">[전체분석차트]</Link> */}
+                    <Link to="/upload2">[업로드]</Link>
+                    {/* <Link to="/mypage_album">[마이페이지]</Link> */}
                     {/* <Link to="/total_chart">[전체분석차트]</Link> */}
                     <Link to="/yearly_chart">[전체분석차트]</Link>
-                    <Link to="/upload">[분석]</Link>
+                    {/* <Link to="/upload">[분석]</Link> */}
                     <Link to="/exhibition">[전시관]</Link>
-                    <Link to="/recommend">[추천]</Link>
+                    {/* <Link to="/recommend">[추천]</Link> */}
                     <Link to="/mypageAlbum2">[마이페이지]</Link>
                     {
                         localStorage.getItem("token") === null ?
@@ -60,7 +63,7 @@ const Top = () => {
                 <Route path='/personal_chart_yearly/:username' element={<Personal_chart_yearly />} />
                 <Route path='/SignIn' element={<SignIn />}></Route>
                 <Route path='/Join' element={<Join />}></Route>
-                <Route path='/upload' element={<Upload />}></Route>
+                <Route path='/upload2' element={<Upload2 />}></Route>
                 <Route path='/mypageAlbum2' element={<MypageAlbum2 />}></Route>
                 <Route path='/mypageMypost' element={<MypageMypost />}></Route>
                 <Route path='/mypageMyReply' element={<MypageMyReply />}></Route>
@@ -72,6 +75,8 @@ const Top = () => {
                 <Route path='/photoUpdate/:board_no' element={<PhotoUpdate />} />
                 <Route path='/recommend' element={<Recommend />} />
                 <Route path='/classification' element={<Classification />} />
+                <Route path='/mypageRecentAlbum' element={<MypageRecentAlbum />}></Route>
+                <Route path='/albumUpdate/:photoid' element={<MypageAlbumUpdate />}></Route>
 
                 <Route path='/yearly_chart' element={<Yearly_chart />} />
             </Routes>

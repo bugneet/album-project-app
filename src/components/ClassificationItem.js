@@ -14,14 +14,14 @@ const ClassificationItem = ({ item, onDataChange }) => {
     return (
         <div>
             <img src={url} />
-            <p>Photo Hash: {item.photohash}</p>
+            {/* <p>Photo Hash: {item.photohash}</p> */}
             <p>
                 Photo Tag:
                 <input type="text" value={editedPhototag} onChange={handlePhototagChange} />
             </p>
             <p>Photo Date: {item.photodate}</p>
-            <p>Upload Date: {item.uploaddate}</p>
-            <p>Item Image: {item.image}</p>
+            {/* <p>Upload Date: {item.uploaddate}</p>
+            <p>Item Image: {item.image}</p> */}
         </div>
     );
 };
