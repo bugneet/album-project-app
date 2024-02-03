@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import MypageSidemenu from './MypageSidemenu';
 import axios from 'axios'
-import MypagePostItem from './MypagePostItem';
-import MypageLikedItem from './MypageLikedItem';
+// import { ScrollableFeed, FeedItem } from 'react-scrollable-feed';
+
+import MypageAlbumItem from './MypageAlbumItem';
+import MypageSidemenu from './MypageSidemenu';
+
 import Pagination from './Pagination';
 
+const itemsPerPage = 9;
 
-const MypageMyLiked = () => {
-
-    const itemsPerPage = 10;
+const MypageRecentAlbum = () => {
 
     const [data, setData] = useState([]);
 
@@ -25,6 +26,9 @@ const MypageMyLiked = () => {
 
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
+    // const filteredData = filterDataByTags(data, selectedTags);
+
+
     const handleTagChange = (tag) => {
         if (selectedTags.includes(tag)) {
             setSelectedTags(selectedTags.filter(item => item !== tag));
@@ -39,34 +43,44 @@ const MypageMyLiked = () => {
         // 페이지 변경에 따른 데이터 로딩 등의 작업 수행
         window.scrollTo({ top: 0, behavior: "auto" });
     };
-
     // 서버에 요청해서 데이터 받아와서
     // state 값 저장하는 함수
     const loadData = async () => {
-        const token = localStorage.getItem('token'); // 예시: JWT 토큰
-        const response = await axios.get(`http://localhost:8000/myliked/${localStorage.getItem("username")}/`)
+        const response = await axios.get(`http://localhost:8000/mixin/mypage_album/${localStorage.getItem("username")}/`);
+        // console.log(response.data);
 
-        // const response = await axios.get('http://localhost:8000/myliked/', );
-        console.log(response.data);
-        console.log(token);
-        // 받아온 값으로 state 값 저장
-        setData(response.data);
+        // 받아온 데이터에서 오늘 날짜 기준으로 3일 이전의 데이터 필터링
+        const today = new Date();
+        const threeDaysAgo = new Date(today);
+        threeDaysAgo.setDate(today.getDate() - 3);
+
+        const recentData = response.data.filter(item => {
+            // item의 날짜를 포맷에 맞게 변환 
+            const itemDate = new Date(item.uploaddate);
+            return itemDate >= threeDaysAgo;
+        });
+        console.log(recentData);
+        // 추려진 데이터를 state 값으로 저장
+        setData(recentData);
     };
 
+    // useEffect() : 컴포넌트가 렌더링될 때마다 특정 작업을 실행할 수 있도록 해주는 Hook
+    // 렌더링 될 때마다 호출 
+    // loadData() 한 번만 호출하도록 설정 : 빈 배열 지정
     useEffect(() => {
         loadData();
         window.scrollTo({ top: 0, behavior: "auto" });
     }, []);
 
     useEffect(() => {
-        const uniqueTags = Array.from(new Set(data.flatMap(photo => photo.board_no.board_photo_tag.split("#"))));
+        const uniqueTags = Array.from(new Set(data.flatMap(photo => photo.phototag.split("#"))));
         setTags(uniqueTags.filter(tag => tag !== ""));
     }, [data]);
 
     useEffect(() => {
         const filterDataByTags = (data, selectedTags) => {
             return data.filter(photo => {
-                return selectedTags.every(tag => photo.board_no.board_photo_tag.includes(tag));
+                return selectedTags.every(tag => photo.phototag.includes(tag));
             });
         };
 
@@ -77,21 +91,22 @@ const MypageMyLiked = () => {
 
     useEffect(() => {
         const counts = tags.reduce((acc, tag) => {
-            acc[tag] = data.filter(photo => photo.board_no.board_photo_tag.includes(tag)).length;
+            acc[tag] = filteredData.filter(photo => photo.phototag.includes(tag)).length;
             return acc;
         }, {});
         setTagCounts(counts);
-    }, [tags, data]);
+    }, [tags, filteredData]);
 
     useEffect(() => {
-        const uniqueTags = Array.from(new Set(data.flatMap(photo => photo.board_no.board_photo_tag.split('#').filter(tag => tag.trim() !== ''))));
+        const uniqueTags = Array.from(new Set(filteredData.flatMap(photo => photo.phototag.split('#').filter(tag => tag.trim() !== ''))));
         const counts = uniqueTags.reduce((acc, tag) => {
-            acc[tag] = data.filter(photo => photo.board_no.board_photo_tag.includes(tag)).length;
+            acc[tag] = filteredData.filter(photo => photo.phototag.includes(tag)).length;
             return acc;
         }, {});
         const sortedTags = uniqueTags.sort((a, b) => counts[b] - counts[a]);
+        // sortedTags = uniqueTags.sort((a, b) => a.localeCompare(b));
         setTags(sortedTags);
-    }, [data, data]);
+    }, [filteredData, filteredData]);
 
     return (
 
@@ -114,10 +129,10 @@ const MypageMyLiked = () => {
                         </label>
                     ))}
                 </div>
-                <div id="post_content">
+                <div id="img_content">
                     {
-                        currentData.map(function (liked, i) {
-                            return <MypageLikedItem liked={liked} key={i} />
+                        currentData.map(function (picture, i) {
+                            return <MypageAlbumItem picture={picture} key={i} />
                         })
                     }
                 </div>
@@ -130,4 +145,4 @@ const MypageMyLiked = () => {
     );
 };
 
-export default MypageMyLiked;
+export default MypageRecentAlbum;

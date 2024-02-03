@@ -1,0 +1,8077 @@
+[
+  {
+    "tagname": "자전거",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 5
+      },
+      {
+        "year": 2008,
+        "tagcount": 15
+      },
+      {
+        "year": 2009,
+        "tagcount": 41
+      },
+      {
+        "year": 2010,
+        "tagcount": 51
+      },
+      {
+        "year": 2011,
+        "tagcount": 35
+      },
+      {
+        "year": 2012,
+        "tagcount": 46
+      },
+      {
+        "year": 2013,
+        "tagcount": 25
+      },
+      {
+        "year": 2014,
+        "tagcount": 28
+      },
+      {
+        "year": 2015,
+        "tagcount": 18
+      },
+      {
+        "year": 2016,
+        "tagcount": 30
+      },
+      {
+        "year": 2017,
+        "tagcount": 48
+      },
+      {
+        "year": 2018,
+        "tagcount": 47
+      },
+      {
+        "year": 2019,
+        "tagcount": 40
+      },
+      {
+        "year": 2020,
+        "tagcount": 37
+      },
+      {
+        "year": 2021,
+        "tagcount": 22
+      },
+      {
+        "year": 2022,
+        "tagcount": 30
+      },
+      {
+        "year": 2023,
+        "tagcount": 31
+      }
+    ]
+  },
+  {
+    "tagname": "자동차",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 29
+      },
+      {
+        "year": 2005,
+        "tagcount": 26
+      },
+      {
+        "year": 2006,
+        "tagcount": 31
+      },
+      {
+        "year": 2007,
+        "tagcount": 47
+      },
+      {
+        "year": 2008,
+        "tagcount": 80
+      },
+      {
+        "year": 2009,
+        "tagcount": 106
+      },
+      {
+        "year": 2010,
+        "tagcount": 141
+      },
+      {
+        "year": 2011,
+        "tagcount": 218
+      },
+      {
+        "year": 2012,
+        "tagcount": 206
+      },
+      {
+        "year": 2013,
+        "tagcount": 183
+      },
+      {
+        "year": 2014,
+        "tagcount": 208
+      },
+      {
+        "year": 2015,
+        "tagcount": 201
+      },
+      {
+        "year": 2016,
+        "tagcount": 334
+      },
+      {
+        "year": 2017,
+        "tagcount": 511
+      },
+      {
+        "year": 2018,
+        "tagcount": 592
+      },
+      {
+        "year": 2019,
+        "tagcount": 491
+      },
+      {
+        "year": 2020,
+        "tagcount": 438
+      },
+      {
+        "year": 2021,
+        "tagcount": 331
+      },
+      {
+        "year": 2022,
+        "tagcount": 327
+      },
+      {
+        "year": 2023,
+        "tagcount": 287
+      }
+    ]
+  },
+  {
+    "tagname": "오토바이",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 5
+      },
+      {
+        "year": 2006,
+        "tagcount": 7
+      },
+      {
+        "year": 2007,
+        "tagcount": 6
+      },
+      {
+        "year": 2008,
+        "tagcount": 11
+      },
+      {
+        "year": 2009,
+        "tagcount": 13
+      },
+      {
+        "year": 2010,
+        "tagcount": 13
+      },
+      {
+        "year": 2011,
+        "tagcount": 25
+      },
+      {
+        "year": 2012,
+        "tagcount": 21
+      },
+      {
+        "year": 2013,
+        "tagcount": 18
+      },
+      {
+        "year": 2014,
+        "tagcount": 23
+      },
+      {
+        "year": 2015,
+        "tagcount": 18
+      },
+      {
+        "year": 2016,
+        "tagcount": 26
+      },
+      {
+        "year": 2017,
+        "tagcount": 38
+      },
+      {
+        "year": 2018,
+        "tagcount": 22
+      },
+      {
+        "year": 2019,
+        "tagcount": 34
+      },
+      {
+        "year": 2020,
+        "tagcount": 21
+      },
+      {
+        "year": 2021,
+        "tagcount": 21
+      },
+      {
+        "year": 2022,
+        "tagcount": 19
+      },
+      {
+        "year": 2023,
+        "tagcount": 28
+      }
+    ]
+  },
+  {
+    "tagname": "비행기",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 8
+      },
+      {
+        "year": 2010,
+        "tagcount": 10
+      },
+      {
+        "year": 2011,
+        "tagcount": 12
+      },
+      {
+        "year": 2012,
+        "tagcount": 3
+      },
+      {
+        "year": 2013,
+        "tagcount": 18
+      },
+      {
+        "year": 2014,
+        "tagcount": 18
+      },
+      {
+        "year": 2015,
+        "tagcount": 20
+      },
+      {
+        "year": 2016,
+        "tagcount": 21
+      },
+      {
+        "year": 2017,
+        "tagcount": 28
+      },
+      {
+        "year": 2018,
+        "tagcount": 21
+      },
+      {
+        "year": 2019,
+        "tagcount": 29
+      },
+      {
+        "year": 2020,
+        "tagcount": 48
+      },
+      {
+        "year": 2021,
+        "tagcount": 26
+      },
+      {
+        "year": 2022,
+        "tagcount": 25
+      },
+      {
+        "year": 2023,
+        "tagcount": 37
+      }
+    ]
+  },
+  {
+    "tagname": "버스",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 12
+      },
+      {
+        "year": 2008,
+        "tagcount": 11
+      },
+      {
+        "year": 2009,
+        "tagcount": 12
+      },
+      {
+        "year": 2010,
+        "tagcount": 20
+      },
+      {
+        "year": 2011,
+        "tagcount": 18
+      },
+      {
+        "year": 2012,
+        "tagcount": 18
+      },
+      {
+        "year": 2013,
+        "tagcount": 21
+      },
+      {
+        "year": 2014,
+        "tagcount": 29
+      },
+      {
+        "year": 2015,
+        "tagcount": 29
+      },
+      {
+        "year": 2016,
+        "tagcount": 34
+      },
+      {
+        "year": 2017,
+        "tagcount": 65
+      },
+      {
+        "year": 2018,
+        "tagcount": 115
+      },
+      {
+        "year": 2019,
+        "tagcount": 51
+      },
+      {
+        "year": 2020,
+        "tagcount": 47
+      },
+      {
+        "year": 2021,
+        "tagcount": 36
+      },
+      {
+        "year": 2022,
+        "tagcount": 30
+      },
+      {
+        "year": 2023,
+        "tagcount": 32
+      }
+    ]
+  },
+  {
+    "tagname": "기차",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 6
+      },
+      {
+        "year": 2009,
+        "tagcount": 9
+      },
+      {
+        "year": 2010,
+        "tagcount": 12
+      },
+      {
+        "year": 2011,
+        "tagcount": 16
+      },
+      {
+        "year": 2012,
+        "tagcount": 11
+      },
+      {
+        "year": 2013,
+        "tagcount": 15
+      },
+      {
+        "year": 2014,
+        "tagcount": 16
+      },
+      {
+        "year": 2015,
+        "tagcount": 11
+      },
+      {
+        "year": 2016,
+        "tagcount": 20
+      },
+      {
+        "year": 2017,
+        "tagcount": 34
+      },
+      {
+        "year": 2018,
+        "tagcount": 41
+      },
+      {
+        "year": 2019,
+        "tagcount": 24
+      },
+      {
+        "year": 2020,
+        "tagcount": 24
+      },
+      {
+        "year": 2021,
+        "tagcount": 25
+      },
+      {
+        "year": 2022,
+        "tagcount": 11
+      },
+      {
+        "year": 2023,
+        "tagcount": 17
+      }
+    ]
+  },
+  {
+    "tagname": "트럭",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 6
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 8
+      },
+      {
+        "year": 2007,
+        "tagcount": 11
+      },
+      {
+        "year": 2008,
+        "tagcount": 16
+      },
+      {
+        "year": 2009,
+        "tagcount": 13
+      },
+      {
+        "year": 2010,
+        "tagcount": 30
+      },
+      {
+        "year": 2011,
+        "tagcount": 27
+      },
+      {
+        "year": 2012,
+        "tagcount": 34
+      },
+      {
+        "year": 2013,
+        "tagcount": 25
+      },
+      {
+        "year": 2014,
+        "tagcount": 32
+      },
+      {
+        "year": 2015,
+        "tagcount": 27
+      },
+      {
+        "year": 2016,
+        "tagcount": 37
+      },
+      {
+        "year": 2017,
+        "tagcount": 91
+      },
+      {
+        "year": 2018,
+        "tagcount": 96
+      },
+      {
+        "year": 2019,
+        "tagcount": 74
+      },
+      {
+        "year": 2020,
+        "tagcount": 76
+      },
+      {
+        "year": 2021,
+        "tagcount": 47
+      },
+      {
+        "year": 2022,
+        "tagcount": 61
+      },
+      {
+        "year": 2023,
+        "tagcount": 55
+      }
+    ]
+  },
+  {
+    "tagname": "보트",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 5
+      },
+      {
+        "year": 2006,
+        "tagcount": 6
+      },
+      {
+        "year": 2007,
+        "tagcount": 8
+      },
+      {
+        "year": 2008,
+        "tagcount": 9
+      },
+      {
+        "year": 2009,
+        "tagcount": 17
+      },
+      {
+        "year": 2010,
+        "tagcount": 26
+      },
+      {
+        "year": 2011,
+        "tagcount": 24
+      },
+      {
+        "year": 2012,
+        "tagcount": 14
+      },
+      {
+        "year": 2013,
+        "tagcount": 15
+      },
+      {
+        "year": 2014,
+        "tagcount": 16
+      },
+      {
+        "year": 2015,
+        "tagcount": 15
+      },
+      {
+        "year": 2016,
+        "tagcount": 30
+      },
+      {
+        "year": 2017,
+        "tagcount": 41
+      },
+      {
+        "year": 2018,
+        "tagcount": 49
+      },
+      {
+        "year": 2019,
+        "tagcount": 48
+      },
+      {
+        "year": 2020,
+        "tagcount": 56
+      },
+      {
+        "year": 2021,
+        "tagcount": 27
+      },
+      {
+        "year": 2022,
+        "tagcount": 31
+      },
+      {
+        "year": 2023,
+        "tagcount": 37
+      }
+    ]
+  },
+  {
+    "tagname": "벤치",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 9
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 11
+      },
+      {
+        "year": 2008,
+        "tagcount": 15
+      },
+      {
+        "year": 2009,
+        "tagcount": 26
+      },
+      {
+        "year": 2010,
+        "tagcount": 28
+      },
+      {
+        "year": 2011,
+        "tagcount": 32
+      },
+      {
+        "year": 2012,
+        "tagcount": 38
+      },
+      {
+        "year": 2013,
+        "tagcount": 43
+      },
+      {
+        "year": 2014,
+        "tagcount": 57
+      },
+      {
+        "year": 2015,
+        "tagcount": 35
+      },
+      {
+        "year": 2016,
+        "tagcount": 47
+      },
+      {
+        "year": 2017,
+        "tagcount": 60
+      },
+      {
+        "year": 2018,
+        "tagcount": 68
+      },
+      {
+        "year": 2019,
+        "tagcount": 77
+      },
+      {
+        "year": 2020,
+        "tagcount": 80
+      },
+      {
+        "year": 2021,
+        "tagcount": 30
+      },
+      {
+        "year": 2022,
+        "tagcount": 36
+      },
+      {
+        "year": 2023,
+        "tagcount": 41
+      }
+    ]
+  },
+  {
+    "tagname": "새",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 7
+      },
+      {
+        "year": 2006,
+        "tagcount": 15
+      },
+      {
+        "year": 2007,
+        "tagcount": 8
+      },
+      {
+        "year": 2008,
+        "tagcount": 15
+      },
+      {
+        "year": 2009,
+        "tagcount": 25
+      },
+      {
+        "year": 2010,
+        "tagcount": 34
+      },
+      {
+        "year": 2011,
+        "tagcount": 28
+      },
+      {
+        "year": 2012,
+        "tagcount": 33
+      },
+      {
+        "year": 2013,
+        "tagcount": 33
+      },
+      {
+        "year": 2014,
+        "tagcount": 22
+      },
+      {
+        "year": 2015,
+        "tagcount": 20
+      },
+      {
+        "year": 2016,
+        "tagcount": 17
+      },
+      {
+        "year": 2017,
+        "tagcount": 23
+      },
+      {
+        "year": 2018,
+        "tagcount": 29
+      },
+      {
+        "year": 2019,
+        "tagcount": 26
+      },
+      {
+        "year": 2020,
+        "tagcount": 21
+      },
+      {
+        "year": 2021,
+        "tagcount": 13
+      },
+      {
+        "year": 2022,
+        "tagcount": 10
+      },
+      {
+        "year": 2023,
+        "tagcount": 15
+      }
+    ]
+  },
+  {
+    "tagname": "고양이",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 10
+      },
+      {
+        "year": 2006,
+        "tagcount": 12
+      },
+      {
+        "year": 2007,
+        "tagcount": 19
+      },
+      {
+        "year": 2008,
+        "tagcount": 28
+      },
+      {
+        "year": 2009,
+        "tagcount": 29
+      },
+      {
+        "year": 2010,
+        "tagcount": 65
+      },
+      {
+        "year": 2011,
+        "tagcount": 54
+      },
+      {
+        "year": 2012,
+        "tagcount": 117
+      },
+      {
+        "year": 2013,
+        "tagcount": 130
+      },
+      {
+        "year": 2014,
+        "tagcount": 131
+      },
+      {
+        "year": 2015,
+        "tagcount": 60
+      },
+      {
+        "year": 2016,
+        "tagcount": 79
+      },
+      {
+        "year": 2017,
+        "tagcount": 87
+      },
+      {
+        "year": 2018,
+        "tagcount": 84
+      },
+      {
+        "year": 2019,
+        "tagcount": 88
+      },
+      {
+        "year": 2020,
+        "tagcount": 110
+      },
+      {
+        "year": 2021,
+        "tagcount": 28
+      },
+      {
+        "year": 2022,
+        "tagcount": 54
+      },
+      {
+        "year": 2023,
+        "tagcount": 39
+      }
+    ]
+  },
+  {
+    "tagname": "강아지",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 8
+      },
+      {
+        "year": 2005,
+        "tagcount": 11
+      },
+      {
+        "year": 2006,
+        "tagcount": 21
+      },
+      {
+        "year": 2007,
+        "tagcount": 14
+      },
+      {
+        "year": 2008,
+        "tagcount": 29
+      },
+      {
+        "year": 2009,
+        "tagcount": 47
+      },
+      {
+        "year": 2010,
+        "tagcount": 70
+      },
+      {
+        "year": 2011,
+        "tagcount": 73
+      },
+      {
+        "year": 2012,
+        "tagcount": 150
+      },
+      {
+        "year": 2013,
+        "tagcount": 95
+      },
+      {
+        "year": 2014,
+        "tagcount": 126
+      },
+      {
+        "year": 2015,
+        "tagcount": 54
+      },
+      {
+        "year": 2016,
+        "tagcount": 88
+      },
+      {
+        "year": 2017,
+        "tagcount": 132
+      },
+      {
+        "year": 2018,
+        "tagcount": 131
+      },
+      {
+        "year": 2019,
+        "tagcount": 145
+      },
+      {
+        "year": 2020,
+        "tagcount": 85
+      },
+      {
+        "year": 2021,
+        "tagcount": 42
+      },
+      {
+        "year": 2022,
+        "tagcount": 38
+      },
+      {
+        "year": 2023,
+        "tagcount": 41
+      }
+    ]
+  },
+  {
+    "tagname": "양",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 12
+      },
+      {
+        "year": 2006,
+        "tagcount": 14
+      },
+      {
+        "year": 2007,
+        "tagcount": 26
+      },
+      {
+        "year": 2008,
+        "tagcount": 35
+      },
+      {
+        "year": 2009,
+        "tagcount": 44
+      },
+      {
+        "year": 2010,
+        "tagcount": 89
+      },
+      {
+        "year": 2011,
+        "tagcount": 79
+      },
+      {
+        "year": 2012,
+        "tagcount": 136
+      },
+      {
+        "year": 2013,
+        "tagcount": 162
+      },
+      {
+        "year": 2014,
+        "tagcount": 151
+      },
+      {
+        "year": 2015,
+        "tagcount": 76
+      },
+      {
+        "year": 2016,
+        "tagcount": 99
+      },
+      {
+        "year": 2017,
+        "tagcount": 110
+      },
+      {
+        "year": 2018,
+        "tagcount": 99
+      },
+      {
+        "year": 2019,
+        "tagcount": 124
+      },
+      {
+        "year": 2020,
+        "tagcount": 132
+      },
+      {
+        "year": 2021,
+        "tagcount": 29
+      },
+      {
+        "year": 2022,
+        "tagcount": 57
+      },
+      {
+        "year": 2023,
+        "tagcount": 50
+      }
+    ]
+  },
+  {
+    "tagname": "소",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 6
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 7
+      },
+      {
+        "year": 2007,
+        "tagcount": 4
+      },
+      {
+        "year": 2008,
+        "tagcount": 22
+      },
+      {
+        "year": 2009,
+        "tagcount": 51
+      },
+      {
+        "year": 2010,
+        "tagcount": 52
+      },
+      {
+        "year": 2011,
+        "tagcount": 98
+      },
+      {
+        "year": 2012,
+        "tagcount": 101
+      },
+      {
+        "year": 2013,
+        "tagcount": 82
+      },
+      {
+        "year": 2014,
+        "tagcount": 93
+      },
+      {
+        "year": 2015,
+        "tagcount": 83
+      },
+      {
+        "year": 2016,
+        "tagcount": 103
+      },
+      {
+        "year": 2017,
+        "tagcount": 128
+      },
+      {
+        "year": 2018,
+        "tagcount": 100
+      },
+      {
+        "year": 2019,
+        "tagcount": 110
+      },
+      {
+        "year": 2020,
+        "tagcount": 85
+      },
+      {
+        "year": 2021,
+        "tagcount": 149
+      },
+      {
+        "year": 2022,
+        "tagcount": 46
+      },
+      {
+        "year": 2023,
+        "tagcount": 57
+      }
+    ]
+  },
+  {
+    "tagname": "코끼리",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 3
+      },
+      {
+        "year": 2011,
+        "tagcount": 5
+      },
+      {
+        "year": 2012,
+        "tagcount": 3
+      },
+      {
+        "year": 2013,
+        "tagcount": 1
+      },
+      {
+        "year": 2014,
+        "tagcount": 5
+      },
+      {
+        "year": 2015,
+        "tagcount": 1
+      },
+      {
+        "year": 2016,
+        "tagcount": 10
+      },
+      {
+        "year": 2017,
+        "tagcount": 1
+      },
+      {
+        "year": 2018,
+        "tagcount": 3
+      },
+      {
+        "year": 2019,
+        "tagcount": 6
+      },
+      {
+        "year": 2020,
+        "tagcount": 5
+      },
+      {
+        "year": 2021,
+        "tagcount": 1
+      },
+      {
+        "year": 2022,
+        "tagcount": 1
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "곰",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 5
+      },
+      {
+        "year": 2006,
+        "tagcount": 7
+      },
+      {
+        "year": 2007,
+        "tagcount": 10
+      },
+      {
+        "year": 2008,
+        "tagcount": 20
+      },
+      {
+        "year": 2009,
+        "tagcount": 39
+      },
+      {
+        "year": 2010,
+        "tagcount": 66
+      },
+      {
+        "year": 2011,
+        "tagcount": 56
+      },
+      {
+        "year": 2012,
+        "tagcount": 80
+      },
+      {
+        "year": 2013,
+        "tagcount": 73
+      },
+      {
+        "year": 2014,
+        "tagcount": 65
+      },
+      {
+        "year": 2015,
+        "tagcount": 51
+      },
+      {
+        "year": 2016,
+        "tagcount": 60
+      },
+      {
+        "year": 2017,
+        "tagcount": 105
+      },
+      {
+        "year": 2018,
+        "tagcount": 62
+      },
+      {
+        "year": 2019,
+        "tagcount": 51
+      },
+      {
+        "year": 2020,
+        "tagcount": 41
+      },
+      {
+        "year": 2021,
+        "tagcount": 36
+      },
+      {
+        "year": 2022,
+        "tagcount": 33
+      },
+      {
+        "year": 2023,
+        "tagcount": 26
+      }
+    ]
+  },
+  {
+    "tagname": "얼룩말",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 0
+      },
+      {
+        "year": 2011,
+        "tagcount": 1
+      },
+      {
+        "year": 2012,
+        "tagcount": 2
+      },
+      {
+        "year": 2013,
+        "tagcount": 4
+      },
+      {
+        "year": 2014,
+        "tagcount": 3
+      },
+      {
+        "year": 2015,
+        "tagcount": 2
+      },
+      {
+        "year": 2016,
+        "tagcount": 2
+      },
+      {
+        "year": 2017,
+        "tagcount": 4
+      },
+      {
+        "year": 2018,
+        "tagcount": 2
+      },
+      {
+        "year": 2019,
+        "tagcount": 2
+      },
+      {
+        "year": 2020,
+        "tagcount": 3
+      },
+      {
+        "year": 2021,
+        "tagcount": 2
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 0
+      }
+    ]
+  },
+  {
+    "tagname": "기린",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 6
+      },
+      {
+        "year": 2010,
+        "tagcount": 1
+      },
+      {
+        "year": 2011,
+        "tagcount": 6
+      },
+      {
+        "year": 2012,
+        "tagcount": 4
+      },
+      {
+        "year": 2013,
+        "tagcount": 6
+      },
+      {
+        "year": 2014,
+        "tagcount": 8
+      },
+      {
+        "year": 2015,
+        "tagcount": 1
+      },
+      {
+        "year": 2016,
+        "tagcount": 3
+      },
+      {
+        "year": 2017,
+        "tagcount": 1
+      },
+      {
+        "year": 2018,
+        "tagcount": 6
+      },
+      {
+        "year": 2019,
+        "tagcount": 6
+      },
+      {
+        "year": 2020,
+        "tagcount": 0
+      },
+      {
+        "year": 2021,
+        "tagcount": 2
+      },
+      {
+        "year": 2022,
+        "tagcount": 3
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "가방",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 12
+      },
+      {
+        "year": 2009,
+        "tagcount": 12
+      },
+      {
+        "year": 2010,
+        "tagcount": 17
+      },
+      {
+        "year": 2011,
+        "tagcount": 26
+      },
+      {
+        "year": 2012,
+        "tagcount": 29
+      },
+      {
+        "year": 2013,
+        "tagcount": 29
+      },
+      {
+        "year": 2014,
+        "tagcount": 36
+      },
+      {
+        "year": 2015,
+        "tagcount": 28
+      },
+      {
+        "year": 2016,
+        "tagcount": 32
+      },
+      {
+        "year": 2017,
+        "tagcount": 45
+      },
+      {
+        "year": 2018,
+        "tagcount": 83
+      },
+      {
+        "year": 2019,
+        "tagcount": 43
+      },
+      {
+        "year": 2020,
+        "tagcount": 39
+      },
+      {
+        "year": 2021,
+        "tagcount": 31
+      },
+      {
+        "year": 2022,
+        "tagcount": 27
+      },
+      {
+        "year": 2023,
+        "tagcount": 18
+      }
+    ]
+  },
+  {
+    "tagname": "우산",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 9
+      },
+      {
+        "year": 2005,
+        "tagcount": 7
+      },
+      {
+        "year": 2006,
+        "tagcount": 12
+      },
+      {
+        "year": 2007,
+        "tagcount": 11
+      },
+      {
+        "year": 2008,
+        "tagcount": 19
+      },
+      {
+        "year": 2009,
+        "tagcount": 23
+      },
+      {
+        "year": 2010,
+        "tagcount": 33
+      },
+      {
+        "year": 2011,
+        "tagcount": 38
+      },
+      {
+        "year": 2012,
+        "tagcount": 50
+      },
+      {
+        "year": 2013,
+        "tagcount": 49
+      },
+      {
+        "year": 2014,
+        "tagcount": 45
+      },
+      {
+        "year": 2015,
+        "tagcount": 55
+      },
+      {
+        "year": 2016,
+        "tagcount": 59
+      },
+      {
+        "year": 2017,
+        "tagcount": 56
+      },
+      {
+        "year": 2018,
+        "tagcount": 76
+      },
+      {
+        "year": 2019,
+        "tagcount": 50
+      },
+      {
+        "year": 2020,
+        "tagcount": 48
+      },
+      {
+        "year": 2021,
+        "tagcount": 51
+      },
+      {
+        "year": 2022,
+        "tagcount": 58
+      },
+      {
+        "year": 2023,
+        "tagcount": 38
+      }
+    ]
+  },
+  {
+    "tagname": "핸드백",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 14
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 12
+      },
+      {
+        "year": 2007,
+        "tagcount": 20
+      },
+      {
+        "year": 2008,
+        "tagcount": 46
+      },
+      {
+        "year": 2009,
+        "tagcount": 48
+      },
+      {
+        "year": 2010,
+        "tagcount": 102
+      },
+      {
+        "year": 2011,
+        "tagcount": 161
+      },
+      {
+        "year": 2012,
+        "tagcount": 95
+      },
+      {
+        "year": 2013,
+        "tagcount": 100
+      },
+      {
+        "year": 2014,
+        "tagcount": 96
+      },
+      {
+        "year": 2015,
+        "tagcount": 90
+      },
+      {
+        "year": 2016,
+        "tagcount": 90
+      },
+      {
+        "year": 2017,
+        "tagcount": 117
+      },
+      {
+        "year": 2018,
+        "tagcount": 168
+      },
+      {
+        "year": 2019,
+        "tagcount": 98
+      },
+      {
+        "year": 2020,
+        "tagcount": 115
+      },
+      {
+        "year": 2021,
+        "tagcount": 99
+      },
+      {
+        "year": 2022,
+        "tagcount": 118
+      },
+      {
+        "year": 2023,
+        "tagcount": 75
+      }
+    ]
+  },
+  {
+    "tagname": "넥타이",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 13
+      },
+      {
+        "year": 2005,
+        "tagcount": 9
+      },
+      {
+        "year": 2006,
+        "tagcount": 14
+      },
+      {
+        "year": 2007,
+        "tagcount": 20
+      },
+      {
+        "year": 2008,
+        "tagcount": 56
+      },
+      {
+        "year": 2009,
+        "tagcount": 56
+      },
+      {
+        "year": 2010,
+        "tagcount": 71
+      },
+      {
+        "year": 2011,
+        "tagcount": 117
+      },
+      {
+        "year": 2012,
+        "tagcount": 129
+      },
+      {
+        "year": 2013,
+        "tagcount": 113
+      },
+      {
+        "year": 2014,
+        "tagcount": 113
+      },
+      {
+        "year": 2015,
+        "tagcount": 90
+      },
+      {
+        "year": 2016,
+        "tagcount": 125
+      },
+      {
+        "year": 2017,
+        "tagcount": 88
+      },
+      {
+        "year": 2018,
+        "tagcount": 81
+      },
+      {
+        "year": 2019,
+        "tagcount": 87
+      },
+      {
+        "year": 2020,
+        "tagcount": 60
+      },
+      {
+        "year": 2021,
+        "tagcount": 79
+      },
+      {
+        "year": 2022,
+        "tagcount": 51
+      },
+      {
+        "year": 2023,
+        "tagcount": 44
+      }
+    ]
+  },
+  {
+    "tagname": "캐리어",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 4
+      },
+      {
+        "year": 2008,
+        "tagcount": 8
+      },
+      {
+        "year": 2009,
+        "tagcount": 16
+      },
+      {
+        "year": 2010,
+        "tagcount": 26
+      },
+      {
+        "year": 2011,
+        "tagcount": 28
+      },
+      {
+        "year": 2012,
+        "tagcount": 35
+      },
+      {
+        "year": 2013,
+        "tagcount": 28
+      },
+      {
+        "year": 2014,
+        "tagcount": 36
+      },
+      {
+        "year": 2015,
+        "tagcount": 28
+      },
+      {
+        "year": 2016,
+        "tagcount": 28
+      },
+      {
+        "year": 2017,
+        "tagcount": 41
+      },
+      {
+        "year": 2018,
+        "tagcount": 46
+      },
+      {
+        "year": 2019,
+        "tagcount": 25
+      },
+      {
+        "year": 2020,
+        "tagcount": 38
+      },
+      {
+        "year": 2021,
+        "tagcount": 28
+      },
+      {
+        "year": 2022,
+        "tagcount": 24
+      },
+      {
+        "year": 2023,
+        "tagcount": 12
+      }
+    ]
+  },
+  {
+    "tagname": "스키",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 4
+      },
+      {
+        "year": 2010,
+        "tagcount": 5
+      },
+      {
+        "year": 2011,
+        "tagcount": 0
+      },
+      {
+        "year": 2012,
+        "tagcount": 1
+      },
+      {
+        "year": 2013,
+        "tagcount": 0
+      },
+      {
+        "year": 2014,
+        "tagcount": 0
+      },
+      {
+        "year": 2015,
+        "tagcount": 1
+      },
+      {
+        "year": 2016,
+        "tagcount": 3
+      },
+      {
+        "year": 2017,
+        "tagcount": 1
+      },
+      {
+        "year": 2018,
+        "tagcount": 0
+      },
+      {
+        "year": 2019,
+        "tagcount": 2
+      },
+      {
+        "year": 2020,
+        "tagcount": 1
+      },
+      {
+        "year": 2021,
+        "tagcount": 2
+      },
+      {
+        "year": 2022,
+        "tagcount": 2
+      },
+      {
+        "year": 2023,
+        "tagcount": 0
+      }
+    ]
+  },
+  {
+    "tagname": "스노우보드",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 4
+      },
+      {
+        "year": 2011,
+        "tagcount": 3
+      },
+      {
+        "year": 2012,
+        "tagcount": 3
+      },
+      {
+        "year": 2013,
+        "tagcount": 1
+      },
+      {
+        "year": 2014,
+        "tagcount": 0
+      },
+      {
+        "year": 2015,
+        "tagcount": 2
+      },
+      {
+        "year": 2016,
+        "tagcount": 2
+      },
+      {
+        "year": 2017,
+        "tagcount": 1
+      },
+      {
+        "year": 2018,
+        "tagcount": 3
+      },
+      {
+        "year": 2019,
+        "tagcount": 1
+      },
+      {
+        "year": 2020,
+        "tagcount": 0
+      },
+      {
+        "year": 2021,
+        "tagcount": 1
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 4
+      }
+    ]
+  },
+  {
+    "tagname": "공",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 6
+      },
+      {
+        "year": 2007,
+        "tagcount": 5
+      },
+      {
+        "year": 2008,
+        "tagcount": 13
+      },
+      {
+        "year": 2009,
+        "tagcount": 15
+      },
+      {
+        "year": 2010,
+        "tagcount": 26
+      },
+      {
+        "year": 2011,
+        "tagcount": 22
+      },
+      {
+        "year": 2012,
+        "tagcount": 25
+      },
+      {
+        "year": 2013,
+        "tagcount": 35
+      },
+      {
+        "year": 2014,
+        "tagcount": 28
+      },
+      {
+        "year": 2015,
+        "tagcount": 29
+      },
+      {
+        "year": 2016,
+        "tagcount": 19
+      },
+      {
+        "year": 2017,
+        "tagcount": 35
+      },
+      {
+        "year": 2018,
+        "tagcount": 38
+      },
+      {
+        "year": 2019,
+        "tagcount": 50
+      },
+      {
+        "year": 2020,
+        "tagcount": 22
+      },
+      {
+        "year": 2021,
+        "tagcount": 22
+      },
+      {
+        "year": 2022,
+        "tagcount": 20
+      },
+      {
+        "year": 2023,
+        "tagcount": 19
+      }
+    ]
+  },
+  {
+    "tagname": "야구배트",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 6
+      },
+      {
+        "year": 2010,
+        "tagcount": 7
+      },
+      {
+        "year": 2011,
+        "tagcount": 8
+      },
+      {
+        "year": 2012,
+        "tagcount": 11
+      },
+      {
+        "year": 2013,
+        "tagcount": 6
+      },
+      {
+        "year": 2014,
+        "tagcount": 9
+      },
+      {
+        "year": 2015,
+        "tagcount": 3
+      },
+      {
+        "year": 2016,
+        "tagcount": 7
+      },
+      {
+        "year": 2017,
+        "tagcount": 11
+      },
+      {
+        "year": 2018,
+        "tagcount": 7
+      },
+      {
+        "year": 2019,
+        "tagcount": 5
+      },
+      {
+        "year": 2020,
+        "tagcount": 6
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 5
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "야구글러브",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 10
+      },
+      {
+        "year": 2010,
+        "tagcount": 4
+      },
+      {
+        "year": 2011,
+        "tagcount": 4
+      },
+      {
+        "year": 2012,
+        "tagcount": 4
+      },
+      {
+        "year": 2013,
+        "tagcount": 7
+      },
+      {
+        "year": 2014,
+        "tagcount": 7
+      },
+      {
+        "year": 2015,
+        "tagcount": 9
+      },
+      {
+        "year": 2016,
+        "tagcount": 2
+      },
+      {
+        "year": 2017,
+        "tagcount": 5
+      },
+      {
+        "year": 2018,
+        "tagcount": 10
+      },
+      {
+        "year": 2019,
+        "tagcount": 2
+      },
+      {
+        "year": 2020,
+        "tagcount": 6
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 4
+      },
+      {
+        "year": 2023,
+        "tagcount": 5
+      }
+    ]
+  },
+  {
+    "tagname": "스케이트보드",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 6
+      },
+      {
+        "year": 2009,
+        "tagcount": 10
+      },
+      {
+        "year": 2010,
+        "tagcount": 15
+      },
+      {
+        "year": 2011,
+        "tagcount": 20
+      },
+      {
+        "year": 2012,
+        "tagcount": 20
+      },
+      {
+        "year": 2013,
+        "tagcount": 10
+      },
+      {
+        "year": 2014,
+        "tagcount": 8
+      },
+      {
+        "year": 2015,
+        "tagcount": 22
+      },
+      {
+        "year": 2016,
+        "tagcount": 19
+      },
+      {
+        "year": 2017,
+        "tagcount": 26
+      },
+      {
+        "year": 2018,
+        "tagcount": 21
+      },
+      {
+        "year": 2019,
+        "tagcount": 18
+      },
+      {
+        "year": 2020,
+        "tagcount": 17
+      },
+      {
+        "year": 2021,
+        "tagcount": 9
+      },
+      {
+        "year": 2022,
+        "tagcount": 15
+      },
+      {
+        "year": 2023,
+        "tagcount": 7
+      }
+    ]
+  },
+  {
+    "tagname": "테니스라켓",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 8
+      },
+      {
+        "year": 2010,
+        "tagcount": 4
+      },
+      {
+        "year": 2011,
+        "tagcount": 4
+      },
+      {
+        "year": 2012,
+        "tagcount": 7
+      },
+      {
+        "year": 2013,
+        "tagcount": 5
+      },
+      {
+        "year": 2014,
+        "tagcount": 7
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 7
+      },
+      {
+        "year": 2017,
+        "tagcount": 6
+      },
+      {
+        "year": 2018,
+        "tagcount": 7
+      },
+      {
+        "year": 2019,
+        "tagcount": 6
+      },
+      {
+        "year": 2020,
+        "tagcount": 8
+      },
+      {
+        "year": 2021,
+        "tagcount": 4
+      },
+      {
+        "year": 2022,
+        "tagcount": 2
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "물병",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 7
+      },
+      {
+        "year": 2005,
+        "tagcount": 12
+      },
+      {
+        "year": 2006,
+        "tagcount": 14
+      },
+      {
+        "year": 2007,
+        "tagcount": 22
+      },
+      {
+        "year": 2008,
+        "tagcount": 40
+      },
+      {
+        "year": 2009,
+        "tagcount": 49
+      },
+      {
+        "year": 2010,
+        "tagcount": 89
+      },
+      {
+        "year": 2011,
+        "tagcount": 129
+      },
+      {
+        "year": 2012,
+        "tagcount": 155
+      },
+      {
+        "year": 2013,
+        "tagcount": 182
+      },
+      {
+        "year": 2014,
+        "tagcount": 159
+      },
+      {
+        "year": 2015,
+        "tagcount": 147
+      },
+      {
+        "year": 2016,
+        "tagcount": 174
+      },
+      {
+        "year": 2017,
+        "tagcount": 180
+      },
+      {
+        "year": 2018,
+        "tagcount": 166
+      },
+      {
+        "year": 2019,
+        "tagcount": 178
+      },
+      {
+        "year": 2020,
+        "tagcount": 129
+      },
+      {
+        "year": 2021,
+        "tagcount": 73
+      },
+      {
+        "year": 2022,
+        "tagcount": 76
+      },
+      {
+        "year": 2023,
+        "tagcount": 67
+      }
+    ]
+  },
+  {
+    "tagname": "와인잔",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 5
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 5
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 17
+      },
+      {
+        "year": 2010,
+        "tagcount": 27
+      },
+      {
+        "year": 2011,
+        "tagcount": 43
+      },
+      {
+        "year": 2012,
+        "tagcount": 38
+      },
+      {
+        "year": 2013,
+        "tagcount": 38
+      },
+      {
+        "year": 2014,
+        "tagcount": 47
+      },
+      {
+        "year": 2015,
+        "tagcount": 32
+      },
+      {
+        "year": 2016,
+        "tagcount": 38
+      },
+      {
+        "year": 2017,
+        "tagcount": 40
+      },
+      {
+        "year": 2018,
+        "tagcount": 44
+      },
+      {
+        "year": 2019,
+        "tagcount": 39
+      },
+      {
+        "year": 2020,
+        "tagcount": 25
+      },
+      {
+        "year": 2021,
+        "tagcount": 20
+      },
+      {
+        "year": 2022,
+        "tagcount": 12
+      },
+      {
+        "year": 2023,
+        "tagcount": 12
+      }
+    ]
+  },
+  {
+    "tagname": "컵",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 10
+      },
+      {
+        "year": 2005,
+        "tagcount": 8
+      },
+      {
+        "year": 2006,
+        "tagcount": 23
+      },
+      {
+        "year": 2007,
+        "tagcount": 26
+      },
+      {
+        "year": 2008,
+        "tagcount": 48
+      },
+      {
+        "year": 2009,
+        "tagcount": 74
+      },
+      {
+        "year": 2010,
+        "tagcount": 148
+      },
+      {
+        "year": 2011,
+        "tagcount": 233
+      },
+      {
+        "year": 2012,
+        "tagcount": 282
+      },
+      {
+        "year": 2013,
+        "tagcount": 380
+      },
+      {
+        "year": 2014,
+        "tagcount": 311
+      },
+      {
+        "year": 2015,
+        "tagcount": 281
+      },
+      {
+        "year": 2016,
+        "tagcount": 300
+      },
+      {
+        "year": 2017,
+        "tagcount": 294
+      },
+      {
+        "year": 2018,
+        "tagcount": 336
+      },
+      {
+        "year": 2019,
+        "tagcount": 392
+      },
+      {
+        "year": 2020,
+        "tagcount": 277
+      },
+      {
+        "year": 2021,
+        "tagcount": 172
+      },
+      {
+        "year": 2022,
+        "tagcount": 164
+      },
+      {
+        "year": 2023,
+        "tagcount": 123
+      }
+    ]
+  },
+  {
+    "tagname": "포크",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 9
+      },
+      {
+        "year": 2011,
+        "tagcount": 17
+      },
+      {
+        "year": 2012,
+        "tagcount": 19
+      },
+      {
+        "year": 2013,
+        "tagcount": 36
+      },
+      {
+        "year": 2014,
+        "tagcount": 31
+      },
+      {
+        "year": 2015,
+        "tagcount": 19
+      },
+      {
+        "year": 2016,
+        "tagcount": 22
+      },
+      {
+        "year": 2017,
+        "tagcount": 23
+      },
+      {
+        "year": 2018,
+        "tagcount": 35
+      },
+      {
+        "year": 2019,
+        "tagcount": 47
+      },
+      {
+        "year": 2020,
+        "tagcount": 39
+      },
+      {
+        "year": 2021,
+        "tagcount": 21
+      },
+      {
+        "year": 2022,
+        "tagcount": 22
+      },
+      {
+        "year": 2023,
+        "tagcount": 4
+      }
+    ]
+  },
+  {
+    "tagname": "나이프",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 4
+      },
+      {
+        "year": 2010,
+        "tagcount": 10
+      },
+      {
+        "year": 2011,
+        "tagcount": 19
+      },
+      {
+        "year": 2012,
+        "tagcount": 23
+      },
+      {
+        "year": 2013,
+        "tagcount": 40
+      },
+      {
+        "year": 2014,
+        "tagcount": 40
+      },
+      {
+        "year": 2015,
+        "tagcount": 29
+      },
+      {
+        "year": 2016,
+        "tagcount": 26
+      },
+      {
+        "year": 2017,
+        "tagcount": 24
+      },
+      {
+        "year": 2018,
+        "tagcount": 34
+      },
+      {
+        "year": 2019,
+        "tagcount": 39
+      },
+      {
+        "year": 2020,
+        "tagcount": 29
+      },
+      {
+        "year": 2021,
+        "tagcount": 16
+      },
+      {
+        "year": 2022,
+        "tagcount": 22
+      },
+      {
+        "year": 2023,
+        "tagcount": 14
+      }
+    ]
+  },
+  {
+    "tagname": "숟가락",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 9
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 17
+      },
+      {
+        "year": 2011,
+        "tagcount": 32
+      },
+      {
+        "year": 2012,
+        "tagcount": 37
+      },
+      {
+        "year": 2013,
+        "tagcount": 43
+      },
+      {
+        "year": 2014,
+        "tagcount": 68
+      },
+      {
+        "year": 2015,
+        "tagcount": 24
+      },
+      {
+        "year": 2016,
+        "tagcount": 40
+      },
+      {
+        "year": 2017,
+        "tagcount": 44
+      },
+      {
+        "year": 2018,
+        "tagcount": 47
+      },
+      {
+        "year": 2019,
+        "tagcount": 78
+      },
+      {
+        "year": 2020,
+        "tagcount": 60
+      },
+      {
+        "year": 2021,
+        "tagcount": 21
+      },
+      {
+        "year": 2022,
+        "tagcount": 41
+      },
+      {
+        "year": 2023,
+        "tagcount": 21
+      }
+    ]
+  },
+  {
+    "tagname": "접시",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 6
+      },
+      {
+        "year": 2005,
+        "tagcount": 9
+      },
+      {
+        "year": 2006,
+        "tagcount": 15
+      },
+      {
+        "year": 2007,
+        "tagcount": 12
+      },
+      {
+        "year": 2008,
+        "tagcount": 32
+      },
+      {
+        "year": 2009,
+        "tagcount": 47
+      },
+      {
+        "year": 2010,
+        "tagcount": 105
+      },
+      {
+        "year": 2011,
+        "tagcount": 156
+      },
+      {
+        "year": 2012,
+        "tagcount": 182
+      },
+      {
+        "year": 2013,
+        "tagcount": 286
+      },
+      {
+        "year": 2014,
+        "tagcount": 279
+      },
+      {
+        "year": 2015,
+        "tagcount": 167
+      },
+      {
+        "year": 2016,
+        "tagcount": 167
+      },
+      {
+        "year": 2017,
+        "tagcount": 185
+      },
+      {
+        "year": 2018,
+        "tagcount": 234
+      },
+      {
+        "year": 2019,
+        "tagcount": 308
+      },
+      {
+        "year": 2020,
+        "tagcount": 264
+      },
+      {
+        "year": 2021,
+        "tagcount": 117
+      },
+      {
+        "year": 2022,
+        "tagcount": 144
+      },
+      {
+        "year": 2023,
+        "tagcount": 99
+      }
+    ]
+  },
+  {
+    "tagname": "바나나",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 11
+      },
+      {
+        "year": 2009,
+        "tagcount": 11
+      },
+      {
+        "year": 2010,
+        "tagcount": 12
+      },
+      {
+        "year": 2011,
+        "tagcount": 22
+      },
+      {
+        "year": 2012,
+        "tagcount": 31
+      },
+      {
+        "year": 2013,
+        "tagcount": 23
+      },
+      {
+        "year": 2014,
+        "tagcount": 35
+      },
+      {
+        "year": 2015,
+        "tagcount": 23
+      },
+      {
+        "year": 2016,
+        "tagcount": 30
+      },
+      {
+        "year": 2017,
+        "tagcount": 13
+      },
+      {
+        "year": 2018,
+        "tagcount": 20
+      },
+      {
+        "year": 2019,
+        "tagcount": 17
+      },
+      {
+        "year": 2020,
+        "tagcount": 31
+      },
+      {
+        "year": 2021,
+        "tagcount": 14
+      },
+      {
+        "year": 2022,
+        "tagcount": 12
+      },
+      {
+        "year": 2023,
+        "tagcount": 9
+      }
+    ]
+  },
+  {
+    "tagname": "사과",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 13
+      },
+      {
+        "year": 2010,
+        "tagcount": 17
+      },
+      {
+        "year": 2011,
+        "tagcount": 16
+      },
+      {
+        "year": 2012,
+        "tagcount": 20
+      },
+      {
+        "year": 2013,
+        "tagcount": 20
+      },
+      {
+        "year": 2014,
+        "tagcount": 14
+      },
+      {
+        "year": 2015,
+        "tagcount": 18
+      },
+      {
+        "year": 2016,
+        "tagcount": 8
+      },
+      {
+        "year": 2017,
+        "tagcount": 10
+      },
+      {
+        "year": 2018,
+        "tagcount": 9
+      },
+      {
+        "year": 2019,
+        "tagcount": 16
+      },
+      {
+        "year": 2020,
+        "tagcount": 14
+      },
+      {
+        "year": 2021,
+        "tagcount": 3
+      },
+      {
+        "year": 2022,
+        "tagcount": 7
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "샌드위치",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 10
+      },
+      {
+        "year": 2010,
+        "tagcount": 17
+      },
+      {
+        "year": 2011,
+        "tagcount": 17
+      },
+      {
+        "year": 2012,
+        "tagcount": 19
+      },
+      {
+        "year": 2013,
+        "tagcount": 39
+      },
+      {
+        "year": 2014,
+        "tagcount": 35
+      },
+      {
+        "year": 2015,
+        "tagcount": 26
+      },
+      {
+        "year": 2016,
+        "tagcount": 26
+      },
+      {
+        "year": 2017,
+        "tagcount": 25
+      },
+      {
+        "year": 2018,
+        "tagcount": 32
+      },
+      {
+        "year": 2019,
+        "tagcount": 37
+      },
+      {
+        "year": 2020,
+        "tagcount": 34
+      },
+      {
+        "year": 2021,
+        "tagcount": 19
+      },
+      {
+        "year": 2022,
+        "tagcount": 17
+      },
+      {
+        "year": 2023,
+        "tagcount": 10
+      }
+    ]
+  },
+  {
+    "tagname": "오렌지",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 8
+      },
+      {
+        "year": 2010,
+        "tagcount": 13
+      },
+      {
+        "year": 2011,
+        "tagcount": 9
+      },
+      {
+        "year": 2012,
+        "tagcount": 9
+      },
+      {
+        "year": 2013,
+        "tagcount": 15
+      },
+      {
+        "year": 2014,
+        "tagcount": 14
+      },
+      {
+        "year": 2015,
+        "tagcount": 16
+      },
+      {
+        "year": 2016,
+        "tagcount": 12
+      },
+      {
+        "year": 2017,
+        "tagcount": 16
+      },
+      {
+        "year": 2018,
+        "tagcount": 13
+      },
+      {
+        "year": 2019,
+        "tagcount": 23
+      },
+      {
+        "year": 2020,
+        "tagcount": 24
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 5
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "브로콜리",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 7
+      },
+      {
+        "year": 2010,
+        "tagcount": 14
+      },
+      {
+        "year": 2011,
+        "tagcount": 18
+      },
+      {
+        "year": 2012,
+        "tagcount": 18
+      },
+      {
+        "year": 2013,
+        "tagcount": 25
+      },
+      {
+        "year": 2014,
+        "tagcount": 23
+      },
+      {
+        "year": 2015,
+        "tagcount": 17
+      },
+      {
+        "year": 2016,
+        "tagcount": 24
+      },
+      {
+        "year": 2017,
+        "tagcount": 21
+      },
+      {
+        "year": 2018,
+        "tagcount": 19
+      },
+      {
+        "year": 2019,
+        "tagcount": 27
+      },
+      {
+        "year": 2020,
+        "tagcount": 40
+      },
+      {
+        "year": 2021,
+        "tagcount": 19
+      },
+      {
+        "year": 2022,
+        "tagcount": 19
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "당근",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 6
+      },
+      {
+        "year": 2011,
+        "tagcount": 12
+      },
+      {
+        "year": 2012,
+        "tagcount": 9
+      },
+      {
+        "year": 2013,
+        "tagcount": 31
+      },
+      {
+        "year": 2014,
+        "tagcount": 13
+      },
+      {
+        "year": 2015,
+        "tagcount": 13
+      },
+      {
+        "year": 2016,
+        "tagcount": 22
+      },
+      {
+        "year": 2017,
+        "tagcount": 18
+      },
+      {
+        "year": 2018,
+        "tagcount": 18
+      },
+      {
+        "year": 2019,
+        "tagcount": 30
+      },
+      {
+        "year": 2020,
+        "tagcount": 21
+      },
+      {
+        "year": 2021,
+        "tagcount": 8
+      },
+      {
+        "year": 2022,
+        "tagcount": 10
+      },
+      {
+        "year": 2023,
+        "tagcount": 6
+      }
+    ]
+  },
+  {
+    "tagname": "핫도그",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 1
+      },
+      {
+        "year": 2010,
+        "tagcount": 2
+      },
+      {
+        "year": 2011,
+        "tagcount": 7
+      },
+      {
+        "year": 2012,
+        "tagcount": 7
+      },
+      {
+        "year": 2013,
+        "tagcount": 17
+      },
+      {
+        "year": 2014,
+        "tagcount": 17
+      },
+      {
+        "year": 2015,
+        "tagcount": 12
+      },
+      {
+        "year": 2016,
+        "tagcount": 7
+      },
+      {
+        "year": 2017,
+        "tagcount": 18
+      },
+      {
+        "year": 2018,
+        "tagcount": 11
+      },
+      {
+        "year": 2019,
+        "tagcount": 15
+      },
+      {
+        "year": 2020,
+        "tagcount": 14
+      },
+      {
+        "year": 2021,
+        "tagcount": 8
+      },
+      {
+        "year": 2022,
+        "tagcount": 6
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "피자",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 11
+      },
+      {
+        "year": 2009,
+        "tagcount": 13
+      },
+      {
+        "year": 2010,
+        "tagcount": 23
+      },
+      {
+        "year": 2011,
+        "tagcount": 38
+      },
+      {
+        "year": 2012,
+        "tagcount": 55
+      },
+      {
+        "year": 2013,
+        "tagcount": 102
+      },
+      {
+        "year": 2014,
+        "tagcount": 84
+      },
+      {
+        "year": 2015,
+        "tagcount": 32
+      },
+      {
+        "year": 2016,
+        "tagcount": 38
+      },
+      {
+        "year": 2017,
+        "tagcount": 47
+      },
+      {
+        "year": 2018,
+        "tagcount": 63
+      },
+      {
+        "year": 2019,
+        "tagcount": 75
+      },
+      {
+        "year": 2020,
+        "tagcount": 45
+      },
+      {
+        "year": 2021,
+        "tagcount": 10
+      },
+      {
+        "year": 2022,
+        "tagcount": 16
+      },
+      {
+        "year": 2023,
+        "tagcount": 15
+      }
+    ]
+  },
+  {
+    "tagname": "도넛",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 6
+      },
+      {
+        "year": 2009,
+        "tagcount": 11
+      },
+      {
+        "year": 2010,
+        "tagcount": 23
+      },
+      {
+        "year": 2011,
+        "tagcount": 37
+      },
+      {
+        "year": 2012,
+        "tagcount": 39
+      },
+      {
+        "year": 2013,
+        "tagcount": 50
+      },
+      {
+        "year": 2014,
+        "tagcount": 44
+      },
+      {
+        "year": 2015,
+        "tagcount": 45
+      },
+      {
+        "year": 2016,
+        "tagcount": 31
+      },
+      {
+        "year": 2017,
+        "tagcount": 46
+      },
+      {
+        "year": 2018,
+        "tagcount": 43
+      },
+      {
+        "year": 2019,
+        "tagcount": 54
+      },
+      {
+        "year": 2020,
+        "tagcount": 55
+      },
+      {
+        "year": 2021,
+        "tagcount": 25
+      },
+      {
+        "year": 2022,
+        "tagcount": 23
+      },
+      {
+        "year": 2023,
+        "tagcount": 30
+      }
+    ]
+  },
+  {
+    "tagname": "케이크",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 10
+      },
+      {
+        "year": 2008,
+        "tagcount": 11
+      },
+      {
+        "year": 2009,
+        "tagcount": 31
+      },
+      {
+        "year": 2010,
+        "tagcount": 31
+      },
+      {
+        "year": 2011,
+        "tagcount": 39
+      },
+      {
+        "year": 2012,
+        "tagcount": 52
+      },
+      {
+        "year": 2013,
+        "tagcount": 76
+      },
+      {
+        "year": 2014,
+        "tagcount": 56
+      },
+      {
+        "year": 2015,
+        "tagcount": 46
+      },
+      {
+        "year": 2016,
+        "tagcount": 54
+      },
+      {
+        "year": 2017,
+        "tagcount": 58
+      },
+      {
+        "year": 2018,
+        "tagcount": 73
+      },
+      {
+        "year": 2019,
+        "tagcount": 66
+      },
+      {
+        "year": 2020,
+        "tagcount": 57
+      },
+      {
+        "year": 2021,
+        "tagcount": 28
+      },
+      {
+        "year": 2022,
+        "tagcount": 25
+      },
+      {
+        "year": 2023,
+        "tagcount": 26
+      }
+    ]
+  },
+  {
+    "tagname": "소파",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 16
+      },
+      {
+        "year": 2009,
+        "tagcount": 34
+      },
+      {
+        "year": 2010,
+        "tagcount": 39
+      },
+      {
+        "year": 2011,
+        "tagcount": 71
+      },
+      {
+        "year": 2012,
+        "tagcount": 84
+      },
+      {
+        "year": 2013,
+        "tagcount": 66
+      },
+      {
+        "year": 2014,
+        "tagcount": 75
+      },
+      {
+        "year": 2015,
+        "tagcount": 71
+      },
+      {
+        "year": 2016,
+        "tagcount": 89
+      },
+      {
+        "year": 2017,
+        "tagcount": 117
+      },
+      {
+        "year": 2018,
+        "tagcount": 87
+      },
+      {
+        "year": 2019,
+        "tagcount": 88
+      },
+      {
+        "year": 2020,
+        "tagcount": 70
+      },
+      {
+        "year": 2021,
+        "tagcount": 143
+      },
+      {
+        "year": 2022,
+        "tagcount": 31
+      },
+      {
+        "year": 2023,
+        "tagcount": 54
+      }
+    ]
+  },
+  {
+    "tagname": "화분",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 9
+      },
+      {
+        "year": 2005,
+        "tagcount": 13
+      },
+      {
+        "year": 2006,
+        "tagcount": 12
+      },
+      {
+        "year": 2007,
+        "tagcount": 14
+      },
+      {
+        "year": 2008,
+        "tagcount": 38
+      },
+      {
+        "year": 2009,
+        "tagcount": 70
+      },
+      {
+        "year": 2010,
+        "tagcount": 79
+      },
+      {
+        "year": 2011,
+        "tagcount": 111
+      },
+      {
+        "year": 2012,
+        "tagcount": 112
+      },
+      {
+        "year": 2013,
+        "tagcount": 115
+      },
+      {
+        "year": 2014,
+        "tagcount": 94
+      },
+      {
+        "year": 2015,
+        "tagcount": 95
+      },
+      {
+        "year": 2016,
+        "tagcount": 116
+      },
+      {
+        "year": 2017,
+        "tagcount": 122
+      },
+      {
+        "year": 2018,
+        "tagcount": 126
+      },
+      {
+        "year": 2019,
+        "tagcount": 143
+      },
+      {
+        "year": 2020,
+        "tagcount": 147
+      },
+      {
+        "year": 2021,
+        "tagcount": 91
+      },
+      {
+        "year": 2022,
+        "tagcount": 102
+      },
+      {
+        "year": 2023,
+        "tagcount": 69
+      }
+    ]
+  },
+  {
+    "tagname": "침대",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 9
+      },
+      {
+        "year": 2006,
+        "tagcount": 14
+      },
+      {
+        "year": 2007,
+        "tagcount": 8
+      },
+      {
+        "year": 2008,
+        "tagcount": 21
+      },
+      {
+        "year": 2009,
+        "tagcount": 46
+      },
+      {
+        "year": 2010,
+        "tagcount": 62
+      },
+      {
+        "year": 2011,
+        "tagcount": 93
+      },
+      {
+        "year": 2012,
+        "tagcount": 137
+      },
+      {
+        "year": 2013,
+        "tagcount": 156
+      },
+      {
+        "year": 2014,
+        "tagcount": 169
+      },
+      {
+        "year": 2015,
+        "tagcount": 160
+      },
+      {
+        "year": 2016,
+        "tagcount": 184
+      },
+      {
+        "year": 2017,
+        "tagcount": 189
+      },
+      {
+        "year": 2018,
+        "tagcount": 159
+      },
+      {
+        "year": 2019,
+        "tagcount": 143
+      },
+      {
+        "year": 2020,
+        "tagcount": 124
+      },
+      {
+        "year": 2021,
+        "tagcount": 74
+      },
+      {
+        "year": 2022,
+        "tagcount": 50
+      },
+      {
+        "year": 2023,
+        "tagcount": 39
+      }
+    ]
+  },
+  {
+    "tagname": "식탁",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 7
+      },
+      {
+        "year": 2005,
+        "tagcount": 16
+      },
+      {
+        "year": 2006,
+        "tagcount": 19
+      },
+      {
+        "year": 2007,
+        "tagcount": 26
+      },
+      {
+        "year": 2008,
+        "tagcount": 62
+      },
+      {
+        "year": 2009,
+        "tagcount": 87
+      },
+      {
+        "year": 2010,
+        "tagcount": 161
+      },
+      {
+        "year": 2011,
+        "tagcount": 246
+      },
+      {
+        "year": 2012,
+        "tagcount": 307
+      },
+      {
+        "year": 2013,
+        "tagcount": 447
+      },
+      {
+        "year": 2014,
+        "tagcount": 430
+      },
+      {
+        "year": 2015,
+        "tagcount": 327
+      },
+      {
+        "year": 2016,
+        "tagcount": 338
+      },
+      {
+        "year": 2017,
+        "tagcount": 382
+      },
+      {
+        "year": 2018,
+        "tagcount": 448
+      },
+      {
+        "year": 2019,
+        "tagcount": 494
+      },
+      {
+        "year": 2020,
+        "tagcount": 394
+      },
+      {
+        "year": 2021,
+        "tagcount": 226
+      },
+      {
+        "year": 2022,
+        "tagcount": 188
+      },
+      {
+        "year": 2023,
+        "tagcount": 152
+      }
+    ]
+  },
+  {
+    "tagname": "텔레비전",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 5
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 11
+      },
+      {
+        "year": 2007,
+        "tagcount": 17
+      },
+      {
+        "year": 2008,
+        "tagcount": 25
+      },
+      {
+        "year": 2009,
+        "tagcount": 32
+      },
+      {
+        "year": 2010,
+        "tagcount": 97
+      },
+      {
+        "year": 2011,
+        "tagcount": 54
+      },
+      {
+        "year": 2012,
+        "tagcount": 80
+      },
+      {
+        "year": 2013,
+        "tagcount": 95
+      },
+      {
+        "year": 2014,
+        "tagcount": 74
+      },
+      {
+        "year": 2015,
+        "tagcount": 69
+      },
+      {
+        "year": 2016,
+        "tagcount": 54
+      },
+      {
+        "year": 2017,
+        "tagcount": 72
+      },
+      {
+        "year": 2018,
+        "tagcount": 59
+      },
+      {
+        "year": 2019,
+        "tagcount": 69
+      },
+      {
+        "year": 2020,
+        "tagcount": 61
+      },
+      {
+        "year": 2021,
+        "tagcount": 61
+      },
+      {
+        "year": 2022,
+        "tagcount": 38
+      },
+      {
+        "year": 2023,
+        "tagcount": 48
+      }
+    ]
+  },
+  {
+    "tagname": "컴퓨터",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 5
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 6
+      },
+      {
+        "year": 2008,
+        "tagcount": 12
+      },
+      {
+        "year": 2009,
+        "tagcount": 24
+      },
+      {
+        "year": 2010,
+        "tagcount": 50
+      },
+      {
+        "year": 2011,
+        "tagcount": 31
+      },
+      {
+        "year": 2012,
+        "tagcount": 45
+      },
+      {
+        "year": 2013,
+        "tagcount": 64
+      },
+      {
+        "year": 2014,
+        "tagcount": 48
+      },
+      {
+        "year": 2015,
+        "tagcount": 42
+      },
+      {
+        "year": 2016,
+        "tagcount": 53
+      },
+      {
+        "year": 2017,
+        "tagcount": 60
+      },
+      {
+        "year": 2018,
+        "tagcount": 44
+      },
+      {
+        "year": 2019,
+        "tagcount": 34
+      },
+      {
+        "year": 2020,
+        "tagcount": 52
+      },
+      {
+        "year": 2021,
+        "tagcount": 35
+      },
+      {
+        "year": 2022,
+        "tagcount": 25
+      },
+      {
+        "year": 2023,
+        "tagcount": 28
+      }
+    ]
+  },
+  {
+    "tagname": "마우스",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 3
+      },
+      {
+        "year": 2010,
+        "tagcount": 9
+      },
+      {
+        "year": 2011,
+        "tagcount": 13
+      },
+      {
+        "year": 2012,
+        "tagcount": 10
+      },
+      {
+        "year": 2013,
+        "tagcount": 15
+      },
+      {
+        "year": 2014,
+        "tagcount": 11
+      },
+      {
+        "year": 2015,
+        "tagcount": 7
+      },
+      {
+        "year": 2016,
+        "tagcount": 9
+      },
+      {
+        "year": 2017,
+        "tagcount": 14
+      },
+      {
+        "year": 2018,
+        "tagcount": 8
+      },
+      {
+        "year": 2019,
+        "tagcount": 5
+      },
+      {
+        "year": 2020,
+        "tagcount": 9
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "키보드",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 8
+      },
+      {
+        "year": 2010,
+        "tagcount": 19
+      },
+      {
+        "year": 2011,
+        "tagcount": 13
+      },
+      {
+        "year": 2012,
+        "tagcount": 16
+      },
+      {
+        "year": 2013,
+        "tagcount": 26
+      },
+      {
+        "year": 2014,
+        "tagcount": 12
+      },
+      {
+        "year": 2015,
+        "tagcount": 12
+      },
+      {
+        "year": 2016,
+        "tagcount": 11
+      },
+      {
+        "year": 2017,
+        "tagcount": 13
+      },
+      {
+        "year": 2018,
+        "tagcount": 17
+      },
+      {
+        "year": 2019,
+        "tagcount": 13
+      },
+      {
+        "year": 2020,
+        "tagcount": 18
+      },
+      {
+        "year": 2021,
+        "tagcount": 6
+      },
+      {
+        "year": 2022,
+        "tagcount": 5
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "전화기",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 10
+      },
+      {
+        "year": 2007,
+        "tagcount": 11
+      },
+      {
+        "year": 2008,
+        "tagcount": 26
+      },
+      {
+        "year": 2009,
+        "tagcount": 51
+      },
+      {
+        "year": 2010,
+        "tagcount": 81
+      },
+      {
+        "year": 2011,
+        "tagcount": 126
+      },
+      {
+        "year": 2012,
+        "tagcount": 129
+      },
+      {
+        "year": 2013,
+        "tagcount": 127
+      },
+      {
+        "year": 2014,
+        "tagcount": 147
+      },
+      {
+        "year": 2015,
+        "tagcount": 186
+      },
+      {
+        "year": 2016,
+        "tagcount": 159
+      },
+      {
+        "year": 2017,
+        "tagcount": 155
+      },
+      {
+        "year": 2018,
+        "tagcount": 177
+      },
+      {
+        "year": 2019,
+        "tagcount": 209
+      },
+      {
+        "year": 2020,
+        "tagcount": 179
+      },
+      {
+        "year": 2021,
+        "tagcount": 173
+      },
+      {
+        "year": 2022,
+        "tagcount": 174
+      },
+      {
+        "year": 2023,
+        "tagcount": 152
+      }
+    ]
+  },
+  {
+    "tagname": "전자레인지",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 6
+      },
+      {
+        "year": 2010,
+        "tagcount": 21
+      },
+      {
+        "year": 2011,
+        "tagcount": 8
+      },
+      {
+        "year": 2012,
+        "tagcount": 6
+      },
+      {
+        "year": 2013,
+        "tagcount": 8
+      },
+      {
+        "year": 2014,
+        "tagcount": 8
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 2
+      },
+      {
+        "year": 2017,
+        "tagcount": 11
+      },
+      {
+        "year": 2018,
+        "tagcount": 10
+      },
+      {
+        "year": 2019,
+        "tagcount": 2
+      },
+      {
+        "year": 2020,
+        "tagcount": 14
+      },
+      {
+        "year": 2021,
+        "tagcount": 1
+      },
+      {
+        "year": 2022,
+        "tagcount": 10
+      },
+      {
+        "year": 2023,
+        "tagcount": 4
+      }
+    ]
+  },
+  {
+    "tagname": "오븐",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 4
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 6
+      },
+      {
+        "year": 2010,
+        "tagcount": 8
+      },
+      {
+        "year": 2011,
+        "tagcount": 7
+      },
+      {
+        "year": 2012,
+        "tagcount": 8
+      },
+      {
+        "year": 2013,
+        "tagcount": 8
+      },
+      {
+        "year": 2014,
+        "tagcount": 14
+      },
+      {
+        "year": 2015,
+        "tagcount": 5
+      },
+      {
+        "year": 2016,
+        "tagcount": 3
+      },
+      {
+        "year": 2017,
+        "tagcount": 16
+      },
+      {
+        "year": 2018,
+        "tagcount": 10
+      },
+      {
+        "year": 2019,
+        "tagcount": 13
+      },
+      {
+        "year": 2020,
+        "tagcount": 12
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 4
+      },
+      {
+        "year": 2023,
+        "tagcount": 4
+      }
+    ]
+  },
+  {
+    "tagname": "토스터기",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 0
+      },
+      {
+        "year": 2011,
+        "tagcount": 0
+      },
+      {
+        "year": 2012,
+        "tagcount": 0
+      },
+      {
+        "year": 2013,
+        "tagcount": 0
+      },
+      {
+        "year": 2014,
+        "tagcount": 0
+      },
+      {
+        "year": 2015,
+        "tagcount": 0
+      },
+      {
+        "year": 2016,
+        "tagcount": 0
+      },
+      {
+        "year": 2017,
+        "tagcount": 0
+      },
+      {
+        "year": 2018,
+        "tagcount": 0
+      },
+      {
+        "year": 2019,
+        "tagcount": 0
+      },
+      {
+        "year": 2020,
+        "tagcount": 1
+      },
+      {
+        "year": 2021,
+        "tagcount": 1
+      },
+      {
+        "year": 2022,
+        "tagcount": 1
+      },
+      {
+        "year": 2023,
+        "tagcount": 1
+      }
+    ]
+  },
+  {
+    "tagname": "싱크대",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 1
+      },
+      {
+        "year": 2010,
+        "tagcount": 10
+      },
+      {
+        "year": 2011,
+        "tagcount": 9
+      },
+      {
+        "year": 2012,
+        "tagcount": 6
+      },
+      {
+        "year": 2013,
+        "tagcount": 16
+      },
+      {
+        "year": 2014,
+        "tagcount": 10
+      },
+      {
+        "year": 2015,
+        "tagcount": 19
+      },
+      {
+        "year": 2016,
+        "tagcount": 13
+      },
+      {
+        "year": 2017,
+        "tagcount": 16
+      },
+      {
+        "year": 2018,
+        "tagcount": 8
+      },
+      {
+        "year": 2019,
+        "tagcount": 13
+      },
+      {
+        "year": 2020,
+        "tagcount": 11
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 3
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "냉장고",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 8
+      },
+      {
+        "year": 2008,
+        "tagcount": 6
+      },
+      {
+        "year": 2009,
+        "tagcount": 24
+      },
+      {
+        "year": 2010,
+        "tagcount": 29
+      },
+      {
+        "year": 2011,
+        "tagcount": 21
+      },
+      {
+        "year": 2012,
+        "tagcount": 24
+      },
+      {
+        "year": 2013,
+        "tagcount": 33
+      },
+      {
+        "year": 2014,
+        "tagcount": 30
+      },
+      {
+        "year": 2015,
+        "tagcount": 26
+      },
+      {
+        "year": 2016,
+        "tagcount": 29
+      },
+      {
+        "year": 2017,
+        "tagcount": 44
+      },
+      {
+        "year": 2018,
+        "tagcount": 32
+      },
+      {
+        "year": 2019,
+        "tagcount": 27
+      },
+      {
+        "year": 2020,
+        "tagcount": 35
+      },
+      {
+        "year": 2021,
+        "tagcount": 22
+      },
+      {
+        "year": 2022,
+        "tagcount": 16
+      },
+      {
+        "year": 2023,
+        "tagcount": 20
+      }
+    ]
+  },
+  {
+    "tagname": "책",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 9
+      },
+      {
+        "year": 2006,
+        "tagcount": 10
+      },
+      {
+        "year": 2007,
+        "tagcount": 7
+      },
+      {
+        "year": 2008,
+        "tagcount": 18
+      },
+      {
+        "year": 2009,
+        "tagcount": 64
+      },
+      {
+        "year": 2010,
+        "tagcount": 81
+      },
+      {
+        "year": 2011,
+        "tagcount": 87
+      },
+      {
+        "year": 2012,
+        "tagcount": 108
+      },
+      {
+        "year": 2013,
+        "tagcount": 86
+      },
+      {
+        "year": 2014,
+        "tagcount": 113
+      },
+      {
+        "year": 2015,
+        "tagcount": 88
+      },
+      {
+        "year": 2016,
+        "tagcount": 83
+      },
+      {
+        "year": 2017,
+        "tagcount": 127
+      },
+      {
+        "year": 2018,
+        "tagcount": 105
+      },
+      {
+        "year": 2019,
+        "tagcount": 83
+      },
+      {
+        "year": 2020,
+        "tagcount": 88
+      },
+      {
+        "year": 2021,
+        "tagcount": 41
+      },
+      {
+        "year": 2022,
+        "tagcount": 42
+      },
+      {
+        "year": 2023,
+        "tagcount": 54
+      }
+    ]
+  },
+  {
+    "tagname": "꽃병",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 9
+      },
+      {
+        "year": 2007,
+        "tagcount": 14
+      },
+      {
+        "year": 2008,
+        "tagcount": 21
+      },
+      {
+        "year": 2009,
+        "tagcount": 18
+      },
+      {
+        "year": 2010,
+        "tagcount": 41
+      },
+      {
+        "year": 2011,
+        "tagcount": 50
+      },
+      {
+        "year": 2012,
+        "tagcount": 42
+      },
+      {
+        "year": 2013,
+        "tagcount": 56
+      },
+      {
+        "year": 2014,
+        "tagcount": 52
+      },
+      {
+        "year": 2015,
+        "tagcount": 47
+      },
+      {
+        "year": 2016,
+        "tagcount": 52
+      },
+      {
+        "year": 2017,
+        "tagcount": 58
+      },
+      {
+        "year": 2018,
+        "tagcount": 44
+      },
+      {
+        "year": 2019,
+        "tagcount": 62
+      },
+      {
+        "year": 2020,
+        "tagcount": 45
+      },
+      {
+        "year": 2021,
+        "tagcount": 28
+      },
+      {
+        "year": 2022,
+        "tagcount": 17
+      },
+      {
+        "year": 2023,
+        "tagcount": 10
+      }
+    ]
+  },
+  {
+    "tagname": "곰인형",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 9
+      },
+      {
+        "year": 2008,
+        "tagcount": 17
+      },
+      {
+        "year": 2009,
+        "tagcount": 32
+      },
+      {
+        "year": 2010,
+        "tagcount": 55
+      },
+      {
+        "year": 2011,
+        "tagcount": 54
+      },
+      {
+        "year": 2012,
+        "tagcount": 77
+      },
+      {
+        "year": 2013,
+        "tagcount": 69
+      },
+      {
+        "year": 2014,
+        "tagcount": 61
+      },
+      {
+        "year": 2015,
+        "tagcount": 49
+      },
+      {
+        "year": 2016,
+        "tagcount": 58
+      },
+      {
+        "year": 2017,
+        "tagcount": 102
+      },
+      {
+        "year": 2018,
+        "tagcount": 58
+      },
+      {
+        "year": 2019,
+        "tagcount": 51
+      },
+      {
+        "year": 2020,
+        "tagcount": 37
+      },
+      {
+        "year": 2021,
+        "tagcount": 36
+      },
+      {
+        "year": 2022,
+        "tagcount": 31
+      },
+      {
+        "year": 2023,
+        "tagcount": 26
+      }
+    ]
+  },
+  {
+    "tagname": "장신구",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 7
+      },
+      {
+        "year": 2008,
+        "tagcount": 10
+      },
+      {
+        "year": 2009,
+        "tagcount": 13
+      },
+      {
+        "year": 2010,
+        "tagcount": 23
+      },
+      {
+        "year": 2011,
+        "tagcount": 37
+      },
+      {
+        "year": 2012,
+        "tagcount": 33
+      },
+      {
+        "year": 2013,
+        "tagcount": 44
+      },
+      {
+        "year": 2014,
+        "tagcount": 55
+      },
+      {
+        "year": 2015,
+        "tagcount": 51
+      },
+      {
+        "year": 2016,
+        "tagcount": 52
+      },
+      {
+        "year": 2017,
+        "tagcount": 50
+      },
+      {
+        "year": 2018,
+        "tagcount": 59
+      },
+      {
+        "year": 2019,
+        "tagcount": 57
+      },
+      {
+        "year": 2020,
+        "tagcount": 71
+      },
+      {
+        "year": 2021,
+        "tagcount": 41
+      },
+      {
+        "year": 2022,
+        "tagcount": 41
+      },
+      {
+        "year": 2023,
+        "tagcount": 27
+      }
+    ]
+  },
+  {
+    "tagname": "에어프라이어",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 4
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 6
+      },
+      {
+        "year": 2011,
+        "tagcount": 5
+      },
+      {
+        "year": 2012,
+        "tagcount": 4
+      },
+      {
+        "year": 2013,
+        "tagcount": 5
+      },
+      {
+        "year": 2014,
+        "tagcount": 5
+      },
+      {
+        "year": 2015,
+        "tagcount": 1
+      },
+      {
+        "year": 2016,
+        "tagcount": 4
+      },
+      {
+        "year": 2017,
+        "tagcount": 7
+      },
+      {
+        "year": 2018,
+        "tagcount": 8
+      },
+      {
+        "year": 2019,
+        "tagcount": 9
+      },
+      {
+        "year": 2020,
+        "tagcount": 9
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 16
+      },
+      {
+        "year": 2023,
+        "tagcount": 22
+      }
+    ]
+  },
+  {
+    "tagname": "비행기날개",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 2
+      },
+      {
+        "year": 2010,
+        "tagcount": 2
+      },
+      {
+        "year": 2011,
+        "tagcount": 1
+      },
+      {
+        "year": 2012,
+        "tagcount": 1
+      },
+      {
+        "year": 2013,
+        "tagcount": 6
+      },
+      {
+        "year": 2014,
+        "tagcount": 7
+      },
+      {
+        "year": 2015,
+        "tagcount": 6
+      },
+      {
+        "year": 2016,
+        "tagcount": 5
+      },
+      {
+        "year": 2017,
+        "tagcount": 9
+      },
+      {
+        "year": 2018,
+        "tagcount": 3
+      },
+      {
+        "year": 2019,
+        "tagcount": 11
+      },
+      {
+        "year": 2020,
+        "tagcount": 11
+      },
+      {
+        "year": 2021,
+        "tagcount": 8
+      },
+      {
+        "year": 2022,
+        "tagcount": 11
+      },
+      {
+        "year": 2023,
+        "tagcount": 12
+      }
+    ]
+  },
+  {
+    "tagname": "백팩",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 2
+      },
+      {
+        "year": 2010,
+        "tagcount": 2
+      },
+      {
+        "year": 2011,
+        "tagcount": 7
+      },
+      {
+        "year": 2012,
+        "tagcount": 2
+      },
+      {
+        "year": 2013,
+        "tagcount": 1
+      },
+      {
+        "year": 2014,
+        "tagcount": 4
+      },
+      {
+        "year": 2015,
+        "tagcount": 3
+      },
+      {
+        "year": 2016,
+        "tagcount": 2
+      },
+      {
+        "year": 2017,
+        "tagcount": 4
+      },
+      {
+        "year": 2018,
+        "tagcount": 7
+      },
+      {
+        "year": 2019,
+        "tagcount": 8
+      },
+      {
+        "year": 2020,
+        "tagcount": 6
+      },
+      {
+        "year": 2021,
+        "tagcount": 3
+      },
+      {
+        "year": 2022,
+        "tagcount": 14
+      },
+      {
+        "year": 2023,
+        "tagcount": 14
+      }
+    ]
+  },
+  {
+    "tagname": "풍선",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 4
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 6
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 10
+      },
+      {
+        "year": 2010,
+        "tagcount": 20
+      },
+      {
+        "year": 2011,
+        "tagcount": 24
+      },
+      {
+        "year": 2012,
+        "tagcount": 26
+      },
+      {
+        "year": 2013,
+        "tagcount": 31
+      },
+      {
+        "year": 2014,
+        "tagcount": 27
+      },
+      {
+        "year": 2015,
+        "tagcount": 29
+      },
+      {
+        "year": 2016,
+        "tagcount": 30
+      },
+      {
+        "year": 2017,
+        "tagcount": 35
+      },
+      {
+        "year": 2018,
+        "tagcount": 29
+      },
+      {
+        "year": 2019,
+        "tagcount": 38
+      },
+      {
+        "year": 2020,
+        "tagcount": 36
+      },
+      {
+        "year": 2021,
+        "tagcount": 15
+      },
+      {
+        "year": 2022,
+        "tagcount": 15
+      },
+      {
+        "year": 2023,
+        "tagcount": 9
+      }
+    ]
+  },
+  {
+    "tagname": "아이들",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 28
+      },
+      {
+        "year": 2005,
+        "tagcount": 41
+      },
+      {
+        "year": 2006,
+        "tagcount": 42
+      },
+      {
+        "year": 2007,
+        "tagcount": 46
+      },
+      {
+        "year": 2008,
+        "tagcount": 138
+      },
+      {
+        "year": 2009,
+        "tagcount": 246
+      },
+      {
+        "year": 2010,
+        "tagcount": 313
+      },
+      {
+        "year": 2011,
+        "tagcount": 498
+      },
+      {
+        "year": 2012,
+        "tagcount": 633
+      },
+      {
+        "year": 2013,
+        "tagcount": 746
+      },
+      {
+        "year": 2014,
+        "tagcount": 811
+      },
+      {
+        "year": 2015,
+        "tagcount": 843
+      },
+      {
+        "year": 2016,
+        "tagcount": 804
+      },
+      {
+        "year": 2017,
+        "tagcount": 1088
+      },
+      {
+        "year": 2018,
+        "tagcount": 695
+      },
+      {
+        "year": 2019,
+        "tagcount": 626
+      },
+      {
+        "year": 2020,
+        "tagcount": 478
+      },
+      {
+        "year": 2021,
+        "tagcount": 320
+      },
+      {
+        "year": 2022,
+        "tagcount": 192
+      },
+      {
+        "year": 2023,
+        "tagcount": 187
+      }
+    ]
+  },
+  {
+    "tagname": "맥주잔",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 2
+      },
+      {
+        "year": 2010,
+        "tagcount": 12
+      },
+      {
+        "year": 2011,
+        "tagcount": 18
+      },
+      {
+        "year": 2012,
+        "tagcount": 18
+      },
+      {
+        "year": 2013,
+        "tagcount": 18
+      },
+      {
+        "year": 2014,
+        "tagcount": 10
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 10
+      },
+      {
+        "year": 2017,
+        "tagcount": 7
+      },
+      {
+        "year": 2018,
+        "tagcount": 12
+      },
+      {
+        "year": 2019,
+        "tagcount": 21
+      },
+      {
+        "year": 2020,
+        "tagcount": 7
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 5
+      },
+      {
+        "year": 2023,
+        "tagcount": 4
+      }
+    ]
+  },
+  {
+    "tagname": "카메라",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 7
+      },
+      {
+        "year": 2007,
+        "tagcount": 18
+      },
+      {
+        "year": 2008,
+        "tagcount": 12
+      },
+      {
+        "year": 2009,
+        "tagcount": 25
+      },
+      {
+        "year": 2010,
+        "tagcount": 46
+      },
+      {
+        "year": 2011,
+        "tagcount": 32
+      },
+      {
+        "year": 2012,
+        "tagcount": 35
+      },
+      {
+        "year": 2013,
+        "tagcount": 17
+      },
+      {
+        "year": 2014,
+        "tagcount": 29
+      },
+      {
+        "year": 2015,
+        "tagcount": 27
+      },
+      {
+        "year": 2016,
+        "tagcount": 33
+      },
+      {
+        "year": 2017,
+        "tagcount": 22
+      },
+      {
+        "year": 2018,
+        "tagcount": 33
+      },
+      {
+        "year": 2019,
+        "tagcount": 28
+      },
+      {
+        "year": 2020,
+        "tagcount": 11
+      },
+      {
+        "year": 2021,
+        "tagcount": 24
+      },
+      {
+        "year": 2022,
+        "tagcount": 22
+      },
+      {
+        "year": 2023,
+        "tagcount": 23
+      }
+    ]
+  },
+  {
+    "tagname": "양초",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 7
+      },
+      {
+        "year": 2010,
+        "tagcount": 16
+      },
+      {
+        "year": 2011,
+        "tagcount": 13
+      },
+      {
+        "year": 2012,
+        "tagcount": 17
+      },
+      {
+        "year": 2013,
+        "tagcount": 25
+      },
+      {
+        "year": 2014,
+        "tagcount": 15
+      },
+      {
+        "year": 2015,
+        "tagcount": 13
+      },
+      {
+        "year": 2016,
+        "tagcount": 17
+      },
+      {
+        "year": 2017,
+        "tagcount": 18
+      },
+      {
+        "year": 2018,
+        "tagcount": 13
+      },
+      {
+        "year": 2019,
+        "tagcount": 32
+      },
+      {
+        "year": 2020,
+        "tagcount": 15
+      },
+      {
+        "year": 2021,
+        "tagcount": 1
+      },
+      {
+        "year": 2022,
+        "tagcount": 3
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "건배",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 3
+      },
+      {
+        "year": 2010,
+        "tagcount": 5
+      },
+      {
+        "year": 2011,
+        "tagcount": 12
+      },
+      {
+        "year": 2012,
+        "tagcount": 10
+      },
+      {
+        "year": 2013,
+        "tagcount": 18
+      },
+      {
+        "year": 2014,
+        "tagcount": 15
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 6
+      },
+      {
+        "year": 2017,
+        "tagcount": 5
+      },
+      {
+        "year": 2018,
+        "tagcount": 16
+      },
+      {
+        "year": 2019,
+        "tagcount": 32
+      },
+      {
+        "year": 2020,
+        "tagcount": 8
+      },
+      {
+        "year": 2021,
+        "tagcount": 3
+      },
+      {
+        "year": 2022,
+        "tagcount": 4
+      },
+      {
+        "year": 2023,
+        "tagcount": 6
+      }
+    ]
+  },
+  {
+    "tagname": "전시된옷",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 3
+      },
+      {
+        "year": 2011,
+        "tagcount": 3
+      },
+      {
+        "year": 2012,
+        "tagcount": 7
+      },
+      {
+        "year": 2013,
+        "tagcount": 2
+      },
+      {
+        "year": 2014,
+        "tagcount": 5
+      },
+      {
+        "year": 2015,
+        "tagcount": 5
+      },
+      {
+        "year": 2016,
+        "tagcount": 4
+      },
+      {
+        "year": 2017,
+        "tagcount": 9
+      },
+      {
+        "year": 2018,
+        "tagcount": 6
+      },
+      {
+        "year": 2019,
+        "tagcount": 3
+      },
+      {
+        "year": 2020,
+        "tagcount": 5
+      },
+      {
+        "year": 2021,
+        "tagcount": 4
+      },
+      {
+        "year": 2022,
+        "tagcount": 3
+      },
+      {
+        "year": 2023,
+        "tagcount": 1
+      }
+    ]
+  },
+  {
+    "tagname": "화장품",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 9
+      },
+      {
+        "year": 2009,
+        "tagcount": 21
+      },
+      {
+        "year": 2010,
+        "tagcount": 23
+      },
+      {
+        "year": 2011,
+        "tagcount": 17
+      },
+      {
+        "year": 2012,
+        "tagcount": 13
+      },
+      {
+        "year": 2013,
+        "tagcount": 26
+      },
+      {
+        "year": 2014,
+        "tagcount": 30
+      },
+      {
+        "year": 2015,
+        "tagcount": 19
+      },
+      {
+        "year": 2016,
+        "tagcount": 23
+      },
+      {
+        "year": 2017,
+        "tagcount": 32
+      },
+      {
+        "year": 2018,
+        "tagcount": 39
+      },
+      {
+        "year": 2019,
+        "tagcount": 30
+      },
+      {
+        "year": 2020,
+        "tagcount": 22
+      },
+      {
+        "year": 2021,
+        "tagcount": 9
+      },
+      {
+        "year": 2022,
+        "tagcount": 11
+      },
+      {
+        "year": 2023,
+        "tagcount": 8
+      }
+    ]
+  },
+  {
+    "tagname": "십자가",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 5
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 7
+      },
+      {
+        "year": 2011,
+        "tagcount": 7
+      },
+      {
+        "year": 2012,
+        "tagcount": 3
+      },
+      {
+        "year": 2013,
+        "tagcount": 1
+      },
+      {
+        "year": 2014,
+        "tagcount": 4
+      },
+      {
+        "year": 2015,
+        "tagcount": 5
+      },
+      {
+        "year": 2016,
+        "tagcount": 7
+      },
+      {
+        "year": 2017,
+        "tagcount": 3
+      },
+      {
+        "year": 2018,
+        "tagcount": 5
+      },
+      {
+        "year": 2019,
+        "tagcount": 3
+      },
+      {
+        "year": 2020,
+        "tagcount": 10
+      },
+      {
+        "year": 2021,
+        "tagcount": 6
+      },
+      {
+        "year": 2022,
+        "tagcount": 4
+      },
+      {
+        "year": 2023,
+        "tagcount": 6
+      }
+    ]
+  },
+  {
+    "tagname": "에펠탑",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 3
+      },
+      {
+        "year": 2010,
+        "tagcount": 4
+      },
+      {
+        "year": 2011,
+        "tagcount": 4
+      },
+      {
+        "year": 2012,
+        "tagcount": 5
+      },
+      {
+        "year": 2013,
+        "tagcount": 6
+      },
+      {
+        "year": 2014,
+        "tagcount": 5
+      },
+      {
+        "year": 2015,
+        "tagcount": 3
+      },
+      {
+        "year": 2016,
+        "tagcount": 5
+      },
+      {
+        "year": 2017,
+        "tagcount": 4
+      },
+      {
+        "year": 2018,
+        "tagcount": 9
+      },
+      {
+        "year": 2019,
+        "tagcount": 8
+      },
+      {
+        "year": 2020,
+        "tagcount": 6
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 7
+      },
+      {
+        "year": 2023,
+        "tagcount": 10
+      }
+    ]
+  },
+  {
+    "tagname": "안경",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 3
+      },
+      {
+        "year": 2007,
+        "tagcount": 6
+      },
+      {
+        "year": 2008,
+        "tagcount": 15
+      },
+      {
+        "year": 2009,
+        "tagcount": 26
+      },
+      {
+        "year": 2010,
+        "tagcount": 25
+      },
+      {
+        "year": 2011,
+        "tagcount": 45
+      },
+      {
+        "year": 2012,
+        "tagcount": 61
+      },
+      {
+        "year": 2013,
+        "tagcount": 77
+      },
+      {
+        "year": 2014,
+        "tagcount": 52
+      },
+      {
+        "year": 2015,
+        "tagcount": 57
+      },
+      {
+        "year": 2016,
+        "tagcount": 65
+      },
+      {
+        "year": 2017,
+        "tagcount": 49
+      },
+      {
+        "year": 2018,
+        "tagcount": 45
+      },
+      {
+        "year": 2019,
+        "tagcount": 68
+      },
+      {
+        "year": 2020,
+        "tagcount": 42
+      },
+      {
+        "year": 2021,
+        "tagcount": 54
+      },
+      {
+        "year": 2022,
+        "tagcount": 48
+      },
+      {
+        "year": 2023,
+        "tagcount": 31
+      }
+    ]
+  },
+  {
+    "tagname": "등대",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 7
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 8
+      },
+      {
+        "year": 2010,
+        "tagcount": 9
+      },
+      {
+        "year": 2011,
+        "tagcount": 11
+      },
+      {
+        "year": 2012,
+        "tagcount": 6
+      },
+      {
+        "year": 2013,
+        "tagcount": 12
+      },
+      {
+        "year": 2014,
+        "tagcount": 9
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 15
+      },
+      {
+        "year": 2017,
+        "tagcount": 24
+      },
+      {
+        "year": 2018,
+        "tagcount": 30
+      },
+      {
+        "year": 2019,
+        "tagcount": 16
+      },
+      {
+        "year": 2020,
+        "tagcount": 37
+      },
+      {
+        "year": 2021,
+        "tagcount": 19
+      },
+      {
+        "year": 2022,
+        "tagcount": 30
+      },
+      {
+        "year": 2023,
+        "tagcount": 32
+      }
+    ]
+  },
+  {
+    "tagname": "바베큐고기",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 7
+      },
+      {
+        "year": 2005,
+        "tagcount": 11
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 9
+      },
+      {
+        "year": 2008,
+        "tagcount": 13
+      },
+      {
+        "year": 2009,
+        "tagcount": 26
+      },
+      {
+        "year": 2010,
+        "tagcount": 51
+      },
+      {
+        "year": 2011,
+        "tagcount": 55
+      },
+      {
+        "year": 2012,
+        "tagcount": 80
+      },
+      {
+        "year": 2013,
+        "tagcount": 99
+      },
+      {
+        "year": 2014,
+        "tagcount": 87
+      },
+      {
+        "year": 2015,
+        "tagcount": 36
+      },
+      {
+        "year": 2016,
+        "tagcount": 47
+      },
+      {
+        "year": 2017,
+        "tagcount": 54
+      },
+      {
+        "year": 2018,
+        "tagcount": 90
+      },
+      {
+        "year": 2019,
+        "tagcount": 89
+      },
+      {
+        "year": 2020,
+        "tagcount": 75
+      },
+      {
+        "year": 2021,
+        "tagcount": 16
+      },
+      {
+        "year": 2022,
+        "tagcount": 41
+      },
+      {
+        "year": 2023,
+        "tagcount": 31
+      }
+    ]
+  },
+  {
+    "tagname": "원판(덤벨 및 바벨)",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 0
+      },
+      {
+        "year": 2011,
+        "tagcount": 0
+      },
+      {
+        "year": 2012,
+        "tagcount": 0
+      },
+      {
+        "year": 2013,
+        "tagcount": 0
+      },
+      {
+        "year": 2014,
+        "tagcount": 0
+      },
+      {
+        "year": 2015,
+        "tagcount": 0
+      },
+      {
+        "year": 2016,
+        "tagcount": 0
+      },
+      {
+        "year": 2017,
+        "tagcount": 0
+      },
+      {
+        "year": 2018,
+        "tagcount": 0
+      },
+      {
+        "year": 2019,
+        "tagcount": 0
+      },
+      {
+        "year": 2020,
+        "tagcount": 0
+      },
+      {
+        "year": 2021,
+        "tagcount": 0
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 0
+      }
+    ]
+  },
+  {
+    "tagname": "포장고기",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 3
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 6
+      },
+      {
+        "year": 2010,
+        "tagcount": 9
+      },
+      {
+        "year": 2011,
+        "tagcount": 19
+      },
+      {
+        "year": 2012,
+        "tagcount": 17
+      },
+      {
+        "year": 2013,
+        "tagcount": 28
+      },
+      {
+        "year": 2014,
+        "tagcount": 16
+      },
+      {
+        "year": 2015,
+        "tagcount": 14
+      },
+      {
+        "year": 2016,
+        "tagcount": 14
+      },
+      {
+        "year": 2017,
+        "tagcount": 18
+      },
+      {
+        "year": 2018,
+        "tagcount": 18
+      },
+      {
+        "year": 2019,
+        "tagcount": 19
+      },
+      {
+        "year": 2020,
+        "tagcount": 12
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 18
+      },
+      {
+        "year": 2023,
+        "tagcount": 18
+      }
+    ]
+  },
+  {
+    "tagname": "바지",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 4
+      },
+      {
+        "year": 2005,
+        "tagcount": 6
+      },
+      {
+        "year": 2006,
+        "tagcount": 4
+      },
+      {
+        "year": 2007,
+        "tagcount": 7
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 15
+      },
+      {
+        "year": 2010,
+        "tagcount": 12
+      },
+      {
+        "year": 2011,
+        "tagcount": 11
+      },
+      {
+        "year": 2012,
+        "tagcount": 11
+      },
+      {
+        "year": 2013,
+        "tagcount": 9
+      },
+      {
+        "year": 2014,
+        "tagcount": 13
+      },
+      {
+        "year": 2015,
+        "tagcount": 15
+      },
+      {
+        "year": 2016,
+        "tagcount": 15
+      },
+      {
+        "year": 2017,
+        "tagcount": 8
+      },
+      {
+        "year": 2018,
+        "tagcount": 10
+      },
+      {
+        "year": 2019,
+        "tagcount": 18
+      },
+      {
+        "year": 2020,
+        "tagcount": 12
+      },
+      {
+        "year": 2021,
+        "tagcount": 5
+      },
+      {
+        "year": 2022,
+        "tagcount": 6
+      },
+      {
+        "year": 2023,
+        "tagcount": 14
+      }
+    ]
+  },
+  {
+    "tagname": "휴대폰뒷면",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 2
+      },
+      {
+        "year": 2010,
+        "tagcount": 8
+      },
+      {
+        "year": 2011,
+        "tagcount": 15
+      },
+      {
+        "year": 2012,
+        "tagcount": 28
+      },
+      {
+        "year": 2013,
+        "tagcount": 28
+      },
+      {
+        "year": 2014,
+        "tagcount": 56
+      },
+      {
+        "year": 2015,
+        "tagcount": 68
+      },
+      {
+        "year": 2016,
+        "tagcount": 56
+      },
+      {
+        "year": 2017,
+        "tagcount": 77
+      },
+      {
+        "year": 2018,
+        "tagcount": 73
+      },
+      {
+        "year": 2019,
+        "tagcount": 97
+      },
+      {
+        "year": 2020,
+        "tagcount": 132
+      },
+      {
+        "year": 2021,
+        "tagcount": 110
+      },
+      {
+        "year": 2022,
+        "tagcount": 140
+      },
+      {
+        "year": 2023,
+        "tagcount": 124
+      }
+    ]
+  },
+  {
+    "tagname": "턱걸이",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 0
+      },
+      {
+        "year": 2008,
+        "tagcount": 0
+      },
+      {
+        "year": 2009,
+        "tagcount": 0
+      },
+      {
+        "year": 2010,
+        "tagcount": 0
+      },
+      {
+        "year": 2011,
+        "tagcount": 0
+      },
+      {
+        "year": 2012,
+        "tagcount": 0
+      },
+      {
+        "year": 2013,
+        "tagcount": 0
+      },
+      {
+        "year": 2014,
+        "tagcount": 0
+      },
+      {
+        "year": 2015,
+        "tagcount": 0
+      },
+      {
+        "year": 2016,
+        "tagcount": 0
+      },
+      {
+        "year": 2017,
+        "tagcount": 0
+      },
+      {
+        "year": 2018,
+        "tagcount": 0
+      },
+      {
+        "year": 2019,
+        "tagcount": 0
+      },
+      {
+        "year": 2020,
+        "tagcount": 0
+      },
+      {
+        "year": 2021,
+        "tagcount": 0
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 0
+      }
+    ]
+  },
+  {
+    "tagname": "케이블카",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 3
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 4
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 1
+      },
+      {
+        "year": 2010,
+        "tagcount": 8
+      },
+      {
+        "year": 2011,
+        "tagcount": 7
+      },
+      {
+        "year": 2012,
+        "tagcount": 6
+      },
+      {
+        "year": 2013,
+        "tagcount": 9
+      },
+      {
+        "year": 2014,
+        "tagcount": 6
+      },
+      {
+        "year": 2015,
+        "tagcount": 4
+      },
+      {
+        "year": 2016,
+        "tagcount": 10
+      },
+      {
+        "year": 2017,
+        "tagcount": 25
+      },
+      {
+        "year": 2018,
+        "tagcount": 27
+      },
+      {
+        "year": 2019,
+        "tagcount": 35
+      },
+      {
+        "year": 2020,
+        "tagcount": 10
+      },
+      {
+        "year": 2021,
+        "tagcount": 20
+      },
+      {
+        "year": 2022,
+        "tagcount": 14
+      },
+      {
+        "year": 2023,
+        "tagcount": 13
+      }
+    ]
+  },
+  {
+    "tagname": "러닝머신",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 2
+      },
+      {
+        "year": 2010,
+        "tagcount": 0
+      },
+      {
+        "year": 2011,
+        "tagcount": 0
+      },
+      {
+        "year": 2012,
+        "tagcount": 1
+      },
+      {
+        "year": 2013,
+        "tagcount": 1
+      },
+      {
+        "year": 2014,
+        "tagcount": 1
+      },
+      {
+        "year": 2015,
+        "tagcount": 1
+      },
+      {
+        "year": 2016,
+        "tagcount": 1
+      },
+      {
+        "year": 2017,
+        "tagcount": 3
+      },
+      {
+        "year": 2018,
+        "tagcount": 5
+      },
+      {
+        "year": 2019,
+        "tagcount": 5
+      },
+      {
+        "year": 2020,
+        "tagcount": 4
+      },
+      {
+        "year": 2021,
+        "tagcount": 7
+      },
+      {
+        "year": 2022,
+        "tagcount": 0
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "신발",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 6
+      },
+      {
+        "year": 2007,
+        "tagcount": 7
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 15
+      },
+      {
+        "year": 2010,
+        "tagcount": 14
+      },
+      {
+        "year": 2011,
+        "tagcount": 17
+      },
+      {
+        "year": 2012,
+        "tagcount": 22
+      },
+      {
+        "year": 2013,
+        "tagcount": 35
+      },
+      {
+        "year": 2014,
+        "tagcount": 36
+      },
+      {
+        "year": 2015,
+        "tagcount": 34
+      },
+      {
+        "year": 2016,
+        "tagcount": 37
+      },
+      {
+        "year": 2017,
+        "tagcount": 36
+      },
+      {
+        "year": 2018,
+        "tagcount": 38
+      },
+      {
+        "year": 2019,
+        "tagcount": 49
+      },
+      {
+        "year": 2020,
+        "tagcount": 32
+      },
+      {
+        "year": 2021,
+        "tagcount": 20
+      },
+      {
+        "year": 2022,
+        "tagcount": 26
+      },
+      {
+        "year": 2023,
+        "tagcount": 27
+      }
+    ]
+  },
+  {
+    "tagname": "소주잔",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 0
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 1
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 10
+      },
+      {
+        "year": 2011,
+        "tagcount": 15
+      },
+      {
+        "year": 2012,
+        "tagcount": 11
+      },
+      {
+        "year": 2013,
+        "tagcount": 10
+      },
+      {
+        "year": 2014,
+        "tagcount": 10
+      },
+      {
+        "year": 2015,
+        "tagcount": 9
+      },
+      {
+        "year": 2016,
+        "tagcount": 10
+      },
+      {
+        "year": 2017,
+        "tagcount": 10
+      },
+      {
+        "year": 2018,
+        "tagcount": 8
+      },
+      {
+        "year": 2019,
+        "tagcount": 12
+      },
+      {
+        "year": 2020,
+        "tagcount": 7
+      },
+      {
+        "year": 2021,
+        "tagcount": 3
+      },
+      {
+        "year": 2022,
+        "tagcount": 9
+      },
+      {
+        "year": 2023,
+        "tagcount": 2
+      }
+    ]
+  },
+  {
+    "tagname": "선글라스",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 5
+      },
+      {
+        "year": 2007,
+        "tagcount": 16
+      },
+      {
+        "year": 2008,
+        "tagcount": 16
+      },
+      {
+        "year": 2009,
+        "tagcount": 26
+      },
+      {
+        "year": 2010,
+        "tagcount": 78
+      },
+      {
+        "year": 2011,
+        "tagcount": 148
+      },
+      {
+        "year": 2012,
+        "tagcount": 97
+      },
+      {
+        "year": 2013,
+        "tagcount": 114
+      },
+      {
+        "year": 2014,
+        "tagcount": 74
+      },
+      {
+        "year": 2015,
+        "tagcount": 95
+      },
+      {
+        "year": 2016,
+        "tagcount": 80
+      },
+      {
+        "year": 2017,
+        "tagcount": 77
+      },
+      {
+        "year": 2018,
+        "tagcount": 64
+      },
+      {
+        "year": 2019,
+        "tagcount": 61
+      },
+      {
+        "year": 2020,
+        "tagcount": 35
+      },
+      {
+        "year": 2021,
+        "tagcount": 36
+      },
+      {
+        "year": 2022,
+        "tagcount": 23
+      },
+      {
+        "year": 2023,
+        "tagcount": 27
+      }
+    ]
+  },
+  {
+    "tagname": "일출(일몰)",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 2
+      },
+      {
+        "year": 2005,
+        "tagcount": 7
+      },
+      {
+        "year": 2006,
+        "tagcount": 6
+      },
+      {
+        "year": 2007,
+        "tagcount": 4
+      },
+      {
+        "year": 2008,
+        "tagcount": 7
+      },
+      {
+        "year": 2009,
+        "tagcount": 15
+      },
+      {
+        "year": 2010,
+        "tagcount": 19
+      },
+      {
+        "year": 2011,
+        "tagcount": 31
+      },
+      {
+        "year": 2012,
+        "tagcount": 23
+      },
+      {
+        "year": 2013,
+        "tagcount": 17
+      },
+      {
+        "year": 2014,
+        "tagcount": 25
+      },
+      {
+        "year": 2015,
+        "tagcount": 25
+      },
+      {
+        "year": 2016,
+        "tagcount": 49
+      },
+      {
+        "year": 2017,
+        "tagcount": 65
+      },
+      {
+        "year": 2018,
+        "tagcount": 51
+      },
+      {
+        "year": 2019,
+        "tagcount": 63
+      },
+      {
+        "year": 2020,
+        "tagcount": 75
+      },
+      {
+        "year": 2021,
+        "tagcount": 50
+      },
+      {
+        "year": 2022,
+        "tagcount": 46
+      },
+      {
+        "year": 2023,
+        "tagcount": 47
+      }
+    ]
+  },
+  {
+    "tagname": "사원",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 3
+      },
+      {
+        "year": 2006,
+        "tagcount": 2
+      },
+      {
+        "year": 2007,
+        "tagcount": 5
+      },
+      {
+        "year": 2008,
+        "tagcount": 9
+      },
+      {
+        "year": 2009,
+        "tagcount": 12
+      },
+      {
+        "year": 2010,
+        "tagcount": 10
+      },
+      {
+        "year": 2011,
+        "tagcount": 11
+      },
+      {
+        "year": 2012,
+        "tagcount": 12
+      },
+      {
+        "year": 2013,
+        "tagcount": 12
+      },
+      {
+        "year": 2014,
+        "tagcount": 7
+      },
+      {
+        "year": 2015,
+        "tagcount": 9
+      },
+      {
+        "year": 2016,
+        "tagcount": 9
+      },
+      {
+        "year": 2017,
+        "tagcount": 22
+      },
+      {
+        "year": 2018,
+        "tagcount": 19
+      },
+      {
+        "year": 2019,
+        "tagcount": 26
+      },
+      {
+        "year": 2020,
+        "tagcount": 14
+      },
+      {
+        "year": 2021,
+        "tagcount": 14
+      },
+      {
+        "year": 2022,
+        "tagcount": 10
+      },
+      {
+        "year": 2023,
+        "tagcount": 10
+      }
+    ]
+  },
+  {
+    "tagname": "상의",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 1
+      },
+      {
+        "year": 2005,
+        "tagcount": 1
+      },
+      {
+        "year": 2006,
+        "tagcount": 1
+      },
+      {
+        "year": 2007,
+        "tagcount": 2
+      },
+      {
+        "year": 2008,
+        "tagcount": 3
+      },
+      {
+        "year": 2009,
+        "tagcount": 5
+      },
+      {
+        "year": 2010,
+        "tagcount": 5
+      },
+      {
+        "year": 2011,
+        "tagcount": 8
+      },
+      {
+        "year": 2012,
+        "tagcount": 6
+      },
+      {
+        "year": 2013,
+        "tagcount": 7
+      },
+      {
+        "year": 2014,
+        "tagcount": 11
+      },
+      {
+        "year": 2015,
+        "tagcount": 8
+      },
+      {
+        "year": 2016,
+        "tagcount": 13
+      },
+      {
+        "year": 2017,
+        "tagcount": 13
+      },
+      {
+        "year": 2018,
+        "tagcount": 15
+      },
+      {
+        "year": 2019,
+        "tagcount": 13
+      },
+      {
+        "year": 2020,
+        "tagcount": 13
+      },
+      {
+        "year": 2021,
+        "tagcount": 14
+      },
+      {
+        "year": 2022,
+        "tagcount": 6
+      },
+      {
+        "year": 2023,
+        "tagcount": 7
+      }
+    ]
+  },
+  {
+    "tagname": "손목시계",
+    "tagcount_by_year": [
+      {
+        "year": 2004,
+        "tagcount": 0
+      },
+      {
+        "year": 2005,
+        "tagcount": 2
+      },
+      {
+        "year": 2006,
+        "tagcount": 0
+      },
+      {
+        "year": 2007,
+        "tagcount": 1
+      },
+      {
+        "year": 2008,
+        "tagcount": 2
+      },
+      {
+        "year": 2009,
+        "tagcount": 4
+      },
+      {
+        "year": 2010,
+        "tagcount": 3
+      },
+      {
+        "year": 2011,
+        "tagcount": 10
+      },
+      {
+        "year": 2012,
+        "tagcount": 18
+      },
+      {
+        "year": 2013,
+        "tagcount": 14
+      },
+      {
+        "year": 2014,
+        "tagcount": 18
+      },
+      {
+        "year": 2015,
+        "tagcount": 13
+      },
+      {
+        "year": 2016,
+        "tagcount": 16
+      },
+      {
+        "year": 2017,
+        "tagcount": 18
+      },
+      {
+        "year": 2018,
+        "tagcount": 19
+      },
+      {
+        "year": 2019,
+        "tagcount": 23
+      },
+      {
+        "year": 2020,
+        "tagcount": 14
+      },
+      {
+        "year": 2021,
+        "tagcount": 21
+      },
+      {
+        "year": 2022,
+        "tagcount": 12
+      },
+      {
+        "year": 2023,
+        "tagcount": 19
+      }
+    ]
+  }
+]
