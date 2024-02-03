@@ -57,7 +57,7 @@ const Top = () => {
                             </>
                         ) : (
                             <>
-                                <Link to="/UserAnalysis">[분석페이지]</Link>
+                                {/* <Link to="/UserAnalysis">[분석페이지]</Link> */}
                                 <Link to="/mypageAlbum2">[마이페이지]</Link>
                                 <Link onClick={onLogout}>[로그아웃]</Link>
                             </>

@@ -64,21 +64,22 @@ const Recommend = () => {
         }
     };
 
-    const recommend =  async () => {
+    const recommend = async () => {
         try {
             const user_tags = currentUser.tags;
             const response = await axios.get(`http://localhost:8000/recommend_contents/`, {
-                params: { 
+                params: {
                     'recommend_tags': recommendTags.join(','),
-                    'user_tags': user_tags,}
+                    'user_tags': user_tags,
+                }
             });
 
             const { user_content, recommend_content } = response.data;
 
             setUserContents(user_content);
             setRecommendContents(recommend_content);
-            
-        }catch (error) {
+
+        } catch (error) {
             console.log('컨텐츠 추천 에러', error)
         }
     }
@@ -86,14 +87,14 @@ const Recommend = () => {
     return (
         <div>
             <p>{currentUser.name}님! 이런 제품은 어떠신가요? <button onClick={recommend}>보기</button></p>
-            <div className='user_content'>
+            {/* <div className='user_content'>
                 {userContents.map((content) => (
                     <div key={content.contents_id}>
                         <p className='user_content_name'>{content.contents_name}</p>
                         <p className='user_content_link'>{content.contents_link}</p>
                     </div>
                 ))}
-            </div>
+            </div> */}
             <p>{currentUser.name}님과 취향이 비슷한 사람들이 관심있어 하는 태그입니다.</p>
             <div className='recommend_tags'>
                 {recommendTags.map((tag) => (
