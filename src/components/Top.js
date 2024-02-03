@@ -26,7 +26,8 @@ import Custom_tags_count_yearly_chart from './custom_tags_count_yearly_chart';
 import Upload2 from './Upload2';
 import MypageRecentAlbum from './MypageRecentAlbum';
 import MypageAlbumUpdate from './MypageAlbumUpdate';
-import UserAnalysis from './UserAnalysis';
+
+import UserAnalysis2 from './UserAnalysis2';
 
 const Top = () => {
     const username = localStorage.getItem("username")
@@ -57,7 +58,7 @@ const Top = () => {
                             </>
                         ) : (
                             <>
-                                <Link to="/UserAnalysis">[분석페이지]</Link>
+                                <Link to="/UserAnalysis2">[분석페이지]</Link>
                                 <Link to="/mypageAlbum2">[마이페이지]</Link>
                                 <Link onClick={onLogout}>[로그아웃]</Link>
                             </>
@@ -94,7 +95,7 @@ const Top = () => {
                 <Route path='/tag_count_yearly_chart' element={<Tag_count_yearly_chart />} />
                 <Route path='/custom_tags_count_yearly_chart' element={<Custom_tags_count_yearly_chart />} />
 
-                <Route path='/UserAnalysis' element={<UserAnalysis />} />
+                <Route path='/UserAnalysis2' element={<UserAnalysis2 />} />
             </Routes >
         </div >
     );
