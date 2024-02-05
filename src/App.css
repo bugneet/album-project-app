@@ -566,11 +566,31 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .photo-tag {
   margin: 0 5px;
-  /* white-space: nowrap; */
+}
+
+.photo-tags::-webkit-scrollbar {
+  width: 10px;
+}
+
+.photo-tags::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.photo-tags::-webkit-scrollbar-thumb {
+  background-color: #4285F4;
+  border-radius: 5px;
+}
+
+.photo-tags::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* 활성화된 상태의 색상 */
 }
 
 #classifyBtn {
@@ -727,8 +747,23 @@ hr {
 }
 
 .reply {
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin-bottom: -20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply .reply_regdate {
+  font-size: 13px;
+  color: #666;
+}
+
+.reply button {
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .reply_input {
@@ -955,6 +990,12 @@ hr {
 }
 
 /* recommend */
+#content_box {
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 1500px;
+}
+
 .user_content {
   display: flex;
   flex-wrap: wrap;
@@ -979,12 +1020,11 @@ hr {
 .recommend_tags {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .recommend_tags > div {
-  margin: 0 10px;
-  padding: 5px;
+  margin: 0 5px;
 }
 
 .recommend_content {
@@ -1004,6 +1044,19 @@ hr {
   font-weight: bold;
 }
 
-.recommend_content_link {
-  color: #3498db;
+#loading_data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.content_name {
+  text-align: center;
+  font-style: bold;
+}
+.content_image {
+  width: 250px;
+  height: 250px;
 }

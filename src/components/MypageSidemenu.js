@@ -9,7 +9,7 @@ const MypageSidemenu = () => {
             <li><Link to="/mypageMypost">내게시글</Link></li>
             <li><Link to="/mypageMyReply">내댓글</Link></li>
             <li><Link to="/mypageMyLiked">좋아요(사진)</Link></li>
-
+            <li><Link to="/recommend">상품 추천</Link></li>
         </ul>
     );
 };
