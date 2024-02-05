@@ -109,13 +109,13 @@ const MypageAlbum2 = () => {
             <div id="content">
                 <div className="checkbox-container">
                     {tags.map(tag => (
-                        <label key={tag}>
+                        <label key={tag} className="checkbox-label">
                             <input
                                 type="checkbox"
                                 checked={selectedTags.includes(tag)}
                                 onChange={() => handleTagChange(tag)}
                             />
-                            {tag}({tagCounts[tag] || 0})
+                            <span className="checkbox-text">{tag}({tagCounts[tag] || 0})</span>
                         </label>
                     ))}
                 </div>
