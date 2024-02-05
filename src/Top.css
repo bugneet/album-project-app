@@ -1,0 +1,56 @@
+#top {
+    text-align: center;
+  }
+  
+  .top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #eee;
+  }
+  
+  .logo-container {
+    margin-right: 20px; /* 로고와 네비게이션 사이의 간격 조절 */
+  }
+  
+  .logo-container a {
+    display: inline-block;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    height: auto;
+  }
