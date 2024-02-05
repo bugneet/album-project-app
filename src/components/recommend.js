@@ -62,7 +62,7 @@ const Recommend = () => {
             });
             
             const allOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.overlappingTags))
-            const allOverlappingTag = [...allOverlappingTagsSet];
+            const allOverlappingTag = [...allOverlappingTagsSet].toString();
             const allNonOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.nonOverlappingTags));
             const allNonOverlappingTags = [...allNonOverlappingTagsSet];
             setUserTags(allOverlappingTag);
@@ -76,7 +76,7 @@ const Recommend = () => {
 
     const recommend =  async () => {
         try {
-            const user_tags = currentUser.tags;
+            const user_tags = userTags;
             const response = await axios.get(`http://localhost:8000/recommend_contents/`, {
                 params: { 
                     'recommend_tags': recommendTags.join(','),
@@ -99,16 +99,24 @@ const Recommend = () => {
                 <h2>마이페이지</h2>
                 <MypageSidemenu></MypageSidemenu>
             </div>
-            {recommendContents.length > 0 && (
+            {currentUser.name && recommendContents.length > 0 && (
                 <div id='content_box'>
                     <p>{currentUser.name}님이 관심있어하는 태그입니다</p>
                     <div className='recommend_tags'>
                         <p>[</p>
-                        {userTags.map((tag) => (
-                            <div key={tag}>
-                                <p>{tag}</p>
-                            </div>
-                        ))}
+                        {Array.isArray(userTags) ? (
+                            userTags.map((tag, index) => (
+                                <div key={index}>
+                                    <p>{tag}</p>
+                                </div>
+                            ))
+                        ) : (
+                            String(userTags).split(',').map((tag, index) => (
+                                <div key={index}>
+                                    <p>{tag.trim()}</p>
+                                </div>
+                            ))
+                        )}
                         <p>]</p>
                     </div>
                     <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
@@ -146,7 +154,7 @@ const Recommend = () => {
                 </div>
             )}
 
-            {recommendContents.length === 0 && (
+            { !(currentUser.name && recommendContents.length > 0) && (
                 <div id="loading_data">Loading...</div>
             )}
         </div>
