@@ -106,7 +106,7 @@ const UserAnalysis2 = () => {
     return (
         <div className="container">
             <h1 className="header">{username} 님의 분석 페이지</h1>
-            <p>전체 이미지 갯수: {totalImageCount}</p>
+            <p>전체 이미지 갯수: {totalImageCount} 입니다</p>
 
             <h2 className="activityheader">상위 태그 TOP3</h2>
             <div className="tagContainer">

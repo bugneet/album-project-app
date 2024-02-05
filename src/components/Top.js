@@ -46,20 +46,21 @@ const Top = () => {
                     </div>
             <ul className='nav-links'>
                 <li>
-                    <Link to="/total_chart">[전체분석차트]</Link>
-                    <Link to="/exhibition">[전시관]</Link>
-                    <Link to="/recommend">[추천]</Link>
+                    <Link to="/total_chart">전체분석차트</Link>
+                    <Link to="/exhibition">전시관</Link>
+                    
 
                     {localStorage.getItem("token") === null ? (
                         <>
-                            <Link to="/SignIn">[로그인]</Link>
-                            <Link to="/Join">[회원가입]</Link>
+                            <Link to="/SignIn">로그인</Link>
+                            <Link to="/Join">회원가입</Link>
                         </>
                     ) : (
                         <>
-                            <Link to="/UserAnalysis2">[분석페이지]</Link>
-                            <Link to="/mypageAlbum2">[마이페이지]</Link>
-                            <Link onClick={onLogout}>[로그아웃]</Link>
+                            <Link to="/recommend">추천</Link>
+                            <Link to="/UserAnalysis2">분석페이지</Link>
+                            <Link to="/mypageAlbum2">마이페이지</Link>
+                            <Link onClick={onLogout}>로그아웃</Link>
                         </>
                     )}
                 </li>
