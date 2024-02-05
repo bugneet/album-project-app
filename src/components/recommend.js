@@ -97,6 +97,22 @@ const Recommend = () => {
             </div>
             {recommendContents.length > 0 && (
                 <div id='content_box'>
+                    <p>{currentUser.name}님이 관심있어하는 태그입니다</p>
+                    <div className='recommend_tags'>
+                    <p>[</p>
+                    {Array.isArray(currentUser.tags)
+                        ? currentUser.tags.map((tag) => (
+                            <div key={tag}>
+                            <p>{tag}</p>
+                            </div>
+                        ))
+                        : currentUser.tags.split(',').map((tag) => (
+                            <div key={tag}>
+                            <p>{tag}</p>
+                            </div>
+                        ))}
+                    <p>]</p>
+                    </div>
                     <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
                     <div className='user_content'>
                         {userContents.map((content) => (
@@ -108,7 +124,7 @@ const Recommend = () => {
                             </div>
                         ))}
                     </div>
-                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 제품입니다!</p>
+                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 태그입니다!</p>
                     <div className='recommend_tags'>
                         <p>[</p>
                         {recommendTags.map((tag) => (
@@ -118,6 +134,7 @@ const Recommend = () => {
                         ))}
                         <p>]</p>
                     </div>
+                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 제품입니다!</p>
                     <div className='recommend_content'>
                         {recommendContents.map((content) => (
                             <div key={content.contents_id}>
