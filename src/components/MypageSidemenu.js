@@ -11,7 +11,7 @@ const MypageSidemenu = () => {
             <li><Link to="/mypageMypost">내게시글</Link></li>
             <li><Link to="/mypageMyReply">내댓글</Link></li>
             <li><Link to="/mypageMyLiked">좋아요(사진)</Link></li>
-
+            <li><Link to="/UserAnalysis2">성향 분석</Link></li>
         </ul>
     );
 };
