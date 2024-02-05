@@ -4,6 +4,7 @@ import MypageSidemenu from './MypageSidemenu';
 
 const Recommend = () => {
     const [currentUser, setCurrentUser] = useState('');
+    const [userTags, setUserTags] = useState('');
     const [recommendTags, setRecommendTags] = useState([]);
 
     const [userContents, setUserContents] = useState([]);
@@ -59,9 +60,12 @@ const Recommend = () => {
                     nonOverlappingTags,
                 };
             });
-
+            
+            const allOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.overlappingTags))
+            const allOverlappingTag = [...allOverlappingTagsSet];
             const allNonOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.nonOverlappingTags));
             const allNonOverlappingTags = [...allNonOverlappingTagsSet];
+            setUserTags(allOverlappingTag);
             setRecommendTags(allNonOverlappingTags);
 
             await recommend();
@@ -99,19 +103,13 @@ const Recommend = () => {
                 <div id='content_box'>
                     <p>{currentUser.name}님이 관심있어하는 태그입니다</p>
                     <div className='recommend_tags'>
-                    <p>[</p>
-                    {Array.isArray(currentUser.tags)
-                        ? currentUser.tags.map((tag) => (
+                        <p>[</p>
+                        {userTags.map((tag) => (
                             <div key={tag}>
-                            <p>{tag}</p>
-                            </div>
-                        ))
-                        : currentUser.tags.split(',').map((tag) => (
-                            <div key={tag}>
-                            <p>{tag}</p>
+                                <p>{tag}</p>
                             </div>
                         ))}
-                    <p>]</p>
+                        <p>]</p>
                     </div>
                     <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
                     <div className='user_content'>
