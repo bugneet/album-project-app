@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Bar, BarChart, Brush, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Brush, CartesianGrid, Label, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 import MypageSidemenu from './MypageSidemenu';
-
 
 const Personal_chart = () => {
     const username = localStorage.getItem("username")
@@ -35,7 +34,7 @@ const Personal_chart = () => {
                         dy={5}
                         textAnchor="start"
                         transform={`rotate(45)`}
-                        fontSize="10"
+                        fontSize="12"
                         fontFamily="Arial"
                         fill="#666"
                     >
@@ -76,11 +75,11 @@ const Personal_chart = () => {
                     </div>
                     <div id="charDB">
                         <BarChart
-                            width={1200}
-                            height={400}
+                            width={1800}
+                            height={700}
                             data={data}
 
-                            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                            margin={{ top: 20, right: 30, left: 20, bottom: 50 }}
                         >
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis
@@ -89,25 +88,24 @@ const Personal_chart = () => {
                                 domain={xAxisDomain}
                                 angle={-45}
                                 tick={<CustomizedXAxisTick />}
+
                             />
 
                             <YAxis dataKey="tagcount" />
                             <Tooltip />
-                            <Legend />
                             <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
                             <Brush
-                                dataKey="tagname"
+
                                 height={20}
                                 stroke="#8884d8"
                                 startIndex={xAxisDomain[0]}
                                 endIndex={xAxisDomain[1]}
                                 onChange={({ startIndex, endIndex }) => handleXAxisDomainChange([startIndex, endIndex])}
-                                y={380}
+                                y={650}
                             />
                         </BarChart>
                     </div>
-                    <div>
-                    </div>
+
                 </div>
 
             </div>
