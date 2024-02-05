@@ -113,29 +113,35 @@ const Exhibition = () => {
   };
 
   const handleLike = async (board_no) => {
-    try {
-      const response = await axios.post(`http://localhost:8000/exhibition/like/${board_no}/`, {
-        board_no: board_no, username: localStorage.getItem('username')
-      });
-
-      console.log(response.data)
-      
-      setBoards((prevBoards) => {
-        const updatedBoards = prevBoards.map((board) => {
-          if (board.board_no === board_no) {
-            return {
-              ...board,
-              isLiked: !board.isLiked,
-            };
-          }
-          return board;
+    if (!login) {
+      alert('로그인 해주세요');
+      history("/SignIn/")
+    }
+    else {
+      try {
+        const response = await axios.post(`http://localhost:8000/exhibition/like/${board_no}/`, {
+          board_no: board_no, username: localStorage.getItem('username')
         });
-        return updatedBoards;
-      });
 
-      loadData(currentPage);
-    } catch (error) {
-      console.error('좋아요 에러', error);
+        console.log(response.data)
+        
+        setBoards((prevBoards) => {
+          const updatedBoards = prevBoards.map((board) => {
+            if (board.board_no === board_no) {
+              return {
+                ...board,
+                isLiked: !board.isLiked,
+              };
+            }
+            return board;
+          });
+          return updatedBoards;
+        });
+
+        loadData(currentPage);
+      } catch (error) {
+        console.error('좋아요 에러', error);
+      }
     }
   };
 

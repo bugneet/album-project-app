@@ -47,8 +47,7 @@ const Top = () => {
                     <Link to="/">[홈]</Link>
                     <Link to="/total_chart">[전체분석차트]</Link>
                     <Link to="/exhibition">[전시관]</Link>
-                    <Link to="/recommend">[추천]</Link>
-
+                    <Link to="/mypageAlbum2">[마이페이지]</Link>
                     {
                         localStorage.getItem("token") === null ? (
                             <>

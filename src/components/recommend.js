@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MypageSidemenu from './MypageSidemenu';
 
 const Recommend = () => {
     const [currentUser, setCurrentUser] = useState('');
-    const [userTagsInfo, setUserTagsInfo] = useState([]);
     const [recommendTags, setRecommendTags] = useState([]);
 
     const [userContents, setUserContents] = useState([]);
     const [recommendContents, setRecommendContents] = useState([]);
+
+    const url = 'http://127.0.0.1:8000/media/'
+
     useEffect(() => {
         loadData();
     }, []);
+
+    useEffect(() => {
+        recommend();
+    }, [recommendTags]);
 
     const loadData = async () => {
         try {
@@ -53,12 +60,11 @@ const Recommend = () => {
                 };
             });
 
-            setUserTagsInfo(userTagsInfo);
-
             const allNonOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.nonOverlappingTags));
             const allNonOverlappingTags = [...allNonOverlappingTagsSet];
             setRecommendTags(allNonOverlappingTags);
 
+            await recommend();
         } catch (error) {
             console.error('추천 태그 에러', error);
         }
@@ -85,33 +91,50 @@ const Recommend = () => {
     }
 
     return (
-        <div>
-            <p>{currentUser.name}님! 이런 제품은 어떠신가요? <button onClick={recommend}>보기</button></p>
-            {/* <div className='user_content'>
-                {userContents.map((content) => (
-                    <div key={content.contents_id}>
-                        <p className='user_content_name'>{content.contents_name}</p>
-                        <p className='user_content_link'>{content.contents_link}</p>
-                    </div>
-                ))}
-            </div> */}
-            <p>{currentUser.name}님과 취향이 비슷한 사람들이 관심있어 하는 태그입니다.</p>
-            <div className='recommend_tags'>
-                {recommendTags.map((tag) => (
-                    <div key={tag}>
-                        <p>{tag}&nbsp;</p>
-                    </div>
-                ))}
+        <div id='mypage_album_body'>
+            <div id="menu">
+                <h2>마이페이지</h2>
+                <MypageSidemenu></MypageSidemenu>
             </div>
-            <p>{currentUser.name}님과 취향이 비슷한 사람들이 관심있어 하는 제품입니다!</p>
-            <div className='recommend_content'>
-                {recommendContents.map((content) => (
-                    <div key={content.contents_id}>
-                        <p className='recommend_content_name'>{content.contents_name}</p>
-                        <p className='recommend_content_link'>{content.contents_link}</p>
+            {recommendContents.length > 0 && (
+                <div id='content_box'>
+                    <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
+                    <div className='user_content'>
+                        {userContents.map((content) => (
+                            <div key={content.contents_id}>
+                                <p className='content_name'>{content.contents_name}</p>
+                                <a href={content.contents_link}>
+                                    <img src={url + content.contents_image} className='content_image' />
+                                </a>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
+                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 제품입니다!</p>
+                    <div className='recommend_tags'>
+                        <p>[</p>
+                        {recommendTags.map((tag) => (
+                            <div key={tag}>
+                                <p>{tag}</p>
+                            </div>
+                        ))}
+                        <p>]</p>
+                    </div>
+                    <div className='recommend_content'>
+                        {recommendContents.map((content) => (
+                            <div key={content.contents_id}>
+                                <p className='content_name'>{content.contents_name}</p>
+                                <a href={content.contents_link}>
+                                    <img src={url + content.contents_image} className='content_image' />
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {recommendContents.length === 0 && (
+                <div id="loading_data">Loading...</div>
+            )}
         </div>
     );
 };
