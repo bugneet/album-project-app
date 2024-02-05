@@ -29,7 +29,7 @@ const PhotoList = () => {
             <h3>사진 목록</h3>
             <ul className='photo_list'>
                 {photos.map(photo => (
-                    <li key={photo.id} onClick={() => handleImageSelect(photo)} className='photo_list_item'>
+                    <li key={photo.photoid} onClick={() => handleImageSelect(photo)} className='photo_list_item'>
                         <img src={photo.image} alt="이미지 불러오기 실패" />
                     </li>
                 ))}

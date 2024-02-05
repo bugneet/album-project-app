@@ -6,9 +6,9 @@ const BoardUpdate = () => {
     let history = useNavigate();
     const location = useLocation();
     const { board_no } = useParams();
-  
+    const [photoid, setPhotoid] = useState(null);
     const url = 'http://127.0.0.1:8000/media/';
-  
+
     const [board, setBoard] = useState({
       title: '',
       contents: '',
@@ -28,6 +28,10 @@ const BoardUpdate = () => {
             tags: boardInfo.board_photo_tag,
             selectedImage: boardInfo.photoid.image,
           });
+          if (!(location.state && location.state.boardInfo)) {
+            setPhotoid(boardInfo.photoid.photoid);          
+          }
+          
         } catch (error) {
           console.error('게시글 정보 불러오기 에러:', error);
         }
@@ -44,9 +48,12 @@ const BoardUpdate = () => {
           tags: location.state.boardInfo.tags,
           selectedImage: location.state.boardInfo.selectedImage,
         });
+        
+        setPhotoid(location.state?.selectedPhoto?.id?.photoid)
+
       }
     }, [location.state]);
-  
+
     const onChange = (e) => {
       const { value, name } = e.target;
       setBoard({
@@ -74,7 +81,8 @@ const BoardUpdate = () => {
       formData.append('contents', board.contents);
       formData.append('created_time', new Date().toISOString());
       formData.append('tags', board.tags);
-      formData.append('photoid', location.state.selectedPhoto.id.photoid);
+      console.log('board', photoid)
+      formData.append('photoid', photoid);
       formData.append('username', localStorage.getItem("username"));
   
       axios.post(`http://localhost:8000/board/${board_no}/`, formData)
