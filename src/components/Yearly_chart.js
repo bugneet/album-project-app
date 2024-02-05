@@ -5,10 +5,13 @@ import { Bar, BarChart, Brush, CartesianAxis, CartesianGrid, Legend, Line, LineC
 import Analysticpagemenu from './Analysticpagemenu';
 import jsonData from '../data/yearly_tag.json'
 import { Button, Select } from 'antd';
+import contents from '../data/recommend.json'
+
 
 const { Option } = Select;
 
 const Yearly_chart = () => {
+    const [selectedTagInfo, setSelectedTagInfo] = useState({});
 
     const [data, setData] = useState([]);
     const [selectedYear, setSelectedYear] = useState(2004);
@@ -25,7 +28,6 @@ const Yearly_chart = () => {
     const handleXAxisDomainChange = (domain) => {
         setXAxisDomain(domain);
     }
-    const shouldWrapLabel = (label) => label.length >= 4;
 
     const handleOutputClick = () => {
         setOutputClicked(true);
@@ -42,11 +44,18 @@ const Yearly_chart = () => {
 
     const fetchData = (year, month) => {
         try {
-            // Instead of axios.get, use the imported JSON data
+            // axios.get 대신에 import한 JSON 데이터 사용
             const selectedData = jsonData.find((item) => item.year === year && item.month === month);
             setData(selectedData?.tags || []);
+
+            // 첫 번째 태그를 기준으로 phototag를 찾아옴
+            const matchingTags = selectedData?.tags.slice(0, 3).map(tag => {
+                return contents.find(item => item.phototag.indexOf(tag.tagname) !== -1);
+            });
+
+            setSelectedTagInfo(matchingTags || []);
         } catch (error) {
-            console.error('Error fetching data:', error);
+            console.error('데이터 불러오기 오류:', error);
         }
     };
 
@@ -105,35 +114,49 @@ const Yearly_chart = () => {
             </div>
             <hr></hr>
             {/* Right side - Chart */}
-            {showSelects && (
-                <div id="charDB" style={{ flex: '1' }}>
-                    <BarChart width={1200} height={400} data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
 
-                        <XAxis
-                            dataKey="tagname"
-                            interval={0} // 모든 레이블 표시
-                            domain={xAxisDomain}
-                            angle={0}
+            <div id="charDB" style={{ flex: '1' }}>
+                <BarChart width={1500} height={600} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 50 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
 
-                        />
+                    <XAxis
+                        dataKey="tagname"
+                        interval={0} // 모든 레이블 표시
+                        domain={xAxisDomain}
+                        angle={0}
 
-                        <YAxis dataKey="tagcount" />
-                        <Tooltip />
-                        <Legend />
-                        <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
-                        <Brush
-                            dataKey="tagname"
-                            height={20}
-                            stroke="#8884d8"
-                            startIndex={xAxisDomain[0]}
-                            endIndex={xAxisDomain[1]}
-                            onChange={({ startIndex, endIndex }) => handleXAxisDomainChange([startIndex, endIndex])}
-                            y={380}
-                        />
-                    </BarChart>
+
+                    />
+
+                    <YAxis dataKey="tagcount" />
+                    <Tooltip />
+                    <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
+                    <Brush
+                        dataKey="tagname"
+                        height={20}
+                        stroke="#8884d8"
+                        startIndex={xAxisDomain[0]}
+                        endIndex={xAxisDomain[1]}
+                        onChange={({ startIndex, endIndex }) => handleXAxisDomainChange([startIndex, endIndex])}
+                        y={530}
+                    />
+                </BarChart>
+                <div style={{ display: 'flex', marginTop: '20px', justifyContent: 'center', alignItems: 'center' }}>
+                    {Array.isArray(selectedTagInfo) && selectedTagInfo.map((tagInfo, index) => (
+                        tagInfo && tagInfo.phototag && (
+                            <div key={index} style={{ marginRight: index < selectedTagInfo.length - 1 ? '100px' : '0', flex: '0 0 auto' }}>
+                                <img
+                                    src={tagInfo.contents_image}
+                                    alt={tagInfo.contents_name}
+                                    style={{ width: '400px', height: '267px', objectFit: 'cover', cursor: 'pointer' }}
+                                    onClick={() => window.open(tagInfo.contents_link, '_blank')}
+                                />
+                            </div>
+                        )
+                    ))}
                 </div>
-            )}
+            </div>
+
 
         </div>
     );

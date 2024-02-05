@@ -1,24 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, LineChart, CartesianAxis, Tooltip, Legend, Line, CartesianGrid, ComposedChart, Area, Scatter, Brush } from 'recharts';
-import { Link } from 'react-router-dom';
 import chartData from '../data/tags.json';
+import totaltop3 from '../data/total_top3.json'
 import Analysticpagemenu from './Analysticpagemenu';
 
 const Total_chart_json = () => {
+    const [data1, setData1] = useState([]);
     const [data, setData] = useState([]);
-    const linkStyle = {
-        border: '1px dotted #000',
-        display: 'inline-block',
-        textAlign: 'center',
-        padding: '5px',
-        color: '#000',
-        textDecoration: 'none',
-    };
+    const [contents, setContents] = useState([]);
 
-    const hoverStyle = {
-        borderColor: '#f00',
-    };
+
     const initialDomain = [0, 25]; // 초기에 보이는 데이터의 범위를 설정
     const [xAxisDomain, setXAxisDomain] = useState(initialDomain);
 
@@ -42,7 +34,7 @@ const Total_chart_json = () => {
                         dy={5}
                         textAnchor="start"
                         transform={`rotate(45)`}
-                        fontSize="10"
+                        fontSize="12"
                         fontFamily="Arial"
                         fill="#666"
                     >
@@ -55,13 +47,50 @@ const Total_chart_json = () => {
 
     useEffect(() => {
         // Fetch or import your data here
-        setData(chartData);
+        setData1(chartData);
+
+        setData(totaltop3)
+
+        // 컨텐츠 데이터 불러오기
+        const fetchContents = async () => {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/recommend_contents3/'); // Django의 URL로 변경
+                const jsonContents = await response.json();
+                setContents(jsonContents);
+            } catch (error) {
+                console.error('Error fetching contents:', error);
+            }
+        };
+
+        fetchContents();
     }, []);
 
     // Rest of your component logic
+    const tableStyle = {
+        width: '100%',
+        borderCollapse: 'collapse',
+        marginTop: '20px',
+        fontSize: '16px',
+        textAlign: 'center',
+    };
+
+    const thTdStyle = {
+        padding: '10px',
+        border: '1px solid #ddd',
+    };
+
+    const thStyle = {
+        ...thTdStyle,
+        backgroundColor: '#f2f2f2',
+    };
+
+    const tdStyle = {
+        ...thTdStyle,
+        backgroundColor: '#fff',
+    };
 
     return (
-        <div id="charDB" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+        <div id="charDB" style={{ display: 'flex', padding: '20px' }}>
             {/* Left side - Menu */}
             <div id="analysticmenu" style={{ width: '200px', marginRight: '20px' }}>
                 <h2>분석페이지</h2>
@@ -73,10 +102,10 @@ const Total_chart_json = () => {
             {/* Right side - Chart */}
             <div id="chartContainer" style={{ flex: '1' }}>
                 <BarChart
-                    width={1200}
-                    height={400}
-                    data={data}
-                    margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    width={1500}
+                    height={600}
+                    data={data1}
+                    margin={{ top: 20, right: 30, left: 20, bottom: 50 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis
                         dataKey="tagname"
@@ -88,7 +117,7 @@ const Total_chart_json = () => {
 
                     <YAxis dataKey="tagcount" />
                     <Tooltip />
-                    <Legend />
+
                     <Bar dataKey="tagcount" fill="#8884d8" categoryGap={30} />
                     <Brush
                         dataKey="tagname"
@@ -97,11 +126,57 @@ const Total_chart_json = () => {
                         startIndex={xAxisDomain[0]}
                         endIndex={xAxisDomain[1]}
                         onChange={({ startIndex, endIndex }) => handleXAxisDomainChange([startIndex, endIndex])}
-                        y={380}
+                        y={550}
                     />
                 </BarChart>
+                <br /><br /><br /><br />
+                <h2>최근 5년 회원들의 태그 순위</h2>
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                    <thead>
+                        <tr>
+                            <th style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }}>순위</th>
+                            {data.map((yearData, yearIndex) => (
+                                <th key={yearIndex} style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }} colSpan="2">
+                                    {yearData.year}
+                                </th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {[0, 1, 2].map((rankIndex) => (
+                            <tr key={rankIndex}>
+                                <td style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }}>{`${rankIndex + 1}위`}</td>
+                                {data.map((yearData, yearIndex) => (
+                                    <React.Fragment key={yearIndex}>
+                                        <td style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }}>{yearData.top3_tags[rankIndex].tagname}</td>
+                                        <td style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }}>{yearData.top3_tags[rankIndex].tagcount}</td>
+                                    </React.Fragment>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <div>
+                <div style={{ marginTop: '20px', display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>
+                    {contents.map((content, index) => (
+                        <div key={index} style={{ marginBottom: '20px', marginRight: '20px', flex: '0 0 auto' }}>
+                            <a href={content.contents_link} target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src={content.contents_image}
+                                    alt={content.contents_name}
+                                    style={{ maxWidth: '100%', height: 'auto', width: '300px' }}
+                                />
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
+
     );
 };
 

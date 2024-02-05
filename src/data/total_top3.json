@@ -1,0 +1,87 @@
+[
+  {
+    "year": 2019,
+    "top3_tags": [
+      {
+        "tagname": "아이들",
+        "tagcount": 626
+      },
+      {
+        "tagname": "식탁",
+        "tagcount": 494
+      },
+      {
+        "tagname": "자동차",
+        "tagcount": 491
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "top3_tags": [
+      {
+        "tagname": "아이들",
+        "tagcount": 478
+      },
+      {
+        "tagname": "자동차",
+        "tagcount": 438
+      },
+      {
+        "tagname": "식탁",
+        "tagcount": 394
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "top3_tags": [
+      {
+        "tagname": "자동차",
+        "tagcount": 331
+      },
+      {
+        "tagname": "아이들",
+        "tagcount": 320
+      },
+      {
+        "tagname": "식탁",
+        "tagcount": 226
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "top3_tags": [
+      {
+        "tagname": "자동차",
+        "tagcount": 327
+      },
+      {
+        "tagname": "아이들",
+        "tagcount": 192
+      },
+      {
+        "tagname": "식탁",
+        "tagcount": 188
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "top3_tags": [
+      {
+        "tagname": "자동차",
+        "tagcount": 287
+      },
+      {
+        "tagname": "아이들",
+        "tagcount": 187
+      },
+      {
+        "tagname": "식탁",
+        "tagcount": 152
+      }
+    ]
+  }
+]

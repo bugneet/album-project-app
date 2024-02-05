@@ -4,16 +4,21 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LineChart,
 import Analysticpagemenu from './Analysticpagemenu';
 import { Button, Select } from 'antd';
 import tagData from '../data/tag_count.json'
+import contents from '../data/recommend.json'
 
 const { Option } = Select;
 const Tag_count_yearly_chart = () => {
     const [data, setData] = useState([]);
     const [selectedTag, setSelectedTag] = useState(null);
+    const [selectedTagInfo, setSelectedTagInfo] = useState({});
 
 
 
     const handleTagChange = (value) => {
         setSelectedTag(value);
+        const tagInfo = contents.find(item => item.phototag.indexOf(value) !== -1);
+
+        setSelectedTagInfo(tagInfo || {});
     };
 
     useEffect(() => {
@@ -57,20 +62,37 @@ const Tag_count_yearly_chart = () => {
                         </Option>
                     ))}
                 </Select>
+
             </div>
 
             {/* 오른쪽에 그래프 영역 */}
             <div>
 
-                <LineChart width={1200} height={400} data={data.find(item => item.tagname === selectedTag)?.tagcount_by_year || []}>
+                <LineChart width={1500} height={600} data={data.find(item => item.tagname === selectedTag)?.tagcount_by_year || []}
+                    margin={{ top: 5, right: 30, left: 20, bottom: 10 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" />
                     <YAxis />
                     <Tooltip />
-                    <Legend />
                     <Line type="monotone" dataKey="tagcount" stroke="#8884d8" activeDot={{ r: 8 }} />
-                    <ReferenceLine y={0} stroke="#666" strokeDasharray="3 3" label={<Label value={selectedTag} position="insideTop" />} />
+                    <ReferenceLine
+                        y={0}
+                        stroke="#666"
+                        strokeDasharray="3 3"
+                        label={<Label value={selectedTag} position="insideBottomRight" fontSize={25} fontWeight="bold" offset={20} />} // offset을 추가하여 그래프에서 멀리 위치하게 함
+                    />
                 </LineChart>
+
+                {selectedTagInfo && selectedTagInfo.phototag && (
+                    <div style={{ marginTop: '0px' }}>
+                        <img
+                            src={selectedTagInfo.contents_image}
+                            alt={selectedTagInfo.contents_name}
+                            style={{ width: '600px', height: '400px', objectFit: 'contain', cursor: 'pointer' }}
+                            onClick={() => window.open(selectedTagInfo.contents_link, '_blank')}
+                        />
+                    </div>
+                )}
 
             </div>
         </div>
