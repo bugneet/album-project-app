@@ -4,7 +4,7 @@ import Home from './Home';
 import Total_chart from './Total_chart';
 import SignIn from './SignIn';
 import Join from './Join';
-import '../App.css';
+import '../Top.css';
 import Upload from './Upload';
 import MypageAlbum2 from './MypageAlbum2';
 import MypageMypost from './MypageMypost';
@@ -26,13 +26,15 @@ import Custom_tags_count_yearly_chart from './custom_tags_count_yearly_chart';
 import Upload2 from './Upload2';
 import MypageRecentAlbum from './MypageRecentAlbum';
 import MypageAlbumUpdate from './MypageAlbumUpdate';
-import UserAnalysis from './UserAnalysis';
+
+import UserAnalysis2 from './UserAnalysis2';
 
 const Top = () => {
-    const username = localStorage.getItem("username")
+    const username = localStorage.getItem("username");
+
     const onLogout = () => {
         localStorage.clear();
-        window.location.replace('http://localhost:3000/')
+        window.location.replace('http://localhost:3000/');
     };
 
     return (
@@ -44,29 +46,23 @@ const Top = () => {
             </div>
             <ul className='nav-links'>
                 <li>
-                    <Link to="/">[홈]</Link>
-                    <Link to="/total_chart">[전체분석차트]</Link>
-                    <Link to="/exhibition">[전시관]</Link>
-                    <Link to="/mypageAlbum2">[마이페이지]</Link>
-                    {
-                        localStorage.getItem("token") === null ? (
-                            <>
-                                <Link to="/SignIn">[로그인]</Link>
-                                <Link to="/Join">[회원가입]</Link>
-                            </>
-                        ) : (
-                            <>
-                                {/* <Link to="/UserAnalysis">[분석페이지]</Link> */}
-                                <Link to="/mypageAlbum2">[마이페이지]</Link>
-                                <Link onClick={onLogout}>[로그아웃]</Link>
-                            </>
-                        )
-                    }
+                    <Link to="/total_chart">전체분석차트</Link>
+                    <Link to="/exhibition">전시관</Link>
 
-
+                    {localStorage.getItem("token") === null ? (
+                        <>
+                            <Link to="/SignIn">로그인</Link>
+                            <Link to="/Join">회원가입</Link>
+                        </>
+                    ) : (
+                        <>
+                            <Link to="/UserAnalysis2">분석페이지</Link>
+                            <Link to="/mypageAlbum2">마이페이지</Link>
+                            <Link onClick={onLogout}>로그아웃</Link>
+                        </>
+                    )}
                 </li>
             </ul>
-            <hr />
             <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/total_chart' element={<Total_chart />} />
@@ -93,7 +89,7 @@ const Top = () => {
                 <Route path='/tag_count_yearly_chart' element={<Tag_count_yearly_chart />} />
                 <Route path='/custom_tags_count_yearly_chart' element={<Custom_tags_count_yearly_chart />} />
 
-                <Route path='/UserAnalysis' element={<UserAnalysis />} />
+                <Route path='/UserAnalysis2' element={<UserAnalysis2 />} />
             </Routes >
         </div >
     );

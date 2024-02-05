@@ -63,9 +63,9 @@ const Total_chart_json = () => {
     return (
         <div id="charDB" style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{ width: '200px', marginRight: '20px' }}>
+            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', width: '200px', marginRight: '20px' }}>
                 <h2>분석페이지</h2>
-                <ul>
+                <ul style={{ display: 'flex', flexDirection: 'row', padding: 0, margin: 0, listStyle: 'none' }}>
                     <Analysticpagemenu></Analysticpagemenu>
                 </ul>
             </div>
