@@ -9,7 +9,6 @@ const PhotoList = () => {
     useEffect(() => {
         axios.get(`http://localhost:8000/photos/${localStorage.getItem('username')}`)
             .then(response => {
-                console.log(response.data)
                 const photosWithFullImagePath = response.data.photos.map(photo => ({
                 ...photo,
                 image: `http://localhost:8000/media/${photo.image}`
@@ -20,7 +19,6 @@ const PhotoList = () => {
       }, []);
 
     const handleImageSelect = (photo) => {
-        console.log(photo)
         navigate('/board_writing', {state: {selectedPhoto: photo}});
     }
 

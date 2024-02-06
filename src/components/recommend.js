@@ -42,7 +42,6 @@ const Recommend = () => {
                 tagCount: response.data.similar_user.tag_count[index],
             }));
             
-            console.log('상위 유저 5명:', users)
             const userTagsInfo = users.map(user => {
                 const overlappingTags = Object.keys(user.tagCount)
                     .filter(tag => currentUserTags.includes(tag))
@@ -97,9 +96,9 @@ const Recommend = () => {
                 <h2>마이페이지</h2>
                 <MypageSidemenu></MypageSidemenu>
             </div>
-            {currentUser && (
+            {currentUser && (userTags) && (
                 <div id='content_box'>
-                    <p>{currentUser.name}님이 관심있어하는 태그입니다</p>
+                    <p>{localStorage.getItem('username')}님이 관심있어하는 태그입니다</p>
                     <div className='recommend_tags'>
                         <p>[</p>
                         {String(userTags).split(',').map((tag, index) => (
@@ -109,7 +108,7 @@ const Recommend = () => {
                         ))}
                         <p>]</p>
                     </div>
-                    <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
+                    <p>{localStorage.getItem('username')}님! 이런 제품은 어떠신가요?</p>
                     <div className='user_content'>
                         {userContents.map((content) => (
                             <div key={content.contents_id}>
@@ -120,7 +119,7 @@ const Recommend = () => {
                             </div>
                         ))}
                     </div>
-                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 태그입니다!</p>
+                    <p>{localStorage.getItem('username')}님과 비슷한 취향을 가진 사람들이 관심있어 하는 태그입니다!</p>
                     <div className='recommend_tags'>
                         <p>[</p>
                         {recommendTags.map((tag) => (
@@ -130,7 +129,7 @@ const Recommend = () => {
                         ))}
                         <p>]</p>
                     </div>
-                    <p>{currentUser.name}님과 이런 제품은 어떠신가요?</p>
+                    <p>{localStorage.getItem('username')}님과 이런 제품은 어떠신가요?</p>
                     <div className='recommend_content'>
                         {recommendContents.map((content) => (
                             <div key={content.contents_id}>
@@ -146,6 +145,13 @@ const Recommend = () => {
 
             { !(currentUser) && (
                 <div id="loading_data">Loading...</div>
+            )}
+
+            {currentUser && !(userTags) && (
+                <div id='content_box'>
+                <p>{localStorage.getItem('username')}님이 사진을 더 추가해주세요!</p>
+                <p>사진을 더 추가하시면 비슷한 취향을 가진 사람들이 관심있어하는 태그와 그에 맞는 제품을 추천해드립니다!</p>
+                </div>
             )}
         </div>
     );
