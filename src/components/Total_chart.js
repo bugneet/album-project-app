@@ -143,7 +143,7 @@ const Total_chart_json = () => {
                 </BarChart>
                 <br />
                 <h2>최근 5년 회원들의 태그 순위</h2>
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse' }} margin={{ top: 20 }}>
                     <thead>
                         <tr>
                             <th style={{ padding: '10px', textAlign: 'center', border: '1px solid #ddd' }}>순위</th>
@@ -168,6 +168,8 @@ const Total_chart_json = () => {
                         ))}
                     </tbody>
                 </table>
+                <br /><br />
+                <hr></hr>
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
                     {contents.map((content, index) => (
                         <div key={index} style={{ margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -175,7 +177,7 @@ const Total_chart_json = () => {
                                 <img
                                     src={content.contents_image}
                                     alt={content.contents_name}
-                                    style={{ maxWidth: '100%', maxHeight: '100%', width: '400px', height: '400px', objectFit: 'contain' }}
+                                    style={{ maxWidth: '100%', maxHeight: '100%', width: '400px', height: '300px', objectFit: 'contain', margin: '10px' }}
                                 />
                             </a>
                         </div>
