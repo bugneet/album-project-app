@@ -142,20 +142,23 @@ const Yearly_chart = () => {
                         y={530}
                     />
                 </BarChart>
+                <br></br>
+                <hr></hr>
                 <div style={{ display: 'flex', marginTop: '20px', justifyContent: 'center', alignItems: 'center' }}>
                     {Array.isArray(selectedTagInfo) && selectedTagInfo.map((tagInfo, index) => (
                         tagInfo && tagInfo.phototag && (
-                            <div key={index} style={{ marginRight: index < selectedTagInfo.length - 1 ? '100px' : '0', flex: '0 0 auto' }}>
+                            <div key={index} style={{ marginRight: '20px', flex: '0 0 auto' }}>
                                 <img
                                     src={tagInfo.contents_image}
                                     alt={tagInfo.contents_name}
-                                    style={{ width: '400px', height: '267px', objectFit: 'cover', cursor: 'pointer' }}
+                                    style={{ width: '450px', height: '300px', objectFit: 'contain', cursor: 'pointer', margin: '5px' }}
                                     onClick={() => window.open(tagInfo.contents_link, '_blank')}
                                 />
                             </div>
                         )
                     ))}
                 </div>
+
             </div>
 
 
