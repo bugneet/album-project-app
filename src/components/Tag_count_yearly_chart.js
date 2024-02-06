@@ -8,7 +8,7 @@ import contents from '../data/recommend.json'
 
 const { Option } = Select;
 const Tag_count_yearly_chart = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
     const [selectedTag, setSelectedTag] = useState(null);
     const [selectedTagInfo, setSelectedTagInfo] = useState({});
 
@@ -17,13 +17,12 @@ const Tag_count_yearly_chart = () => {
     const handleTagChange = (value) => {
         setSelectedTag(value);
         const tagInfo = contents.find(item => item.phototag.indexOf(value) !== -1);
-
         setSelectedTagInfo(tagInfo || {});
     };
 
     useEffect(() => {
-        setData(tagData);
-    }, []);
+        setData(tagData.find(item => item.tagname === selectedTag)?.tagcount_by_year || null);
+    }, [selectedTag]);
 
 
 
@@ -43,9 +42,9 @@ const Tag_count_yearly_chart = () => {
         '사원', '상의', '손목시계']
 
     return (
-        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px',marginRight :'40px' }}>
+        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px', marginRight: '40px' }}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2' ,textAlign: 'center'}}>
+            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2', textAlign: 'center' }}>
                 <h2>분석페이지</h2>
                 <ul>
                     <Analysticpagemenu></Analysticpagemenu>
@@ -54,7 +53,7 @@ const Tag_count_yearly_chart = () => {
                     style={{ width: '100%', marginTop: '10px' }}
                     placeholder="Select a tag"
                     onChange={handleTagChange}
-                    value={selectedTag}
+                    value={selectedTag} key={selectedTag}
                 >
                     {lis.map((tag, index) => (
                         <Option key={index} value={tag}>
@@ -68,20 +67,38 @@ const Tag_count_yearly_chart = () => {
             {/* 오른쪽에 그래프 영역 */}
             <div>
 
-                <LineChart width={1500} height={600} data={data.find(item => item.tagname === selectedTag)?.tagcount_by_year || []}
-                    margin={{ top: 5, right: 30, left: 20, bottom: 10 }}>
+                <LineChart
+                    key={selectedTag}
+                    width={1500}
+                    height={600}
+                    data={data}
+                    margin={{ top: 5, right: 30, left: 20, bottom: 10 }}
+                >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" />
-                    <YAxis />
+                    <YAxis tick={false} />
                     <Tooltip />
-                    <Line type="monotone" dataKey="tagcount" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Line
+                        key={selectedTag}
+                        type="monotone"
+                        dataKey="tagcount"
+                        stroke="#8884d8"
+                        activeDot={{ r: 8 }}
+                        animation={{
+                            duration: 1000,
+                            easing: 'easeInOutCubic',
+                            from: { y: 0 },
+                            to: { y: 20 },
+                        }}
+                    />
                     <ReferenceLine
                         y={0}
                         stroke="#666"
                         strokeDasharray="3 3"
-                        label={<Label value={selectedTag} position="insideBottomRight" fontSize={25} fontWeight="bold" offset={20} />} // offset을 추가하여 그래프에서 멀리 위치하게 함
+                        label={<Label value={selectedTag} position="insideBottomRight" fontSize={25} fontWeight="bold" offset={20} />}
                     />
                 </LineChart>
+
 
                 {selectedTagInfo && selectedTagInfo.phototag && (
                     <div style={{ marginTop: '0px' }}>

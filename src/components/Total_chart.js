@@ -42,14 +42,15 @@ const Total_chart_json = () => {
                 {labelLines.map((line, index) => (
                     <text
                         key={index}
-                        x={0}
-                        y={index * 15} // 줄바꿈 간격 조절
+                        x={'0'}
+                        y={index * 15 + 5} // 줄바꿈 간격 조절
                         dy={5}
                         textAnchor="start"
                         transform={`rotate(45)`}
-                        fontSize="12"
+                        fontSize="13"
                         fontFamily="Arial"
                         fill="#666"
+                        fontWeight={'1000'}
                     >
                         {line}
                     </text>
@@ -103,9 +104,9 @@ const Total_chart_json = () => {
     };
 
     return (
-        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px',marginRight :'40px' }}>
+        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px', marginRight: '40px' }}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2',textAlign: 'center'}}>
+            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2', textAlign: 'center' }}>
                 <h2>분석페이지</h2>
                 <Analysticpagemenu></Analysticpagemenu>
             </div>
@@ -116,7 +117,7 @@ const Total_chart_json = () => {
                     width={1500}
                     height={600}
                     data={data1}
-                    margin={{ top: 20, right: 30, left: 20, bottom: 50 }}>
+                    margin={{ top: 20, right: 20, left: 20, bottom: 50 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis
                         dataKey="tagname"
@@ -140,7 +141,7 @@ const Total_chart_json = () => {
                         y={550}
                     />
                 </BarChart>
-                <br /><br /><br /><br />
+                <br />
                 <h2>최근 5년 회원들의 태그 순위</h2>
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                     <thead>
@@ -167,24 +168,27 @@ const Total_chart_json = () => {
                         ))}
                     </tbody>
                 </table>
-
-            </div>
-
-
-            <div>
-                <div style={{ marginTop: '20px', display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
                     {contents.map((content, index) => (
-                        <div key={index} style={{ marginBottom: '20px', marginRight: '20px', flex: '0 0 auto' }}>
+                        <div key={index} style={{ margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <a href={content.contents_link} target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={content.contents_image}
                                     alt={content.contents_name}
-                                    style={{ maxWidth: '100%', height: 'auto', width: '300px' }}
+                                    style={{ maxWidth: '100%', maxHeight: '100%', width: '400px', height: '400px', objectFit: 'contain' }}
                                 />
                             </a>
                         </div>
                     ))}
                 </div>
+
+
+
+            </div>
+
+
+            <div>
+
             </div>
         </div>
 

@@ -25,19 +25,20 @@ const ContentsTable = () => {
         <div>
             <table>
                 <tbody>
-                    {contentsdata.map((item) => (
-                        <tr key={item.contents_id}>
-                            <td>
+                    <tr>
+                        {contentsdata.map((item) => (
+                            <td key={item.contents_id}>
                                 <a href={item.contents_link} target="_blank" rel="noopener noreferrer">
-                                    <img src={item.contents_image} alt={item.contents_name} style={{ width: '300px', height: 'auto' }} />
+                                    <img src={item.contents_image} alt={item.contents_name} style={{ width: '250px', height: 'auto' }} />
                                 </a>
                             </td>
-                        </tr>
-                    ))}
+                        ))}
+                    </tr>
                 </tbody>
             </table>
         </div>
     );
+
 };
 
 const YearlyPieChart = ({ data }) => {
@@ -197,14 +198,11 @@ const PersonalChartYearly = () => {
                         {filteredData && <YearlyPieChart data={filteredData.tags} />}
                     </div>
                     <br /><br /><br /><br /><br />
-
-                    <div style={{ fontSize: '30px' }}>{localStorage.getItem('username')}님의 최근 5년간의 분석입니다!</div>
-
-
-                    <Top3TagsTable data={jsonData} />
-                </div>
-                <div>
                     <ContentsTable />
+                    {/* <div style={{ fontSize: '30px' }}>{localStorage.getItem('username')}님의 최근 5년간의 분석입니다!</div>
+
+
+                    <Top3TagsTable data={jsonData} /> */}
                 </div>
 
             </div>
