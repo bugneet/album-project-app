@@ -9,8 +9,6 @@ const Recommend = () => {
 
     const [userContents, setUserContents] = useState([]);
     const [recommendContents, setRecommendContents] = useState([]);
-    
-    const url = 'http://127.0.0.1:8000/media/'
 
     useEffect(() => {
         loadData();
@@ -117,7 +115,7 @@ const Recommend = () => {
                             <div key={content.contents_id}>
                                 <p className='content_name'>{content.contents_name}</p>
                                 <a href={content.contents_link}>
-                                    <img src={url + content.contents_image} className='content_image'/>
+                                    <img src={content.contents_image} className='content_image'/>
                                 </a>
                             </div>
                         ))}
@@ -138,7 +136,7 @@ const Recommend = () => {
                             <div key={content.contents_id}>
                                 <p className='content_name'>{content.contents_name}</p>
                                 <a href={content.contents_link}>
-                                    <img src={url + content.contents_image} className='content_image' />
+                                    <img src={content.contents_image} className='content_image' />
                                 </a>
                             </div>
                         ))}
