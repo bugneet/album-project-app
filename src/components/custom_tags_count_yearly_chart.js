@@ -31,9 +31,10 @@ const Custom_tags_count_yearly_chart = () => {
     };
 
     return (
-        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px',marginRight :'40px'}}>
+        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px', marginRight: '40px' }}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2' ,textAlign: 'center'}}>
+            <div id="analysticmenu"
+                style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2', textAlign: 'center' }}>
                 <h2>분석페이지</h2>
                 <ul>
                     <Analysticpagemenu></Analysticpagemenu>
@@ -42,7 +43,7 @@ const Custom_tags_count_yearly_chart = () => {
                     style={{ width: '200px', marginTop: '10px' }}
                     placeholder="Select a tag"
                     onChange={handleButtonClick}
-                    value={selectedTag}
+                    value={selectedTag} key={selectedTag} // Add key prop
                 >
                     <Option value="애견가">애견가</Option>
                     <Option value="애묘가">애묘가</Option>
@@ -73,13 +74,26 @@ const Custom_tags_count_yearly_chart = () => {
 
             <div>
 
-                <LineChart width={1500} height={600} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 30 }}>
+                <LineChart key={selectedTag} width={1500} height={600} data={data}
+                    margin={{ top: 5, right: 30, left: 20, bottom: 30 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="year" />
                     <YAxis tick={false} />
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
-                    <Line type="monotone" dataKey={`user_tags.${selectedTag}`} stroke="#8884d8" />
+                    <Line
+                        key={selectedTag} // Add key prop
+                        type="monotone"
+                        dataKey={`user_tags.${selectedTag}`}
+                        stroke="#8884d8"
+                        animation={{
+                            duration: 1000,
+                            easing: 'easeInOutCubic',
+                            from: { y: 0 },
+                            to: { y: 20 },
+                        }}
+                    />
+
                     {/* 그래프 안쪽에 선택한 옵션 표시 */}
                     <ReferenceLine
                         y={0}
