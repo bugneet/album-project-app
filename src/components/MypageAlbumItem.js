@@ -38,10 +38,11 @@ const MypageAlbumItem = ({ picture }) => {
     return (
 
         <div className="image-container">
-            <img src={url} />
+            <Link to={"/albumOrigin/" + picture.image}><img src={url} /></Link>
             <div>
                 날짜: {formattedDate}<br />
                 태그: {picture.phototag}<br />
+                <Link to={"/albumOrigin/" + picture.image}><button>원본보기</button></Link>
                 <Link to={"/albumUpdate/" + picture.photoid}><button>수정</button></Link>
                 <button onClick={onDeleteItem}>삭제</button>
             </div>

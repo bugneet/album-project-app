@@ -28,6 +28,7 @@ import MypageRecentAlbum from './MypageRecentAlbum';
 import MypageAlbumUpdate from './MypageAlbumUpdate';
 
 import UserAnalysis2 from './UserAnalysis2';
+import MypageAlbumOrigin from './MypageAlbumOrigin';
 
 const Top = () => {
     const username = localStorage.getItem("username");
@@ -84,6 +85,7 @@ const Top = () => {
                 <Route path='/classification' element={<Classification />} />
                 <Route path='/mypageRecentAlbum' element={<MypageRecentAlbum />}></Route>
                 <Route path='/albumUpdate/:photoid' element={<MypageAlbumUpdate />}></Route>
+                <Route path='/albumOrigin/:imgurl' element={<MypageAlbumOrigin />}></Route>
 
                 <Route path='/yearly_chart' element={<Yearly_chart />} />
                 <Route path='/tag_count_yearly_chart' element={<Tag_count_yearly_chart />} />

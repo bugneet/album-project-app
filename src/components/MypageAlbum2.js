@@ -28,6 +28,11 @@ const MypageAlbum2 = () => {
 
     // const filteredData = filterDataByTags(data, selectedTags);
 
+    const handleReset = () => {
+        // 선택된 모든 체크박스 해제
+        const newSelectedTags = [];
+        setSelectedTags(newSelectedTags);
+    };
 
     const handleTagChange = (tag) => {
         if (selectedTags.includes(tag)) {
@@ -108,16 +113,36 @@ const MypageAlbum2 = () => {
             </div>
             <div id="content">
                 <div className="checkbox-container">
-                    {tags.map(tag => (
-                        <label key={tag} className="checkbox-label">
-                            <input
-                                type="checkbox"
-                                checked={selectedTags.includes(tag)}
-                                onChange={() => handleTagChange(tag)}
-                            />
-                            <span className="checkbox-text">{tag}({tagCounts[tag] || 0})</span>
-                        </label>
-                    ))}
+                    {tags
+                        .sort((a, b) => {
+                            // 체크된 항목이 먼저 나오도록 정렬
+                            const aChecked = selectedTags.includes(a);
+                            const bChecked = selectedTags.includes(b);
+                            if (aChecked && !bChecked) return -1;
+                            if (!aChecked && bChecked) return 1;
+
+                            // tagCounts가 높은 순으로 정렬
+                            const aCount = tagCounts[a] || 0;
+                            const bCount = tagCounts[b] || 0;
+                            if (aCount > bCount) return -1;
+                            if (aCount < bCount) return 1;
+
+                            // 가나다 순으로 정렬
+                            if (a < b) return -1;
+                            if (a > b) return 1;
+                            return 0;
+                        })
+                        .map(tag => (
+                            <label key={tag} className="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    checked={selectedTags.includes(tag)}
+                                    onChange={() => handleTagChange(tag)}
+                                />
+                                <span className="checkbox-text">{tag}({tagCounts[tag] || 0})</span>
+                            </label>
+                        ))}
+                    <button onClick={handleReset} className="reset-button">리셋</button>
                 </div>
                 <div id="img_content">
                     {

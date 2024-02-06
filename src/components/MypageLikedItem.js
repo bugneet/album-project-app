@@ -48,7 +48,7 @@ const MypageLikedItem = ({ liked }) => {
         <div className="mypost_item">
 
             <div className="mypost_image_container">
-                <img src={url} />
+                <Link to={"/albumOrigin/" + liked.board_no.photoid.image}><img src={url} /></Link>
             </div>
             <div className="mypost_contents_container">
                 제목: {liked.board_no.title}<br />
