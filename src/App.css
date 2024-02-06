@@ -149,8 +149,9 @@ body {
   background-color: #4285F4;
   color: #fff;
 }
-.file-label :hover{
-  color: #2c3e50 ;
+
+.file-label :hover {
+  color: #2c3e50;
 }
 
 .file-input {
@@ -465,6 +466,14 @@ hr {
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
+}
+
+.image-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .checkbox-container label {

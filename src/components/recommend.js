@@ -76,6 +76,8 @@ const Recommend = () => {
     const recommend = async () => {
         try {
             const user_tags = userTags;
+            console.log(userTags);
+            console.log(recommendTags);
             const response = await axios.get(`http://localhost:8000/recommend_contents/`, {
                 params: {
                     'recommend_tags': recommendTags.join(','),
