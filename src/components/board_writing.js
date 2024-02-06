@@ -21,7 +21,6 @@ const Board_writing = () => {
                 ...board,
                 tags: selectedPhotoTags,
             });
-            console.log(board.tags);
         }
     }, [location.state]);
 

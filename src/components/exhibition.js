@@ -122,8 +122,6 @@ const Exhibition = () => {
         const response = await axios.post(`http://localhost:8000/exhibition/like/${board_no}/`, {
           board_no: board_no, username: localStorage.getItem('username')
         });
-
-        console.log(response.data)
         
         setBoards((prevBoards) => {
           const updatedBoards = prevBoards.map((board) => {
