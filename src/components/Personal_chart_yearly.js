@@ -26,10 +26,14 @@ const ContentsTable = () => {
             <table>
                 <tbody>
                     <tr>
-                        {contentsdata.map((item) => (
-                            <td key={item.contents_id}>
+                        {contentsdata.map((item, index) => (
+                            <td key={item.contents_id} style={{ paddingRight: index < contentsdata.length - 1 ? '40px' : '0' }}>
                                 <a href={item.contents_link} target="_blank" rel="noopener noreferrer">
-                                    <img src={item.contents_image} alt={item.contents_name} style={{ width: '250px', height: 'auto' }} />
+                                    <img
+                                        src={item.contents_image}
+                                        alt={item.contents_name}
+                                        style={{ maxWidth: '350px', maxHeight: '300px', width: 'auto', height: 'auto' }}
+                                    />
                                 </a>
                             </td>
                         ))}
@@ -38,6 +42,10 @@ const ContentsTable = () => {
             </table>
         </div>
     );
+
+
+
+
 
 };
 
