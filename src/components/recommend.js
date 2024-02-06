@@ -10,8 +10,6 @@ const Recommend = () => {
     const [userContents, setUserContents] = useState([]);
     const [recommendContents, setRecommendContents] = useState([]);
 
-    const url = 'http://127.0.0.1:8000/media/'
-
     useEffect(() => {
         loadData();
     }, []);
@@ -44,6 +42,7 @@ const Recommend = () => {
                 tagCount: response.data.similar_user.tag_count[index],
             }));
 
+            console.log('상위 유저 5명:', users)
             const userTagsInfo = users.map(user => {
                 const overlappingTags = Object.keys(user.tagCount)
                     .filter(tag => currentUserTags.includes(tag))
@@ -60,7 +59,7 @@ const Recommend = () => {
                     nonOverlappingTags,
                 };
             });
-            
+
             const allOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.overlappingTags))
             const allOverlappingTag = [...allOverlappingTagsSet].toString();
             const allNonOverlappingTagsSet = new Set(userTagsInfo.flatMap(user => user.nonOverlappingTags));
@@ -88,7 +87,6 @@ const Recommend = () => {
 
             setUserContents(user_content);
             setRecommendContents(recommend_content);
-
         } catch (error) {
             console.log('컨텐츠 추천 에러', error)
         }
@@ -100,24 +98,16 @@ const Recommend = () => {
                 <h2>마이페이지</h2>
                 <MypageSidemenu></MypageSidemenu>
             </div>
-            {currentUser.name && recommendContents.length > 0 && (
+            {currentUser && (
                 <div id='content_box'>
                     <p>{currentUser.name}님이 관심있어하는 태그입니다</p>
                     <div className='recommend_tags'>
                         <p>[</p>
-                        {Array.isArray(userTags) ? (
-                            userTags.map((tag, index) => (
-                                <div key={index}>
-                                    <p>{tag}</p>
-                                </div>
-                            ))
-                        ) : (
-                            String(userTags).split(',').map((tag, index) => (
-                                <div key={index}>
-                                    <p>{tag.trim()}</p>
-                                </div>
-                            ))
-                        )}
+                        {String(userTags).split(',').map((tag, index) => (
+                            <div key={index}>
+                                <p>{tag.trim()}</p>
+                            </div>
+                        ))}
                         <p>]</p>
                     </div>
                     <p>{currentUser.name}님! 이런 제품은 어떠신가요?</p>
@@ -126,7 +116,7 @@ const Recommend = () => {
                             <div key={content.contents_id}>
                                 <p className='content_name'>{content.contents_name}</p>
                                 <a href={content.contents_link}>
-                                    <img src={url + content.contents_image} className='content_image' />
+                                    <img src={content.contents_image} className='content_image' />
                                 </a>
                             </div>
                         ))}
@@ -141,13 +131,13 @@ const Recommend = () => {
                         ))}
                         <p>]</p>
                     </div>
-                    <p>{currentUser.name}님과 비슷한 취향을 가진 사람들이 관심있어 하는 제품입니다!</p>
+                    <p>{currentUser.name}님과 이런 제품은 어떠신가요?</p>
                     <div className='recommend_content'>
                         {recommendContents.map((content) => (
                             <div key={content.contents_id}>
                                 <p className='content_name'>{content.contents_name}</p>
                                 <a href={content.contents_link}>
-                                    <img src={url + content.contents_image} className='content_image' />
+                                    <img src={content.contents_image} className='content_image' />
                                 </a>
                             </div>
                         ))}
@@ -155,7 +145,7 @@ const Recommend = () => {
                 </div>
             )}
 
-            { !(currentUser.name && recommendContents.length > 0) && (
+            {!(currentUser) && (
                 <div id="loading_data">Loading...</div>
             )}
         </div>
