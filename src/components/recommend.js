@@ -99,6 +99,7 @@ const Recommend = () => {
                 <h2>마이페이지</h2>
                 <MypageSidemenu></MypageSidemenu>
             </div>
+
             {currentUser && (userTags) && (
                 <div id='content_box'>
                     <p>{localStorage.getItem('username')}님이 관심있어하는 태그입니다</p>
@@ -156,6 +157,7 @@ const Recommend = () => {
                     <p>사진을 더 추가하시면 비슷한 취향을 가진 사람들이 관심있어하는 태그와 그에 맞는 제품을 추천해드립니다!</p>
                 </div>
             )}
+
         </div>
     );
 };

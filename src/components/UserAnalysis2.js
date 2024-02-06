@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../UserAnalysis2.css';
+import MypageSidemenu from './MypageSidemenu';
+
 const UserAnalysis2 = () => {
     const [data, setData] = useState([]);
     const [tags, setTags] = useState([]);
@@ -9,8 +11,8 @@ const UserAnalysis2 = () => {
 
     const activities = {
         '운동': [
-            {'name': '자전거 타기', 'tags': ['자전거', '벤치', '공원']},
-            {'name': '야구', 'tags': ['야구배트', '야구글러브', '야구공']},
+            { 'name': '자전거 타기', 'tags': ['자전거', '벤치', '공원'] },
+            { 'name': '야구', 'tags': ['야구배트', '야구글러브', '야구공'] },
             { 'name': '스키', 'tags': ['스키', '스노우보드', '겨울'] },
             { 'name': '공놀이', 'tags': ['공', '야구배트', '야구장'] },
             { 'name': '롤러블레이딩', 'tags': ['스케이트보드', '롤러블레이드', '공원'] },
@@ -102,44 +104,50 @@ const UserAnalysis2 = () => {
         )
     );
 
-    
+
     return (
-        <div className="container">
-            <h1 className="header">{username} 님의 분석 페이지</h1>
-            <p>전체 이미지 갯수: {totalImageCount} 입니다</p>
-
-            <h2 className="activityheader">상위 태그 TOP3</h2>
-            <div className="tagContainer">
-                {topTags.map((tag, index) => (
-                    <span key={tag} className="tag">
-                        {tag}
-                    </span>
-                ))}
+        <div id='mypage_album_body'>
+            <div id="menu">
+                <h2>마이페이지</h2>
+                <MypageSidemenu></MypageSidemenu>
             </div>
+            <div className="container">
+                <h1 className="header">{username} 님의 분석 페이지</h1>
+                <p>전체 오브젝트 감지 갯수: {totalImageCount}개 입니다</p>
 
-            <h2 className="activityheader">추천 액티비티</h2>
-            <div className="activityContainer">
-                {matchingActivities.map(activity => (
-                    <div key={activity.name} className="activityCard">
-                        <p>{activity.name}</p>
-                    </div>
-                ))}
-            </div>
+                <h2 className="activityheader">상위 태그 TOP3</h2>
+                <div className="tagContainer">
+                    {topTags.map((tag, index) => (
+                        <span key={tag} className="tag">
+                            {tag}
+                        </span>
+                    ))}
+                </div>
 
-            <h2 className="activityheader">당신이 관심을 가질 만한 액티비티</h2>
-            <div className="activityGroup">
-                {topTags.map((tag, index) => (
-                    <div key={tag} className="activityCard">
-                        <h3 className="tagHeading">{tag} 태그에 관련된 액티비티</h3>
-                        {matchingActivities
-                            .filter(activity => activity.tags.includes(tag))
-                            .map(activity => (
-                                <div key={activity.name}>
-                                    <h4>{activity.name}</h4>
-                                </div>
-                            ))}
-                    </div>
-                ))}
+                <h2 className="activityheader">추천 액티비티</h2>
+                <div className="activityContainer">
+                    {matchingActivities.map(activity => (
+                        <div key={activity.name} className="activityCard">
+                            <p>{activity.name}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <h2 className="activityheader">당신이 관심을 가질 만한 액티비티</h2>
+                <div className="activityGroup">
+                    {topTags.map((tag, index) => (
+                        <div key={tag} className="activityCard">
+                            <h3 className="tagHeading">{tag} 태그에 관련된 액티비티</h3>
+                            {matchingActivities
+                                .filter(activity => activity.tags.includes(tag))
+                                .map(activity => (
+                                    <div key={activity.name}>
+                                        <h4>{activity.name}</h4>
+                                    </div>
+                                ))}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
