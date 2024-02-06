@@ -31,9 +31,9 @@ const Custom_tags_count_yearly_chart = () => {
     };
 
     return (
-        <div id="charDB" style={{ display: 'flex', padding: '20px' }}>
+        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px',marginRight :'40px'}}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{ width: '200px', marginRight: '20px' }}>
+            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2' ,textAlign: 'center'}}>
                 <h2>분석페이지</h2>
                 <ul>
                     <Analysticpagemenu></Analysticpagemenu>

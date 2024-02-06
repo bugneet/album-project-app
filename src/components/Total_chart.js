@@ -4,6 +4,19 @@ import { BarChart, Bar, XAxis, YAxis, Radar, RadarChart, PolarGrid, PolarAngleAx
 import chartData from '../data/tags.json';
 import totaltop3 from '../data/total_top3.json'
 import Analysticpagemenu from './Analysticpagemenu';
+import { Link } from 'react-router-dom';
+
+const button = {
+    backgroundColor: '#4285F4',
+    border: 'none',
+    color: 'white',
+    borderRadius: '5px',
+    padding: '10px',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    transition: 'background-color 0.3s ease',
+};
 
 const Total_chart_json = () => {
     const [data1, setData1] = useState([]);
@@ -90,13 +103,11 @@ const Total_chart_json = () => {
     };
 
     return (
-        <div id="charDB" style={{ display: 'flex', padding: '20px' }}>
+        <div id="charDB" style={{ display: 'flex', flexDirection: 'row', marginLeft: '-250px',marginRight :'40px' }}>
             {/* Left side - Menu */}
-            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', width: '200px', marginRight: '20px' }}>
+            <div id="analysticmenu" style={{ display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: '5px', padding: '10px', marginRight: '20px', backgroundColor: '#f2f2f2' ,textAlign: 'center'}}>
                 <h2>분석페이지</h2>
-                <ul style={{ display: 'flex', flexDirection: 'row', padding: 0, margin: 0, listStyle: 'none' }}>
-                    <Analysticpagemenu></Analysticpagemenu>
-                </ul>
+                <Analysticpagemenu></Analysticpagemenu>
             </div>
 
             {/* Right side - Chart */}
