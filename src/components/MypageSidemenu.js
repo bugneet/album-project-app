@@ -17,12 +17,12 @@ const MypageSidemenu = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',  // 수직 정렬
-        textAlign: 'center',   // 텍스트 정렬
+        textAlign: 'left',   // 텍스트 정렬
     };
 
     return (
         <div style={containerStyle}>
-            <ul style={{ display: 'flex', flexDirection: 'column', listStyle: 'none', width: '200px', padding: 0, lineHeight: '3.0', marginRight: '10px' }}>
+            <ul style={{ display: 'flex', flexDirection: 'column', listStyle: 'none', width: '200px', paddingLeft: 100, lineHeight: '3.0', marginRight: '10px' }}>
                 <li><Link to="/mypageRecentAlbum" style={buttonStyles}>최근사진</Link></li>
                 <li><Link to="/mypageAlbum2" style={buttonStyles}>엘범보기</Link></li>
                 <li><Link to="/personal_chart/{username}" style={buttonStyles}>분석결과</Link></li>
