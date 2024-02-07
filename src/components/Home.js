@@ -59,9 +59,8 @@ const Main = () => {
 
   const handleFileChange = (event) => {
     const files = event.target.files;
-    const newFiles = Array.from(files).slice(0, 5);
-    setSelectedFiles([...newFiles]);
-    analyzeFiles([...newFiles]);
+    setSelectedFiles([...files]);
+    analyzeFiles([...files]);
   };
 
   const analyzeFiles = (files) => {

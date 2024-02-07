@@ -67,7 +67,7 @@ table#insert tr td input {
 
 input[type=submit],
 input[type=reset] {
-  background-color: #dc3030;
+  background-color: #4285F4;
   border: none;
   color: white;
   border-radius: 5px;
