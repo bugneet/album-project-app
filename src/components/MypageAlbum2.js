@@ -26,6 +26,7 @@ const MypageAlbum2 = () => {
 
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
+
     // const filteredData = filterDataByTags(data, selectedTags);
 
     const handleReset = () => {

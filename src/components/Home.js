@@ -103,7 +103,7 @@ const Main = () => {
                   </div>
                 ))}
               </div>
-              <button onClick={handleSubmit}>파일 업로드</button>
+              <button className="file-label" onClick={handleSubmit}>파일 업로드</button>
             </div>
           )}
         </div>

@@ -1165,3 +1165,13 @@ hr {
 
   /* 채크박스 레이블과 텍스트 사이의 간격을 조정합니다. */
 }
+
+.reset-button {
+  padding: 2px 7px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4285F4;
+  color: #fff;
+  display: inline-block;
+}

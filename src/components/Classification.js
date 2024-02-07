@@ -58,7 +58,7 @@ const Classification = () => {
                     onDataChange={(newValue) => handlePhototagChange(i, newValue)}
                 />
             ))}
-            <button onClick={handleSaveData}>저장</button>
+            <button className='file-label' onClick={handleSaveData}>저장</button>
         </div>
     );
 };

@@ -12,6 +12,17 @@ const MypageAlbumItem = ({ picture }) => {
         minute: '2-digit',
         hour12: false, // 24시간 형식
     });
+    const button = {
+        cursor: 'pointer',
+        display: 'inline-block',
+        padding: '2px 8px',
+        fontSize: '13px',
+        border: 'none',
+        borderRadius: '4px',
+        backgroundColor: '#4285F4',
+        color: '#fff',
+        marginRight: '5px'
+    };
 
     let history = useNavigate()
 
@@ -42,9 +53,9 @@ const MypageAlbumItem = ({ picture }) => {
             <div>
                 날짜: {formattedDate}<br />
                 태그: {picture.phototag}<br />
-                <Link to={"/albumOrigin/" + picture.image}><button>원본보기</button></Link>
-                <Link to={"/albumUpdate/" + picture.photoid}><button>수정</button></Link>
-                <button onClick={onDeleteItem}>삭제</button>
+                <Link to={"/albumOrigin/" + picture.image}><button style={button}>원본보기</button></Link>
+                <Link to={"/albumUpdate/" + picture.photoid}><button style={button}>수정</button></Link>
+                <button style={button} onClick={onDeleteItem}>삭제</button>
             </div>
         </div>
 

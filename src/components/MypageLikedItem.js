@@ -6,6 +6,18 @@ const MypageLikedItem = ({ liked }) => {
 
     let history = useNavigate()
 
+    const button = {
+        cursor: 'pointer',
+        display: 'inline-block',
+        padding: '2px 8px',
+        fontSize: '13px',
+        border: 'none',
+        borderRadius: '4px',
+        backgroundColor: '#4285F4',
+        color: '#fff',
+        marginRight: '5px'
+    };
+
     const formattedDate = new Date(liked.board_no.created_time).toLocaleString('en-US', {
         year: 'numeric',
         month: '2-digit',
@@ -57,7 +69,7 @@ const MypageLikedItem = ({ liked }) => {
                 내용: {liked.board_no.contents}<br />
                 작성자: {liked.board_no.id.username}<br />
                 좋아요날짜 : {formattedDate2}<br />
-                <br /><button onClick={onDeleteItem}>삭제</button>
+                <br /><button style={button} onClick={onDeleteItem}>삭제</button>
             </div>
 
         </div>

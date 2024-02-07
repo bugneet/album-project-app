@@ -6,6 +6,17 @@ const MypagePostItem = ({ post }) => {
 
     let history = useNavigate()
 
+    const button = {
+        cursor: 'pointer',
+        display: 'inline-block',
+        padding: '2px 8px',
+        fontSize: '13px',
+        border: 'none',
+        borderRadius: '4px',
+        backgroundColor: '#4285F4',
+        color: '#fff',
+        marginRight: '5px'
+    };
     const formattedDate = new Date(post.created_time).toLocaleString('en-US', {
         year: 'numeric',
         month: '2-digit',
@@ -47,8 +58,8 @@ const MypagePostItem = ({ post }) => {
                 태그: {post.board_photo_tag}<br />
                 내용: {post.contents}<br />
                 이미지: {post.photoid.image}<br />
-                <br /><Link to={"/boardUpdate/" + post.board_no}><button>수정</button></Link>
-                <button onClick={onDeleteItem}>삭제</button>
+                <br /><Link to={"/boardUpdate/" + post.board_no}><button style={button}>수정</button></Link>
+                <button style={button} onClick={onDeleteItem}>삭제</button>
             </div>
 
         </div>
